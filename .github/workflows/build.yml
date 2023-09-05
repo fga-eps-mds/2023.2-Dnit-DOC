@@ -1,9 +1,12 @@
 name: Build documentação
 
 on:
-  push: 
-    branches:
-      - "*"
+  push:
+      branches:
+      - '**'
+      - '!releases/**'
+      - '!release/**'
+      - '!main'
     
 jobs:
   build:
@@ -13,7 +16,6 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: pip install mkdocs
-      - run: pip install mkdocs-material
+      - run: pip install -r requirements.txt
       - run: mkdocs build -s
       - run: mkdocs gh-deploy --verbose --strict --clean --force
