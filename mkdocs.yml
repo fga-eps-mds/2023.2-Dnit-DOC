@@ -1,3 +1,9 @@
 site_name: Documentação DNIT
+
 theme: 
   name: material
+
+# Pra mais informações sobre personalizar cores
+# https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
+extra_css:
+  - stylesheets/extra.css
