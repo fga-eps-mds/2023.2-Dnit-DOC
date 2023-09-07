@@ -1,0 +1,11 @@
+version: '3.0'
+
+services:
+  docs-page:
+    build: 
+      context: .
+    ports:
+      - "3030:8000"
+    container_name: docsPage
+    volumes:
+      - .:/home/docs-page
