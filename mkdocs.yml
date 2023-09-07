@@ -1,7 +1,17 @@
-site_name: Documentação DNIT
+site_name: DNIT - Educação paro o trânsito
+repo_name: "2023.2-DNIT-DOC"
+repo_url: https://github.com/fga-eps-mds/2023.2-Dnit-DOC
 
-theme: 
+theme:
   name: material
+  language: pt
+  features:
+           - navigation.tabs
+  logo: assets/logos/dnitLogoBranco.png
+  favicon: assets/logos/dnitLogoBrancoFundoAzul.png
+
+nav:
+  - Home: index.md
 
 # Pra mais informações sobre personalizar cores
 # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
