@@ -24,15 +24,15 @@
 
 Clone este repositório com o comando:
 
-> $ git clone https://github.com/fga-eps-mds/2023.2-Dnit-DOC.git
+    git clone https://github.com/fga-eps-mds/2023.2-Dnit-DOC.git
 
 Dentro do diretório do repositório, rode o seguinte comando para buildar a documentação: 
 
-> $ docker compose build
+    docker compose build
 
 Feito isso, suba o serviço da página de documentação com o comando:
 
-> $ docker compose up
+    docker compose up
 
-Agora basta acessar pelo navegador o endereço **localhost:3030** para visualizar a página localmente.
+Agora basta acessar pelo navegador o endereço http://localhost:3030/ para visualizar a página localmente.
 
