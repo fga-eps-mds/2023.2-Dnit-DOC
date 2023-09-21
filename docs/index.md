@@ -55,7 +55,7 @@
        			<img src="https://github.com/VitorLamego.png" alt="Vitor Magalhães" class="img-thumbnail image">
         		<div class="middle">
             			<a href="https://github.com/VitorLamego" style="text-decoration:none">
-                		<div class="text"> Vitor Magalhães </div>
+                		<div class="text"> Vitor Lamego </div>
 				 </a>
         		</div>
     		</div>
