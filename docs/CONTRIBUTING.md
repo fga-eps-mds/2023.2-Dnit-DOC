@@ -102,7 +102,7 @@
 
 &emsp;&emsp;Exemplo: **Issue 1: [US01] Realizar login**
 
-    git commit -m "#1 feat: adiciona campos de email e senha na tela de login"
+    git commit -m "feat: adiciona campos de email e senha na tela de login"
 
 &emsp;&emsp;Para tarefas realizadas em pares, os commits precisam seguir o seguinte padrão:
 
