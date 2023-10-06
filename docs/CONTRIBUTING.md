@@ -111,7 +111,7 @@
     
     Co-authored-by: Nome de quem auxiliou <auxiliador@gmail.com>"
 
-&emsp;&emsp;É importante ressaltar que o email **PRECISA** ser o mesmo que está vinculado à conta do Github.
+&emsp;&emsp;É importante ressaltar que o email **PRECISA** ser o mesmo que está vinculado à conta do GitHub.
 
 - **Signed-off-by**: deve ser preenchido pelo responsável pelo código;
 - **Co-authored-by**: deve ser preenchido por quem prestou auxílio durante a tarefa.
