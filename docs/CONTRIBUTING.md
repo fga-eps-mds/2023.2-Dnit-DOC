@@ -116,6 +116,8 @@
 - **Signed-off-by**: deve ser preenchido pelo responsável pelo código;
 - **Co-authored-by**: deve ser preenchido por quem prestou auxílio durante a tarefa.
 
+Para preencher o campo **Co-authored-by**, consulte a [documentação](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors).
+
 ## Referências
 
 > VAMOS CUIDAR 2020-1. Políticas. Disponível em: <https://fga-eps-mds.github.io/2020.1-VC_Usuario/#/docs/Policies>
