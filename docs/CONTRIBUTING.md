@@ -109,7 +109,6 @@
     git commit -m "feat: adiciona campos de email e senha na tela de login
 
     
-    Signed-off-by: Nome do responsável <nome@gmail.com>
     Co-authored-by: Nome de quem auxiliou <auxiliador@gmail.com>"
 
 &emsp;&emsp;É importante ressaltar que o email **PRECISA** ser o mesmo que está vinculado à conta do Github.
