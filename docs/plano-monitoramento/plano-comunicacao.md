@@ -10,12 +10,12 @@
 
 |**Logo**|**Nome**|**Finalidade**|
 |--------|-------------|---------|
-|<img src="/assets/logos/comunicacao/discord.png" width="60px" height="60px">|Discord|Comunicação assincrona entre a equipe, donos do produto e professor, além da comunicação e organização interna da equipe|
-|<img src="/assets/logos/comunicacao/github.png" width="60px" height="60px">|Github|Repositório com os documentos, arquivos, códigos, dentre outros recursos relacionados ao projeto|
-|<img src="/assets/logos/comunicacao/drive.png" width="60px" height="60px">|Google Drive|Gerenciamento de arquivos, como planilhas, atas e outros documentos|
-|<img src="/assets/logos/comunicacao/teams.png" width="60px" height="60px">|Microsoft Teams|Reuniões internas da equipe que necessitem de gravação e reuniões com os donos do produto|
-|<img src="/assets/logos/comunicacao/whatsapp.png" width="60px" height="60px">|Whatsapp|Comunicação rápida entre os integrantes da equipe de EPS e MDS|
-|<img src="/assets/logos/comunicacao/zenhub.png" width="60px" height="60px">|ZenHub| Acompanhamento e gerenciamento do projeto|
+|<img src="../../assets/logos/comunicacao/discord.png" width="60px" height="60px">|Discord|Comunicação assincrona entre a equipe, donos do produto e professor, além da comunicação e organização interna da equipe|
+|<img src="../../assets/logos/comunicacao/github.png" width="60px" height="60px">|Github|Repositório com os documentos, arquivos, códigos, dentre outros recursos relacionados ao projeto|
+|<img src="../../assets/logos/comunicacao/drive.png" width="60px" height="60px">|Google Drive|Gerenciamento de arquivos, como planilhas, atas e outros documentos|
+|<img src="../../assets/logos/comunicacao/teams.png" width="60px" height="60px">|Microsoft Teams|Reuniões internas da equipe que necessitem de gravação e reuniões com os donos do produto|
+|<img src="../../assets/logos/comunicacao/whatsapp.png" width="60px" height="60px">|Whatsapp|Comunicação rápida entre os integrantes da equipe de EPS e MDS|
+|<img src="../../assets/logos/comunicacao/zenhub.png" width="60px" height="60px">|ZenHub| Acompanhamento e gerenciamento do projeto|
 
 ## 3. Reuniões
 

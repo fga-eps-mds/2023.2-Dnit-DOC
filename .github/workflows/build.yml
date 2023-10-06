@@ -18,4 +18,4 @@ jobs:
           python-version: 3.x
       - run: pip install -r requirements.txt
       - run: mkdocs build -s
-      - run: mkdocs gh-deploy --verbose --strict --clean --force
+      

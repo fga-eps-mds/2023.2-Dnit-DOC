@@ -86,11 +86,11 @@
 ## 3. Política de issues
 &emsp;&emsp;A criação de novas issues deverá seguir um dos padrões estabelecidos abaixo:
 
-- [Bug report](): para relatar problemas, erros, defeitos ou falhas;
+- [Bug report](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/tree/main/.github/workflows/ISSUE_TEMPLATE/bug_report.md): para relatar problemas, erros, defeitos ou falhas;
     - Título da issue com sufixo `[Bugfix]` ou `[Hotfix]`.
-- [História de usuário](): quando for descrever funcionalidades a nível de história de usuário;
+- [História de usuário](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/tree/main/.github/workflows/ISSUE_TEMPLATE/historia_de_usuario.md): quando for descrever funcionalidades a nível de história de usuário;
     - Título da issue com sufixo `[USX]`, com X sendo o número da História.
-- [Geral](): utilizado para criar ou relatar tarefas ou outras atividades gerais.
+- [Geral](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/tree/main/.github/workflows/ISSUE_TEMPLATE/geral.md): utilizado para criar ou relatar tarefas ou outras atividades gerais.
     - Título da issue com sufixo `[Doc]`, para issues de documentação.
 
 ## 4. Política de commits
