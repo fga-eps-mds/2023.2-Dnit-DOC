@@ -1,6 +1,8 @@
 # DNIT - Educação paro o trânsito
 
-🚧 Mais informações em breve 🚧
+&emsp;&emsp;Esta documentação é destinada ao projeto realizado para o DNIT (Departamento Nacional de Infraestrutura de Transportes) no âmbito da disciplina de EPS (Engenharia de Produto de Software) do curso de Engenharia de Software da Universidade de Brasília.
+
+&emsp;&emsp;O projeto visa desenvolver um produto de software que consiste numa plataforma web para auxiliar na operacionalidade da equipe nacional de educação para o trânsito na execução de ações educacionais em escolas.
 
 ## Equipe
 
@@ -8,74 +10,81 @@
 
 <div class="container">
 	<div class="row">
+
 		<div class="col-sm container-img">
-       			<img src="https://github.com/DanielPortods.png" alt="Daniel Porto" class="img-thumbnail image">
-        		<div class="middle">
-            			<a href="https://github.com/DanielPortods" style="text-decoration:none">
-                		<div class="text"> Daniel Porto </div>
+       		<img src="https://github.com/DanielPortods.png" alt="Daniel Porto" class="img-thumbnail image">
+        	<div class="middle">
+            	<a href="https://github.com/DanielPortods" style="text-decoration:none">
+               		<div class="text"> Daniel Porto </div>
 				 </a>
-        		</div>
+        	</div>
     	</div>
+
 		<div class="col-sm container-img">
-       			<img src="https://github.com/LucasGlopes.png" alt="Lucas Gomes" class="img-thumbnail image">
-        		<div class="middle">
-            			<a href="https://github.com/LucasGlopes" style="text-decoration:none">
-                		<div class="text"> Lucas Gomes </div>
-				 </a>
-        		</div>
+			<img src="https://github.com/RafaelBP02.png" alt="Rafael Berto" class="img-thumbnail image">
+        	<div class="middle">
+            	<a href="https://github.com/RafaelBP02" style="text-decoration:none">
+            		<div class="text"> Rafael Berto </div>
+			 	</a>
+        	</div>
     	</div>
+
 		<div class="col-sm container-img">
-       			<img src="https://github.com/RafaelBP02.png" alt="Rafael Berto" class="img-thumbnail image">
-        		<div class="middle">
-            			<a href="https://github.com/RafaelBP02" style="text-decoration:none">
-                		<div class="text"> Rafael Berto </div>
-				 </a>
-        		</div>
-    		</div>
-		<div class="col-sm container-img">
-       			<img src="https://github.com/thiagohdaqw.png" alt="Thiago Sampaio" class="img-thumbnail image">
-        		<div class="middle">
-            			<a href="https://github.com/thiagohdaqw" style="text-decoration:none">
-                		<div class="text"> Thiago Sampaio </div>
-				 </a>
-        		</div>
+			<img src="https://github.com/thiagohdaqw.png" alt="Thiago Sampaio" class="img-thumbnail image">
+        	<div class="middle">
+            	<a href="https://github.com/thiagohdaqw" style="text-decoration:none">
+            		<div class="text"> Thiago Sampaio </div>
+			 	</a>
+        	</div>
     	</div>
+
+		<div class="col-sm container-img">
+			<img src="https://github.com/victorhugo21.png" alt="Victor Hugo" class="img-thumbnail image">
+        	<div class="middle">
+            	<a href="https://github.com/victorhugo21" style="text-decoration:none">
+            		<div class="text"> Victor Hugo </div>
+				</a>
+        	</div>
+    	</div>
+	
 	</div>
-	<br>
+
+	</br>
+
 	<div class="row">
+
 		<div class="col-sm container-img">
-       			<img src="https://github.com/victorhugo21.png" alt="Victor Hugo" class="img-thumbnail image">
-        		<div class="middle">
-            			<a href="https://github.com/victorhugo21" style="text-decoration:none">
-                		<div class="text"> Victor Hugo </div>
-				 </a>
-        		</div>
+			<img src="https://github.com/VitorLamego.png" alt="Vitor Lamego" class="img-thumbnail image">
+        	<div class="middle">
+            	<a href="https://github.com/VitorLamego" style="text-decoration:none">
+            		<div class="text"> Vitor Lamego </div>
+			 	</a>
+        	</div>
     	</div>
+
 		<div class="col-sm container-img">
-       			<img src="https://github.com/VitorLamego.png" alt="Vitor Magalhães" class="img-thumbnail image">
-        		<div class="middle">
-            			<a href="https://github.com/VitorLamego" style="text-decoration:none">
-                		<div class="text"> Vitor Magalhães </div>
-				 </a>
-        		</div>
-    		</div>
+			<img src="https://github.com/wagnermc506.png" alt="Wagner Martins" class="img-thumbnail image">
+        	<div class="middle">
+            	<a href="https://github.com/wagnermc506" style="text-decoration:none">
+            		<div class="text"> Wagner Martins </div>
+			 	</a>
+        	</div>
+    	</div>
+
 		<div class="col-sm container-img">
-       			<img src="https://github.com/wagnermc506.png" alt="Wagner Martins" class="img-thumbnail image">
-        		<div class="middle">
-            			<a href="https://github.com/wagnermc506" style="text-decoration:none">
-                		<div class="text"> Wagner Martins </div>
-				 </a>
-        		</div>
-    		</div>
-		<div class="col-sm container-img">
-       			<img src="https://github.com/yudi-azvd.png" alt="Yudi Yamane" class="img-thumbnail image">
-        		<div class="middle">
-            			<a href="https://github.com/yudi-azvd" style="text-decoration:none">
-                		<div class="text"> Yudi Yamane </div>
-				 </a>
-        		</div>
-    		</div>
+			<img src="https://github.com/yudi-azvd.png" alt="Yudi Yamane" class="img-thumbnail image">
+        	<div class="middle">
+            	<a href="https://github.com/yudi-azvd" style="text-decoration:none">
+            		<div class="text"> Yudi Yamane </div>
+			 	</a>
+        	</div>
+    	</div>
+
+		<div class="col-sm container-img">		
+    	</div>
+	
 	</div>
+
 </div>
 
 </br>
@@ -84,14 +93,16 @@
 
 <div class="container">
 	<div class="row">
+
 		<div class="col-sm container-img">
-       			<img src="https://github.com/Hunter104.png" alt="André Emanuel" class="img-thumbnail image">
-        		<div class="middle">
-            			<a href="https://github.com/Hunter104" style="text-decoration:none">
-                		<div class="text"> André Emanuel </div>
-				 </a>
-        		</div>
+       		<img src="https://github.com/Hunter104.png" alt="André Emanuel" class="img-thumbnail image">
+        	<div class="middle">
+            	<a href="https://github.com/Hunter104" style="text-decoration:none">
+            		<div class="text"> André Emanuel </div>
+				</a>
+        	</div>
     	</div>
+
 		<div class="col-sm container-img">
        			<img src="https://github.com/H0lzz.png" alt="Artur Henrique" class="img-thumbnail image">
         		<div class="middle">
@@ -100,6 +111,7 @@
 				 </a>
         		</div>
     	</div>
+
 		<div class="col-sm container-img">
        			<img src="https://github.com/csreis72.png" alt="Cássio Sousa" class="img-thumbnail image">
         		<div class="middle">
