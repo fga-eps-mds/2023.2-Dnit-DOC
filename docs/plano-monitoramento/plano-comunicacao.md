@@ -25,10 +25,10 @@
 
 |**Objetivo**|**Envolvidos**|**Frequência**|**Dia e Horário**|**Meio**|**Ferramenta**(ou local)|
 |:-:|--------------|--------------|-----------|--------|--------|
-| _Review_, _Retrospective_ e _planning_ | EPS e MDS| Semanal | Sexta-feira, 19:30 - 21:00 | Remoto | Discord |
-| _Daily_ remota | EPS e MDS | 2x/semana | Seg. e Qua. 19:30 - 20:00 | Remoto | Discord |
-| _Mini Daily_ presencial| EPS e MDS | 2x/semana | Ter. e Qui. 15:50 - 16:00 | Presencial | Sala I7 |
-| _Briefing_ | EPS e MDS | Semanal | Segunda-feita, 12:00 - 12:30 | Remoto | Discord |
+| _Review_, _Retrospective_ e _planning_ | EPS e MDS| Semanal | Sexta-feira: <br>19:30 - 21:00 | Remoto | Discord |
+| _Daily_ remota | EPS e MDS | 2x/semana | Segunda-feira: 19:00 - 19:15 Quarta-feira:<br>19:30 - 19:45 | Remoto | Discord |
+| _Daily_ presencial| EPS e MDS | 2x/semana | Ter. e Qui.: <br>15:50 - 16:00 | Presencial | Sala I7 |
+| _Briefing_ | EPS e MDS | Semanal | Segunda-feira: 12:00 - 12:30 | Remoto | Discord |
 
 ### 3.2 Reuniões Externas
 
@@ -47,3 +47,4 @@
 |**Data**|**Descrição**|**Autor(es)**|
 |--------|-------------|--------------|
 | 04/10/2023 | Criação do plano de comunicação | Daniel Porto |
+| 06/10/2023 | Ajustes dos horários conforme combinado | Daniel Porto |
