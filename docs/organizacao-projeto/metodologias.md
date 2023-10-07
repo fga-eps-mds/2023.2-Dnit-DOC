@@ -46,7 +46,7 @@
 
 &emsp;&emsp;Kanban é um termo em japonês que significa "cartão". Essa metodologia auxilia no controle da produção ou gestão de tarefas. Utilizando conceitos simples como o de quadro no qual terão cartões dispostos em colunas, será utilizado o Zenhub para executar essa metodologia.
 
-## Referencias
+## Referências
 
 > EXTREME PROGRAMMING. The Values of Extreme Programming. Disponível em: <http://www.extremeprogramming.org/values.html>
 

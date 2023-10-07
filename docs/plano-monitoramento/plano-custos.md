@@ -76,7 +76,7 @@ Para o custo do MVP o cálculo se dá com base nas semanas a partir do início d
 
 <iframe width="1400" height="400" style="-webkit-transform:scale(0.8);-moz-transform-scale(0.8);" frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR5TLx-OiCCkfYJsUqnzRMC8_voSbbLjuCMqJ7L3HCKK-tyqB_JCvQJeSCWtQKNrHcSY8yMYAyLzpi7/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
-## Referencias
+## Referências
 
 > Equipe Alectrion 2023-1. Plano de custos. Disponível em: <https://fga-eps-mds.github.io/2023-1-Alectrion-DOC/plano-custos/>
 
