@@ -113,7 +113,6 @@
 
 &emsp;&emsp;É importante ressaltar que o email **PRECISA** ser o mesmo que está vinculado à conta do GitHub.
 
-- **Signed-off-by**: deve ser preenchido pelo responsável pelo código;
 - **Co-authored-by**: deve ser preenchido por quem prestou auxílio durante a tarefa.
 
 Para preencher o campo **Co-authored-by**, consulte a [documentação](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors).
@@ -133,4 +132,5 @@ Para preencher o campo **Co-authored-by**, consulte a [documentação](https://d
 |**Data**|**Descrição**|**Autor(es)**|
 |:-:|---|---|
 | 04/10/2023 | Criação do Guia de Contribuição | Daniel Porto |
+| 06/10/2023 | Ajustes das políticas de issues | Daniel Porto, Yudi |
 
