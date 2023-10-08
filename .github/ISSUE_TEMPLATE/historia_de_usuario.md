@@ -1,3 +1,12 @@
+---
+name: História de Usuário
+about: Criação de história de usuário
+title: 'US \<id\>: \<síntese da US \>'
+labels: ''
+assignees: ''
+
+---
+
 # US \<id\>: \<sintese da US \>
 <!-- Ex.: Cadastrar novos usuários -->
 

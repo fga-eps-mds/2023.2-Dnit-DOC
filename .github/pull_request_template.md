@@ -1,3 +1,12 @@
+---
+name: Pull Request 
+about: Criação Pull Request
+title: ''
+labels: ''
+assignees: ''
+
+---
+
 Issue relacionada: resolves #X
 <!-- OBSERVAÇÕES:
   - X é o número da issue

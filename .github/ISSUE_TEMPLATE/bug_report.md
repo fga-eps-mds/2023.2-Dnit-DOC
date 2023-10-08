@@ -1,3 +1,12 @@
+---
+name: Bug report
+about: Criação de relatório de bug
+title: '[BUG] <nome curto e descritivo>'
+labels: ''
+assignees: ''
+
+---
+
 # Título
 
 [Resumo curto e descritivo do problema]

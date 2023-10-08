@@ -1,3 +1,12 @@
+---
+name: Geral
+about: Tarefas gerais
+title: ''
+labels: ''
+assignees: ''
+
+---
+
 **Descrição**
 Deve conter uma descrição detalhada explicando a finalidade para a qual à issue foi criada.
 
