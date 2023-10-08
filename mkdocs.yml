@@ -11,7 +11,15 @@ theme:
   favicon: assets/logos/dnitLogoBrancoFundoAzul.png
 
 nav:
-  - Home: index.md
+  - Home: 
+    - Início: index.md
+    - Guia de contribuição: CONTRIBUTING.md
+    - Código de conduta:  CODE_OF_CONDUCT.md
+  - Plano e monitoramento:
+    - Plano de comunicação: plano-monitoramento/plano-comunicacao.md
+    - Plano de custos: plano-monitoramento/plano-custos.md
+  - Organização do projeto:
+    - Metodologias: organizacao-projeto/metodologias.md
 
   - Documentos do projeto:
     - Identidade Visual: identidadeVisual/identidade.md

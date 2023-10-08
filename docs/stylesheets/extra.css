@@ -9,6 +9,10 @@ p {
 	text-align: justify;
 }
 
+ul {
+  text-align: justify;
+}
+
 p img {
   display: block;
   margin-left: auto;
@@ -19,6 +23,10 @@ p img {
 body{
   color: #000000;
   background-color: #ffffff;
+}
+
+.md-nav__list{
+  text-align: left;
 }
 
 .container-img {
