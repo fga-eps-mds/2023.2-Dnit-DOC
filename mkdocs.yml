@@ -21,6 +21,9 @@ nav:
   - Organização do projeto:
     - Metodologias: organizacao-projeto/metodologias.md
 
+  - Documentos do projeto:
+    - Identidade Visual: identidadeVisual/identidade.md
+
 # Pra mais informações sobre personalizar cores
 # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
 extra_css:
