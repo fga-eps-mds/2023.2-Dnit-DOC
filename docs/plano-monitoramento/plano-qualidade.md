@@ -38,6 +38,31 @@ Para garantir a qualidade do projeto, a equipe adotou as seguintes técnicas de 
 
 **Revisão de PRs:** Foi implementada uma prática de verificação de correção de PRs. Antes de mesclar um PR no repositório principal, algum membro da equipe de EPS revisa o código, analisando a lógica, a qualidade, a conformidade com as diretrizes do projeto e identificando possíveis melhorias ou problemas. Essa verificação adicional ajuda a garantir que o código entregue esteja correto e atenda aos padrões de qualidade estabelecidos.
 
+## Métricas de Qualidade
+
+As métricas definidas para esse projeto do DNIT seguem:
+
+|**Métrica**|**Descrição**|
+|-----------|-------------|
+|*Bugs*|Número de problemas identificados no código|
+|Vulnerabilidades|Quantidade de vulnerabilidades detectadas|
+|*Code Smell*|Indicadores de práticas inadequadas de código|
+|Cobertura|Grau de cobertura dos testes no código|
+|Duplicação|Quantidade de linhas de código duplicadas|
+|Linhas|Total de linhas de código no projeto|
+|*Security Hotspots*|Avaliação de segurança e vulnerabilidades|
+
+As métricas de projeto, processo e produto de software são instrumentos quantitativos essenciais para avaliar a eficiência dos processos de software e dos projetos que empregam esses processos. Estas métricas oferecem insights objetivos, auxiliando engenheiros de software na análise e melhoria contínua da qualidade, eficiência e eficácia dos softwares. Uma métrica eficaz deve ser fácil de entender e calcular, fornecer resultados não ambíguos e estar fundamentada no modelo de requisitos, projeto ou estrutura do programa, independente das características específicas das linguagens de programação. O uso de métricas proporciona uma avaliação objetiva, permitindo a identificação de tendências, aprimoramento de estimativas e a implementação de melhorias significativas na qualidade ao longo do tempo (PRESSMAN, 2021). Os valores mínimos aceitáveis para cada métrica do projeto foram estabelecidos com base nas métricas especificadas no [SonarCloud](https://docs.sonarcloud.io/digging-deeper/metric-definitions/#complexity).
+
+|**Métrica**|**Critério**|
+|-----------|------------|
+|Cobertura|Pelo menos 80% de cobertura de testes|
+|Vunrelabilidades|Classificado como "A" no SonarCloud|
+|*Bugs*|Classificado como "A" no no SonarCloud|
+|*Security Hotspots*|Classificado como "A" no SonarCloud|
+|*Code Smells*|Classificado como "A" no SonarCloud|
+|Duplicação|Até 3.0% de duplicação de código|
+
 ## Referências
 
 > PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de software. Grupo A, 2021. E-book. ISBN 9786558040118. Disponível em: <https://integrada.minhabiblioteca.com.br/#/books/9786558040118/>. Acesso em: 10 out. 2023.
@@ -50,4 +75,5 @@ Para garantir a qualidade do projeto, a equipe adotou as seguintes técnicas de 
 |--------|-------------|--------------|
 |10/10/2023| Criação do documento | Rafael |
 |10/10/2023| Detalha introdução e V&V | Rafael|
-|11/10/2023| Escreve sobre Ferramentas | Rafael
+|11/10/2023| Escreve sobre Ferramentas | Rafael|
+|11/10/2023| Adição de métricas de qualidade | Rafael|
