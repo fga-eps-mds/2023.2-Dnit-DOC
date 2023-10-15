@@ -24,7 +24,8 @@ nav:
     - Plano de riscos: plano-monitoramento/plano-riscos.md
   - Documentos do projeto:
     - Metodologias: documentos-projeto/metodologias.md
-    - Identidade Visual: documentos-projeto/identidade.md
+    - Identidade Visual: documentos-projeto/identidadeVisual/identidade.md
+    - Componentes: documentos-projeto/identidadeVisual/Componentes.md
   - Andamento:
     - Pré-sprints:
       - Semana 1: andamento/semana1.md

@@ -1,10 +1,3 @@
-## Histórico de versionamento
-
-| Versão | Data   | Modificação                                                            | Autor        |
-| -- | ---------- | ----------------------------------------- | ---- |
-| 1.0 | 04/10/2023 | Criação da pagina e adição do manual de identidade visual fornecido pelo DNIT | Vitor Magalhães Lamego |
-| 2.0 | 15/10/2023 | Adição dos componentes | Artur Henrique Holz Bartz |
-
 # Identidade Visual
 
 ## Introdução
@@ -16,29 +9,29 @@ A identidade visual do projeto possui dois focos de atenção. O primeiro é seg
 A seguir serão apresentados os principais pontos do Manual de Gestão de Marca do DNIT, oferecido pela própria equipe do DNIT.
 
 ### Conceito
-![Conceito](../assets/identidadeVisual/a-2.jpg)
+![Conceito](../../assets/identidadeVisual/a-2.jpg)
 ### Ícones
-![Ícones](../assets/identidadeVisual/a-3.jpg)
+![Ícones](../../assets/identidadeVisual/a-3.jpg)
 ### Apresentação
-![Apresentação](../assets/identidadeVisual/a-4.jpg)
+![Apresentação](../../assets/identidadeVisual/a-4.jpg)
 ### Cores
-![Cores](../assets/identidadeVisual/a-5.jpg)
+![Cores](../../assets/identidadeVisual/a-5.jpg)
 ### Elementos gráficos
-![Elementos Gráficos](../assets/identidadeVisual/a-6.jpg)
+![Elementos Gráficos](../../assets/identidadeVisual/a-6.jpg)
 ### Tipografia
-![Tipografia](../assets/identidadeVisual/a-7.jpg)
+![Tipografia](../../assets/identidadeVisual/a-7.jpg)
 ### Tamanho da logo
-![Tamanho da Logo](../assets/identidadeVisual/a-8.jpg)
+![Tamanho da Logo](../../assets/identidadeVisual/a-8.jpg)
 ### Usos indevidos
-![Usos indevidos](../assets/identidadeVisual/a-9.jpg)
+![Usos indevidos](../../assets/identidadeVisual/a-9.jpg)
 ### Caixa de proteção
-![Caixa de proteção](../assets/identidadeVisual/a-10.jpg)
+![Caixa de proteção](../../assets/identidadeVisual/a-10.jpg)
 ### Logo em fundos coloridos
-![Logo em fundos coloridos](../assets/identidadeVisual/a-11.jpg)
+![Logo em fundos coloridos](../../assets/identidadeVisual/a-11.jpg)
 ### Logo em fundos instáveis
-![Logo em fundos instáveis](../assets/identidadeVisual/a-12.jpg)
+![Logo em fundos instáveis](../../assets/identidadeVisual/a-12.jpg)
 ### Assinatura conjunta
-![Assinatura conjunta](../assets/identidadeVisual/a-13.jpg)
+![Assinatura conjunta](../../assets/identidadeVisual/a-13.jpg)
 
 ## Padrão Digital de Governo - Design System
 
@@ -52,7 +45,7 @@ Dentro do contexto de aplicação Web Responsivo, existem seis pontos de atenç�
 
 Este componente é o principal elemento de uma página, onde podem ser agrupados componentes predefinidos que tem como finalidade auxiliar o usuário no acesso ou mesmo execução das funcionalidades principais site/sistema.
 
-![Header](../assets/identidadeVisual/Header.png)
+![Header](../../assets/identidadeVisual/Header.png)
 
 Existem variações de cabeçalho para adaptação. Os outros estilos podem ser visto na [documentação](https://www.gov.br/ds/components/header?tab=desenvolvedor)
 
@@ -60,7 +53,7 @@ Existem variações de cabeçalho para adaptação. Os outros estilos podem ser 
 
 Geralmente localizado na parte inferior das páginas, o footer (rodapé) pode ser organizado de formas distintas. Normalmente essa organização é definida através da combinação de elementos que reforçam a identidade visual com o conteúdo a ser informado, respeitando os objetivos de negócio e as necessidades do usuário.
 
-![Footer](../assets//identidadeVisual/Footer.png)
+![Footer](../../assets//identidadeVisual/Footer.png)
 
 Existe uma variação quanto ao tema que também pode ser utilizada, que no caso o background color é branco. Outras variações, detalhes de como manipular as classes e o estilo do componente oferecido pelo próprio governo podem ser vistos na [documentação](https://www.gov.br/ds/components/footer?tab=desenvolvedor)
 
@@ -68,7 +61,7 @@ Existe uma variação quanto ao tema que também pode ser utilizada, que no caso
 
 A aplicação correta da paleta de cores visa trazer consistência ao Design System e contribuir para garantir uma interface unificada e facilmente reconhecível pelos seus usuários. É fundamental que a paleta esteja alinhada aos Princípios do Design System e seja aplicada corretamente na biblioteca de componentes contribuindo para o equilíbrio entre os diversos produtos e sistemas do governo.
 
-![Cores](../assets/identidadeVisual/Cores.png)
+![Cores](../../assets/identidadeVisual/Cores.png)
 
 Pela [documentação](https://www.gov.br/ds/fundamentos-visuais/cores) é possível ver detalhadamente quais cores devem ser utilizadas e quais as suas funções específicas, portanto é indicado que seja utilizado como guia essas cores para seguir o padrão mínimo esperado
 
@@ -84,9 +77,16 @@ A coleção de ícones escolhida pelo Design System do governo é a 'Font Awesom
 
 Os botões são elementos interativos da interface, que permitem que os usuários acessem funcionalidades, executem ações ou naveguem pela interface.
 
-![Botão1](../assets/identidadeVisual/Botão1.png)
-![Botão2](../assets//identidadeVisual/Botão2.png)
-![Botão3](../assets/identidadeVisual/Botão3.png)
+![Botão1](../../assets/identidadeVisual/Botão1.png)
+![Botão2](../../assets//identidadeVisual/Botão2.png)
+![Botão3](../../assets/identidadeVisual/Botão3.png)
 
 Propriedades adicionais, estados do botão e outros detalhes podem ser vistos na [documentação](https://www.gov.br/ds/components/button?tab=desenvolvedor)
 
+## Versionamento
+
+|**Data**|**Descrição**|**Autor(es)**|  
+| -- | ---------- | ---------------- |
+| 04/10/2023 | Criação da pagina e adição do manual de identidade visual fornecido pelo DNIT | Vitor Magalhães Lamego |
+| 15/10/2023 | Adição dos componentes | Artur Henrique Holz Bartz |
+| 22/10/2023 | Corrige com o padrão da Main | Rafael |
