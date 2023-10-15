@@ -23,6 +23,7 @@ nav:
 
   - Documentos do projeto:
     - Identidade Visual: identidadeVisual/identidade.md
+    - Componentes: identidadeVisual/Componentes.md
 
 # Pra mais informações sobre personalizar cores
 # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
