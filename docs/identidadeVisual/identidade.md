@@ -3,6 +3,7 @@
 | Versão | Data   | Modificação                                                            | Autor        |
 | -- | ---------- | ----------------------------------------- | ---- |
 | 1.0 | 04/10/2023 | Criação da pagina e adição do manual de identidade visual fornecido pelo DNIT | Vitor Magalhães Lamego |
+| 2.0 | 15/10/2023 | Adição dos componentes | Artur Henrique Holz Bartz |
 
 # Identidade Visual
 
