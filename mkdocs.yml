@@ -18,11 +18,9 @@ nav:
   - Plano e monitoramento:
     - Plano de comunicação: plano-monitoramento/plano-comunicacao.md
     - Plano de custos: plano-monitoramento/plano-custos.md
-  - Organização do projeto:
-    - Metodologias: organizacao-projeto/metodologias.md
-
   - Documentos do projeto:
-    - Identidade Visual: identidadeVisual/identidade.md
+    - Metodologias: documentos-projeto/metodologias.md
+    - Identidade Visual: documentos-projeto/identidade.md
 
 # Pra mais informações sobre personalizar cores
 # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
