@@ -36,7 +36,7 @@
 ## 3. Padrão Digital de Governo - Design System
 
 &emsp;&emsp;Como conversado e validado em reunião com os representates do DNIT, o projeto deve seguir os padrões estabelecidos por esse Design System. As informações presentes neste documento são referentes à versão 3.4.0.
-
+&emsp;&emsp;O Padrão Digital de Governo estabelece normas de interface para designers e desenvolvedores, visando uniformizar a interação do usuário com os sistemas governamentais. Originado da necessidade de proporcionar uma experiência consistente aos cidadãos que acessam serviços públicos, esse padrão aumenta a eficiência do usuário, facilita o aprendizado e assegura previsibilidade ao interagir com diferentes sistemas governamentais (BRASIL, 2022).
 &emsp;&emsp;A seguir serão apresentados os padrões minímos de uma aplicação Web Responsiva, mas vale ressaltar que existem inúmeras ferramentas de apoio e consulta na documentação presente na [documentação](https://www.gov.br/ds/home). Por conta disso, é aconselhável que seja utilizado como suporte para validar os designs criados para o projeto.
 
 &emsp;&emsp;Dentro do contexto de aplicação Web Responsivo, existem seis pontos de atenção, sendo eles: Cabeçalho, Logo Gov.br, Rodapé, Tipografia, Paleta de Cores e Botões.
@@ -86,10 +86,11 @@
 ## Referências
 
 > EQUIPE DNIT 2023-1. Identidade Visual. Disponível em: <https://fga-eps-mds.github.io/2023-1-Dnit-DOC/identidadeVisual/identidadeVisual/#assinatura-conjunta>
-
+> BRASIL. Sobre o Design System. GOV.BR, 2022. Disponível em: <https://www.gov.br/ds/introducao/sobre>. Acesso em: 19 out 2023. 
 ## Versionamento
 
 | Data | Modificação | Autor |
 | ---------- | ----------------------------------------- | ---- |
 | 04/10/2023 | Criação da pagina e adição do manual de identidade visual fornecido pelo DNIT | Vitor Magalhães Lamego |
 | 18/10/2023 | Ajustes de formatação | Daniel Porto |
+| 19/10/2023 | Revisão e sugestão de melhoria| Rafael |
