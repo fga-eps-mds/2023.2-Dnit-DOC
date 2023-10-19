@@ -21,6 +21,16 @@ nav:
   - Documentos do projeto:
     - Metodologias: documentos-projeto/metodologias.md
     - Identidade Visual: documentos-projeto/identidade.md
+  - Andamento:
+    - Pré-sprints:
+      - Semana 1: andamento/semana1.md
+      - Semana 2: andamento/semana2.md
+      - Semana 3: andamento/semana3.md
+      - Semana 4: andamento/semana4.md
+      - Semana 5: andamento/semana5.md
+      - Semana 6: andamento/semana6.md
+    - Sprints:
+      - Sprint Teste: andamento/sprint-teste.md
 
 # Pra mais informações sobre personalizar cores
 # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
