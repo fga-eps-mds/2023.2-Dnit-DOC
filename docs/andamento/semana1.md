@@ -15,4 +15,4 @@
 
 ## Quadro de conhecimento inicial
 
-![Quadro de conhecimento](../../assets/quadro-conhecimento/conhecimentoIni.png)
+![Quadro de conhecimento](../assets/quadro-conhecimento/conhecimentoIni.png)

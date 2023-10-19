@@ -2,6 +2,8 @@ site_name: DNIT - Educação paro o trânsito
 repo_name: "2023.2-DNIT-DOC"
 repo_url: https://github.com/fga-eps-mds/2023.2-Dnit-DOC
 
+docs_dir: docs
+
 theme:
   name: material
   language: pt
