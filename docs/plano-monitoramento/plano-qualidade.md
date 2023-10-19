@@ -36,11 +36,13 @@ Para garantir a qualidade do projeto, a equipe adotou as seguintes técnicas de 
 
 **Inspeção contínua do código:** A equipe optou por utilizar o Sonar Cloud como ferramenta de análise estática de código. Essa técnica permite obter métricas mensuráveis e identificar potenciais problemas no código-fonte. O Sonar Cloud fornece informações relevantes para a gestão da qualidade do projeto, auxiliando na tomada de decisões e na identificação de pontos que precisam ser aprimorados pela equipe.
 
+**Testes automatizados**: Além da análise estática, a equipe utilizou testes automatizados, incluindo testes unitários e de integração, que atuam atuam durante o desenvolvimento e nas revisões de Pull Requests, para auxiliar no gerenciamento do projeto. Essa abordagem permite a equipe não apenas verificar os cenários planejados, mas também identificar e lidar com situações de erro indesejados.
+
 **Revisão de PRs:** Foi implementada uma prática de verificação de correção de PRs. Antes de mesclar um PR no repositório principal, algum membro da equipe de EPS revisa o código, analisando a lógica, a qualidade, a conformidade com as diretrizes do projeto e identificando possíveis melhorias ou problemas. Essa verificação adicional ajuda a garantir que o código entregue esteja correto e atenda aos padrões de qualidade estabelecidos.
 
 ## Métricas de Qualidade
 
-As métricas definidas para esse projeto do DNIT seguem:
+As métricas de projeto, processo e produto de software são instrumentos quantitativos essenciais para avaliar a eficiência dos processos de software e dos projetos que empregam esses processos. Estas métricas oferecem insights objetivos, auxiliando engenheiros de software na análise e melhoria contínua da qualidade, eficiência e eficácia dos softwares. Uma métrica eficaz deve ser fácil de entender e calcular, fornecer resultados não ambíguos e estar fundamentada no modelo de requisitos, projeto ou estrutura do programa, independente das características específicas das linguagens de programação. As métricas definidas para esse projeto do DNIT seguem:
 
 |**Métrica**|**Descrição**|
 |-----------|-------------|
@@ -52,12 +54,12 @@ As métricas definidas para esse projeto do DNIT seguem:
 |Linhas|Total de linhas de código no projeto|
 |*Security Hotspots*|Avaliação de segurança e vulnerabilidades|
 
-As métricas de projeto, processo e produto de software são instrumentos quantitativos essenciais para avaliar a eficiência dos processos de software e dos projetos que empregam esses processos. Estas métricas oferecem insights objetivos, auxiliando engenheiros de software na análise e melhoria contínua da qualidade, eficiência e eficácia dos softwares. Uma métrica eficaz deve ser fácil de entender e calcular, fornecer resultados não ambíguos e estar fundamentada no modelo de requisitos, projeto ou estrutura do programa, independente das características específicas das linguagens de programação. O uso de métricas proporciona uma avaliação objetiva, permitindo a identificação de tendências, aprimoramento de estimativas e a implementação de melhorias significativas na qualidade ao longo do tempo (PRESSMAN, 2021). Os valores mínimos aceitáveis para cada métrica do projeto foram estabelecidos com base nas métricas especificadas no [SonarCloud](https://docs.sonarcloud.io/digging-deeper/metric-definitions/#complexity).
+O uso de métricas proporciona uma avaliação objetiva, permitindo a identificação de tendências, aprimoramento de estimativas e a implementação de melhorias significativas na qualidade ao longo do tempo (PRESSMAN, 2021). Os valores mínimos aceitáveis para cada métrica do projeto foram estabelecidos com base nas métricas especificadas no [SonarCloud](https://docs.sonarcloud.io/digging-deeper/metric-definitions/#complexity).
 
 |**Métrica**|**Critério**|
 |-----------|------------|
 |Cobertura|Pelo menos 80% de cobertura de testes|
-|Vunrelabilidades|Classificado como "A" no SonarCloud|
+|Vulnerabilidades|Classificado como "A" no SonarCloud|
 |*Bugs*|Classificado como "A" no no SonarCloud|
 |*Security Hotspots*|Classificado como "A" no SonarCloud|
 |*Code Smells*|Classificado como "A" no SonarCloud|
@@ -77,3 +79,5 @@ As métricas de projeto, processo e produto de software são instrumentos quanti
 |10/10/2023| Detalha introdução e V&V | Rafael|
 |11/10/2023| Escreve sobre Ferramentas | Rafael|
 |11/10/2023| Adição de métricas de qualidade | Rafael|
+|16/10/2023| Revisão e correção ortográfica | Thiago |
+
