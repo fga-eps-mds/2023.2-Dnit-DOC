@@ -1,13 +1,8 @@
 # Plano de Gestão de Riscos
 
-## Versionamento
-| Versão | Data | Modificação | Autor |
-|--|--|--|--|
-|1.0| 12/10/2023 | Criação do documento | Rafael Berto e Victor Hugo |
-
 ## Introdução
 
-Os riscos de um projeto podem comprometer o seu planejamento, cronograma e custo, podendo estar relacionados a diversos fatores, como custo, tempo, pessoas, recursos, clientes, requisitos, entre outros <a href=./#referencias>¹</a>. Com o objetivo de identificar, analisar e monitorar esses riscos, foi elaborado este plano de gestão de riscos.
+O planejamento de riscos é uma das etapas fundamentais no processo de planejamento de um projeto, pois ao identificar os possíveis riscos, torna-se viável estabelecer estratégias para mitigar os impactos que esses riscos possam ter sobre o projeto. Os riscos de um projeto podem comprometer o seu planejamento, cronograma e custo, podendo estar relacionados a diversos fatores, como custo, tempo, pessoas, recursos, clientes, requisitos, entre outros <a href=./#referencias>¹</a>. Com o objetivo de identificar, analisar e monitorar esses riscos, foi elaborado este plano de gestão de riscos.
 
 ### Tipos de risco
 
@@ -148,3 +143,9 @@ O gráfico de áreas empilhadas abaixo mostra a evolução dos riscos ao longo d
 > [2] Escritório de Projetos. Objetivo do Plano de gerenciamento dos riscos. Disponível em: https://escritoriodeprojetos.com.br/downloads/send/8-modelos/129-plano-de-gerenciamento-dos-riscos. Acesso em: 12 mai 2023.
 
 > [3] Isotani, Seiji; Rocha, Rafaela. Gestão de Riscos em Projetos de Software. Disponível em: https://edisciplinas.usp.br/pluginfile.php/3385127/mod_resource/content/1/Aula10-GerenciaProjeto-Riscos.pdf. Acesso em: 13 mai 2023.
+
+## Versionamento
+| Versão | Data | Modificação | Autor |
+|--|--|--|--|
+|1.0| 12/10/2023 | Criação do documento | Rafael Berto e Victor Hugo |
+|1.0.1| 16/10/2023 | Revisão e correção ortográfica | Thiago |
