@@ -24,29 +24,29 @@
 
 - **Custo médio semanal por equipe**: custo TOTAL por equipe ÷ quantidade de semanas do projeto **`186.935,00 ÷ 17 = R$ 10.996,18`**
 
-## 2.2. Equipamentos
+### 2.2. Equipamentos
 
 &emsp;&emsp;Para a estimativa de custos com equipamento, que não se trata de um custo recorrente, foi considerado o preço de um notebook com as configurações mínimas de um Intel Core I5 ou AMD Ryzen 5 com 8gb de memória RAM em 2023. Segundo [Kabum](https://www.kabum.com.br/), o preço de um notebook com essas características está em torno de R$ 3.000,00. Considerando os 14 integrantes da equipe:
 
 - **Custo TOTAL dos equipamentos**: custo médio do notebook x quantidade de integrantes da equipe **`3.000 x 14 = R$ 42.000,00`**
 
-## 2.3. Ferramentas
+### 2.3. Ferramentas
 &emsp;&emsp;Os custos com ferramentas serão considerados como R$ 0,00, visto que as plataformas e ferramentas utilizadas pela equipe são gratuitas.
 
-## 2.4. Capacitação
+### 2.4. Capacitação
 &emsp;&emsp;Os custos com capacitação do pessoal serão considerados como R$ 0,00, visto que as plataformas e ferramentas utilizadas pela equipe são gratuitas.
 
-## 2.5. Infraestrutura
+### 2.5. Infraestrutura
 &emsp;&emsp;A estimativa de custos de infraestrutura levou em consideração o uso de energia elétrica e internet.
 
-### 2.5.1. Internet
+#### 2.5.1. Internet
 &emsp;&emsp;Para cálculo do custo de internet utilizaremos o preço médio de planos de 250 MB por mês que, é cerca de R$ 90,00.
 
 - **Custo semanal de internet por integrante**: custo mensal da internet ÷ quantidade de semanas no mês **`90 ÷ 4 = R$ 22,50`**
 
 - **Custo semanal de internet por equipe**: custo semanal da internet por integrante x quantidade de integrantes **`22,50 x 14 = R$315,00`**
 
-### 2.5.2. Energia
+#### 2.5.2. Energia
 
 &emsp;&emsp;Para a estimativa de energia, seguiu-se os dados da [tabela de tarifas](https://www.neoenergia.com/documents/d/brasilia/01_nbsb_tarifas_energia_eletrica_grupob_nov_2022_reh3134-pdf-1?download=true) da [neoenergiabrasilia](https://www.neoenergia.com/web/brasilia), com os dados vigentes de novembro de 2022 à outubro de 2023. Segundo essa tabela, o custo do KW/h residencial, consumo ativo, de Brasília é cerca de R$ 0,7773. Segundo dados de 2021 da [cultura UOL](https://cultura.uol.com.br/noticias/26097_6-maneiras-de-economizar-na-conta-de-luz-do-home-office.html), um notebook consome em média cerca de 65W/h, conectado ao carregador. Consideramos que cada integrante da equipe trabalhará 10 horas por semana em sua residência, ao longo de 17 semanas. Utilizando esses dados para cálculo, temos:
 
@@ -58,19 +58,19 @@
 
 - **Custo semanal de energia por equipe**: custo semanal por integrante x quantidade de integrantes da equipe **`0,51 x 14 = R$ 7,14`**
 
-### 2.5.3. Custo TOTAL em infraestrutura
+#### 2.5.3. Custo TOTAL em infraestrutura
 
 &emsp;&emsp;Somando as estimativas de custo semanal de internet (R$ 315,00) e energia (R$ 7,14) por equipe, têm-se um custo semanal de infraestrutura de R$ 322,07.
 
 ## 3. Definição do orçamento inicial estimado
 
-Considerando as estimativas de custos feitas, o orçamento  inicial total estimado para o projeto em 17 semanas é:
+&emsp;&emsp;Considerando as estimativas de custos feitas, o orçamento  inicial total estimado para o projeto em 17 semanas é:
 
     custo pessoas + custo equipamentos + custo ferramentas + custo capacitação + custo infraestrutura
 
     R$ 186.935,00 + R$ 42.000,00 + R$ 0,00 + R$ 0,00 + R$ 5.475,38 = R$ 234.410,38
 
-Para o custo do MVP o cálculo se dá com base nas semanas a partir do início do desenvolvimento.Calculado para 12 semanas, o custo do MVP é de R$ 143.864,52.
+&emsp;&emsp;Para o custo do MVP o cálculo se dá com base nas semanas a partir do início do desenvolvimento.Calculado para 8 semanas, o custo do MVP é de R$ 132.546,24.
 
 ## 4. Planilha de custos
 
@@ -96,3 +96,4 @@ Para o custo do MVP o cálculo se dá com base nas semanas a partir do início d
 |--------|-------------|--------------|
 |14/09/2023| Criação do documento | Yudi |
 |04/10/2023| Ajustes de Cálculos | Daniel Porto |
+|18/10/2023| Atualização do custo  do MVP e ajuste de formatação| Daniel Porto |

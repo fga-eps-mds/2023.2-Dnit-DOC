@@ -100,8 +100,6 @@
 - Um commit deve referenciar a issue trabalhada;
 - Um commit deve representar uma unidade de trabalho. Ou seja, não se deve incluir num único commit trabalhos relacionados a issues diferentes;
 
-&emsp;&emsp;Exemplo: **Issue 1: [US01] Realizar login**
-
     git commit -m "feat: adiciona campos de email e senha na tela de login"
 
 &emsp;&emsp;Para tarefas realizadas em pares, os commits precisam seguir o seguinte padrão:
@@ -132,5 +130,5 @@ Para preencher o campo **Co-authored-by**, consulte a [documentação](https://d
 |**Data**|**Descrição**|**Autor(es)**|
 |:-:|---|---|
 | 04/10/2023 | Criação do Guia de Contribuição | Daniel Porto |
-| 06/10/2023 | Ajustes das políticas de issues | Daniel Porto, Yudi |
-
+| 06/10/2023 | Ajustes das políticas de commits | Daniel Porto, Yudi |
+| 18/10/2023 | Pequenos ajustes | Daniel Porto |
