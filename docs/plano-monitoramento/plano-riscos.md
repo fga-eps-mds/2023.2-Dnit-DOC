@@ -145,7 +145,7 @@ O gráfico de áreas empilhadas abaixo mostra a evolução dos riscos ao longo d
 > [3] Isotani, Seiji; Rocha, Rafaela. Gestão de Riscos em Projetos de Software. Disponível em: https://edisciplinas.usp.br/pluginfile.php/3385127/mod_resource/content/1/Aula10-GerenciaProjeto-Riscos.pdf. Acesso em: 13 mai 2023.
 
 ## Versionamento
-| Versão | Data | Modificação | Autor |
-|--|--|--|--|
-|1.0| 12/10/2023 | Criação do documento | Rafael Berto e Victor Hugo |
-|1.0.1| 16/10/2023 | Revisão e correção ortográfica | Thiago |
+| Data | Modificação | Autor |
+|--|--|--|
+| 12/10/2023 | Criação do documento | Rafael Berto e Victor Hugo |
+| 16/10/2023 | Revisão e correção ortográfica | Thiago |
