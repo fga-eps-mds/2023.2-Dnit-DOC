@@ -89,4 +89,4 @@ Propriedades adicionais, estados do botão e outros detalhes podem ser vistos na
 | -- | ---------- | ---------------- |
 | 04/10/2023 | Criação da pagina e adição do manual de identidade visual fornecido pelo DNIT | Vitor Magalhães Lamego |
 | 15/10/2023 | Adição dos componentes | Artur Henrique Holz Bartz |
-| 22/10/2023 | Corrige com o padrão da Main | Rafael |
+| 22/10/2023 | Padronização do documento | Rafael |

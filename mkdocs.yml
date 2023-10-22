@@ -36,7 +36,7 @@ nav:
       - Semana 6: andamento/semana6.md
     - Sprints:
       - Sprint Teste: andamento/sprint-teste.md
-
+      
 # Pra mais informações sobre personalizar cores
 # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
 extra_css:
