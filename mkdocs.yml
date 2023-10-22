@@ -26,6 +26,8 @@ nav:
     - Metodologias: documentos-projeto/metodologias.md
     - Identidade Visual: documentos-projeto/identidadeVisual/identidade.md
     - Componentes: documentos-projeto/identidadeVisual/Componentes.md
+  - Visão de Produto:
+    - Lean Inception: visao-produto/lean-inception.md
   - Andamento:
     - Pré-sprints:
       - Semana 1: andamento/semana1.md
@@ -36,7 +38,7 @@ nav:
       - Semana 6: andamento/semana6.md
     - Sprints:
       - Sprint Teste: andamento/sprint-teste.md
-      
+
 # Pra mais informações sobre personalizar cores
 # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
 extra_css:
