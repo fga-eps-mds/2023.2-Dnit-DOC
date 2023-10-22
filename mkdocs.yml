@@ -23,6 +23,7 @@ nav:
   - Documentos do projeto:
     - Metodologias: documentos-projeto/metodologias.md
     - Identidade Visual: documentos-projeto/identidade.md
+    - Documento de Arquitetura: documentos-projeto/arquitetura.md
   - Andamento:
     - Pré-sprints:
       - Semana 1: andamento/semana1.md
