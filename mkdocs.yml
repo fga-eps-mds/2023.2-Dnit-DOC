@@ -20,10 +20,13 @@ nav:
   - Plano e monitoramento:
     - Plano de comunicação: plano-monitoramento/plano-comunicacao.md
     - Plano de custos: plano-monitoramento/plano-custos.md
+    - Plano de qualidade: plano-monitoramento/plano-qualidade.md
+    - Plano de riscos: plano-monitoramento/plano-riscos.md
   - Documentos do projeto:
     - Metodologias: documentos-projeto/metodologias.md
-    - Identidade Visual: documentos-projeto/identidade.md
     - Documento de Arquitetura: documentos-projeto/arquitetura.md
+    - Identidade Visual: documentos-projeto/identidadeVisual/identidade.md
+    - Componentes: documentos-projeto/identidadeVisual/Componentes.md
   - Andamento:
     - Pré-sprints:
       - Semana 1: andamento/semana1.md
@@ -34,7 +37,7 @@ nav:
       - Semana 6: andamento/semana6.md
     - Sprints:
       - Sprint Teste: andamento/sprint-teste.md
-
+      
 # Pra mais informações sobre personalizar cores
 # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
 extra_css:
