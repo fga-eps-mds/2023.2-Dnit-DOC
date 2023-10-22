@@ -21,9 +21,6 @@ nav:
     - Plano de comunicação: plano-monitoramento/plano-comunicacao.md
     - Plano de custos: plano-monitoramento/plano-custos.md
     - Plano de qualidade: plano-monitoramento/plano-qualidade.md
-  - Organização do projeto:
-    - Metodologias: ./organizacao-projeto/metodologias.md
-
   - Documentos do projeto:
     - Metodologias: documentos-projeto/metodologias.md
     - Identidade Visual: documentos-projeto/identidade.md
