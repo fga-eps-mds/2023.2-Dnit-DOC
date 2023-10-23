@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Este documento tem como objetivo detalhar a arquitetura do projeto, apresentando uma visão geral do projeto e as tecnologias utilizadas.
+Este documento tem como objetivo detalhar a arquitetura do projeto e a visão de dados, apresentando uma visão geral do projeto, as tecnologias utilizadas e a visão de dados.
 
 ## Arquitetura
 
@@ -33,6 +33,20 @@ Microsserviço responsável pelos serviços de cálculo do UPS (Unidade Padrão 
 
 O PostgreSQL é um SGBD (Sistema Gerenciador de Banco de Dados) de código aberto. Cada microsserviço se comunicará com um banco de dados respectivo - o UsuarioService se comunicará com o UsuarioDB, por exemplo. Os diferentes bancos de dados têm flexibilidade quanto a ficarem em uma instância ou múltiplas instâncias do SGBD.
 
+### Visão de Dados
+
+Os diagramas a seguir apresentam a organização dos dados em seus respectivos bancos de dados.
+
+#### Usuários
+![Diagrama Usuarios](../assets/arquitetura/diagrama_usuario.png)
+
+#### Escolas
+![Diagrama Escolas](../assets/arquitetura/diagrama_escola.png)
+
+#### UPS (Rodovias e Sinistros)
+![Diagrama Rodovias](../assets/arquitetura/diagrama_rodovias.png)
+![Diagrama Sinistros](../assets/arquitetura/diagrama_sinistros.png)
+
 ## Referências
 
 > EQUIPE DNIT 2023-1. Documento de arquitetura. Disponível em: <https://fga-eps-mds.github.io/2023-1-Dnit-DOC/projeto/arquitetura/>
@@ -44,3 +58,5 @@ O PostgreSQL é um SGBD (Sistema Gerenciador de Banco de Dados) de código abert
 |**Data**|**Descrição**|**Autor(es)**|
 |--------|-------------|--------------|
 | 20/10/2023 | Criação do documento | Wagner Martins |
+| 22/10/2023 | Revisão | Thiago |
+| 22/10/2023 | Adição da Visão de dados | Wagner Martins |
