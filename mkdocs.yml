@@ -25,6 +25,7 @@ nav:
     - EVM Agile : plano-monitoramento/EVM.md
   - Documentos do projeto:
     - Metodologias: documentos-projeto/metodologias.md
+    - EAP: documentos-projeto/eap.md
     - Documento de Arquitetura: documentos-projeto/arquitetura.md
     - Identidade Visual: documentos-projeto/identidadeVisual/identidade.md
     - Componentes: documentos-projeto/identidadeVisual/Componentes.md
