@@ -56,13 +56,82 @@ Para garantir que as personas representavam bem o público alvo, foi validado se
 
 ## Jornadas de Usuário
 
+A etapa de Jornadas de Usuário na *Lean Inception* envolve a descrição detalhada do percurso que um usuário faz para alcançar um objetivo específico, mapeando a interação do usuário com o produto. A jornada é descrita passo a passo, com cada passo representando uma ação ou interação específica que a persona realiza para alcançar seu objetivo. As jornadas ajudam a equipe a visualizar e entender como os usuários interagem com o produto de software, identificando oportunidades para melhorar a experiência do usuário e garantir que o produto atenda às suas necessidades e expectativas (CAROLLI, 2018).
+
+Assim, cada uma das personas apresentada na seção anterior possui uma jornada onde também passou por uma etapa de validação pelo cliente do DNIT:
+
+![Jornada1](../assets/lean-inception/jornadas/Jornada1.png)
+
+![Jornada2](../assets/lean-inception/jornadas/Jornada2.png)
+
+![Jornada3](../assets/lean-inception/jornadas/Jornada3.png)
+
+![Jornada4](../assets/lean-inception/jornadas/Jornada4.png)
+
+![Jornada5](../assets/lean-inception/jornadas/Jornada5.png)
+
+![Jornada6](../assets/lean-inception/jornadas/Jornada6.png)
+
+![Jornada7](../assets/lean-inception/jornadas/Jornada7.png)
+
 ## Brainstorm de Funcionalidades
+
+A etapa de *Brainstorm* de Funcionalidades na *Lean Inception* é uma atividade colaborativa que visa identificar e listar as funcionalidades essenciais para o produto. Utilizando um canvas com os objetivos do negócio como colunas e as personas como linhas, os participantes são incentivados a responder perguntas como "O que deve ter no produto para atender às necessidades da persona?" e "Quais funcionalidades devemos construir para atingir esse objetivo do produto?". As respostas são anotadas em post-its e colocadas no canvas. Esta atividade é repetida para cada combinação de persona e objetivo, priorizando os principais objetivos e personas. O resultado é uma lista de funcionalidades que são essenciais para atender aos objetivos do negócio e às necessidades das personas (CAROLLI, 2018).
+
+![Brainstorm](../assets/lean-inception/BrainFunc.png)
 
 ## Revisão Técnica (Esforço, Negócio, UX)
 
+A etapa de Revisão Técnica, de Negócio e de UX na Lean Inception é uma fase crítica onde cada funcionalidade proposta é avaliada em termos de esforço técnico, valor para o negócio e experiência do usuário (UX). Utiliza-se um gráfico do semáforo para atribuir cores que representam o nível de confiança na implementação de cada funcionalidade: verde para alta confiança, amarelo para média e vermelho para baixa (CAROLLI, 2018), exemplificados na Figura abaixo.
+
+![RevTecnica](../assets/lean-inception/RevisaoTecnica.png)
+<figure>
+  <figcaption>Fonte: (CAROLLI, 2018, p. 92)</figcaption>
+</figure>
+
+Cada funcionalidade é marcada em uma tabela que indica o esforço técnico, valor de negócio e valor de UX em uma escala comparativa. Este processo colaborativo ajuda a equipe a identificar e priorizar funcionalidades, considerando os desafios técnicos, o impacto no negócio e a experiência do usuário, garantindo que o produto desenvolvido seja viável, valioso e utilizável (CAROLLI, 2018).
+
+"Esforço" refere-se ao trabalho necessário para implementar uma funcionalidade específica, sendo classificado em baixo, médio ou alto (representado por "E", "EE" ou "EEE"). "Negócio" está relacionado ao retorno sobre o investimento ou a economia que a funcionalidade trará, também classificado em baixo, médio ou alto (representado por "$", "$$" ou "$$$"). "UX" (Experiência do Usuário) é uma medida de quanto se acredita que os usuários vão gostar da funcionalidade (representado por "<3", "<3<3" ou "<3<3<3" ), avaliada da mesma forma (CAROLLI, 2018).
+
+Seguindo essa lógica apresentada de Esforço, Negócio e UX, o grupo identificou as Funcionalidades da seguinte forma: 
+
+![FuncionalidadesCores](../assets/lean-inception/FuncCores.png)
+
 ## Sequenciador
 
+A etapa do Sequenciador na Lean Inception é focada em organizar e planejar as entregas do produto, identificando claramente as funcionalidades do MVP (Produto Mínimo Viável) e seus incrementos subsequentes. Utiliza-se um template do sequenciador, que consiste em ondas numeradas, para organizar as funcionalidades de forma que as mais impactantes sejam executadas nas primeiras ondas (CAROLLI, 2018).
+
+Segundo Carolli (2018), as regras para adicionar cartões às ondas no sequenciador são:
+
+1. Uma onda pode conter, no máximo, três cartões.
+2. Uma onda não pode conter mais de um cartão vermelho.
+3. Uma onda não pode conter três cartões somente amarelos ou vermelhos.
+4. A soma de esforço dos cartões não pode ultrapassar cinco "E".
+5. A soma de valor dos cartões não pode ser menos de quatro "$" e quatro corações.
+
+Essas regras são aplicadas para garantir um equilíbrio entre o esforço necessário para implementar as funcionalidades, o valor que elas trazem para o negócio e a experiência do usuário. Isso almeja garantir uma entrega incremental eficiente e eficaz do produto, validando hipóteses de negócios e atendendo às necessidades dos usuários (CAROLLI, 2018).
+
+O grupo tomou a decisão de apresentar o tamanho de cada onda a partir de uma média geral que no caso deste projeto foi de 14 dias. Também, a partir desse conjunto de regras, o grupo propôs o seguinte sequenciador para os clientes do DNIT:
+
+![Sequenciador](../assets/lean-inception/Sequenciador.png)
+
+**OBS.:** Essa proposta do sequenciador foi validade pelos clientes em uma reunião remota via Teams com os clientes no dia 09/10/2023
+
 ## Canvas MVP
+
+De acordo com Carolli (2018), a etapa do Canvas MVP na Lean Inception é dedicada a detalhar e validar a estratégia para o Produto Mínimo Viável (MVP). O Canvas MVP é dividido em sete blocos:
+
+1. Proposta do MVP: Define o que o MVP se propõe a realizar ou validar.;
+2. Personas Segmentadas: Identifica o público-alvo específico para o MVP, podendo ser um segmento mais restrito para testes iniciais;
+3. Jornadas: Descreve as jornadas de usuário que serão atendidas ou melhoradas com o MVP;
+4. Funcionalidades: Lista as funcionalidades que serão construídas para atender às jornadas de usuário e validar as hipóteses do negócio;
+5. Resultado Esperado: Define o que a equipe espera alcançar com o MVP em termos de aprendizado ou resultados mensuráveis;
+6. Métricas para validar as hipóteses do negócio: Estabelece critérios objetivos e mensuráveis para avaliar se as hipóteses do negócio foram validadas.
+7. Custo e Cronograma: Indica qual é o custo e a data previstos para a entrega do MVP;
+
+Assim, o grupo montou o seguinte Canvas MVP:
+
+![CanvasMVP](../assets/lean-inception/CanvasMVP.png)
 
 ## Referências
 
@@ -74,3 +143,4 @@ Para garantir que as personas representavam bem o público alvo, foi validado se
 |--------|-------------|--------------|
 | 22/10/2023 | Criação do documento | Rafael |
 | 22/10/2023 | Documentação de Kickoff, Visao, É não é, Objetivos| Rafael |
+| 22/10/2023 | Documentação de Jornadas, Brainstorm, Revisão e Sequenciador | Rafael |
