@@ -136,6 +136,8 @@ Assim, o grupo montou o seguinte Canvas MVP:
 ## Referências
 
 > Caroli, Paulo. Lean Inception: como alinhar pessoas e construir o produto certo – 1ª edição atualizada – São Paulo: Editora Caroli, 2018.
+> Wiki. DNIT 2023-1. Disponível em: <https://fga-eps-mds.github.io/2023-1-Dnit-DOC/>. Acesso em: 22 de outubro de 2023.
+> Wiki. Alectrion 2023-1. Disponível em: <https://fga-eps-mds.github.io/2023-1-Alectrion-DOC/documentacao/lean-inception/visao-do-produto/>. Acesso em: 22 de outubro de 2023.
 
 ## Versionamento
 
@@ -144,3 +146,4 @@ Assim, o grupo montou o seguinte Canvas MVP:
 | 22/10/2023 | Criação do documento | Rafael |
 | 22/10/2023 | Documentação de Kickoff, Visao, É não é, Objetivos| Rafael |
 | 22/10/2023 | Documentação de Jornadas, Brainstorm, Revisão e Sequenciador | Rafael |
+| 22/10/2023 | Revisão | Daniel Porto |
