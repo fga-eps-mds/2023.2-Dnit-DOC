@@ -26,7 +26,7 @@
 
 ## 3. Resultados
 
-&emsp;&emsp;O fim da Sprint 1 sofreu um pequeno adiamento resultante do atrazo relacionado ao fechamento da Release 1. A equipe optou por finalizar a sprint após a apresentação no dia 23/10.
+&emsp;&emsp;A sprint 2 foi reduzida devido ao ajuste na data final da sprint 1. Devido à não entrega da US01, a release 1 ficou sem nenhum valor de negócio atribuída, dessa forma, essa sprint fechou a release 1.0.1 para incluir a funcionalidade da US01, bem como as melhorias referentes ao design system do governo.
 
 ### 3.1 Tarefas finalizadas:
 
