@@ -147,3 +147,4 @@ Assim, o grupo montou o seguinte Canvas MVP:
 | 22/10/2023 | Documentação de Kickoff, Visao, É não é, Objetivos| Rafael |
 | 22/10/2023 | Documentação de Jornadas, Brainstorm, Revisão e Sequenciador | Rafael |
 | 22/10/2023 | Revisão | Daniel Porto |
+| 28/10/2023 | Atualização do CanvasMVP | Daniel Porto |
