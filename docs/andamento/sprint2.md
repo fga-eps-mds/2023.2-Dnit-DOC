@@ -33,6 +33,7 @@
 - US01 - Gerenciar perfis;
 - Criação de componentes do front;
 
+
 ## 4. Retrospectiva
 
 ![Retrospectiva](../assets/retrospectivas/retrospectiva2.png)

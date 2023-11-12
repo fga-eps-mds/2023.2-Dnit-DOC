@@ -21,17 +21,18 @@
 |Deploy contínuo| Wagner, Thiago, André e Eduardo|
 |Mensagem de erro ao cadastrar email já registrado|Yudi e Márcio|
 |Footer não responsivo|Vitor Lamego e Cassio|
-<!-- 
 |US02 - Gerenciar os diferentes tipos de usuários do sistema| Rafael, Yudi, Lucas|
 |Refatorar a disposição de pastas do front| Victor Hugo e Lucas Bottino|
-|Refatorar comunicação com a api | Victor Hugo, Jõao e Márcio| 
--->
+|Refatorar comunicação com a api | Victor Hugo, Jõao e Márcio|
 
 ## 3. Resultados
 
-&emsp;&emsp;
+&emsp;&emsp;A sprint foi teve um relativo prejuízo devido ao ritmo empregado pela equipe que não foi possível ser acompanhado pela validação dos POs. Dessa forma, foram atacadas algumas tarefas de melhorias e correções de bugs, além das USs já validadas.
 
 ### 3.1 Tarefas finalizadas:
+
+- US02 - Gerenciar os diferentes tipos de usuários do sistema;
+- Footer não responsivo;
 
 
 ## 4. Retrospectiva
