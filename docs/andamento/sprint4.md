@@ -1,13 +1,14 @@
-# Sprint 3
+# Sprint 4
 
 - Data de início: 03/11/2023
-- Data de término: 17/11/2023
+- Data de término: 10/11/2023
 
 ## 1. Objetivos da Sprint
 
 - Validar e Desenvolver a US03;
 - Continuar as US04 e US06;
 - Revalidar a US08;
+- Configurar o deploy contínuo;
 - Iserir mais melhorias.
 
 ## 2. Atividades da Sprint
@@ -47,3 +48,4 @@
 | Data | Modificação | Autor |
 |---|---|---|
 |16/11/2023|Criação do documento|Daniel Porto|
+|21/11/2023|Atualização do documento| Rafael|

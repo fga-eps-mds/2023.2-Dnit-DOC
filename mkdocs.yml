@@ -1,7 +1,6 @@
 site_name: DNIT - Educação paro o trânsito
 repo_name: "2023.2-DNIT-DOC"
 repo_url: https://github.com/fga-eps-mds/2023.2-Dnit-DOC
-
 docs_dir: docs
 
 theme:
@@ -27,7 +26,7 @@ nav:
     - Metodologias: documentos-projeto/metodologias.md
     - EAP: documentos-projeto/eap.md
     - Documento de Arquitetura: documentos-projeto/arquitetura.md
-    - Identidade Visual: documentos-projeto/identidadeVisual/identidade.md
+    - Identidade Visual: documentos-projeto/identidade.md
     - Componentes: documentos-projeto/identidadeVisual/Componentes.md
   - Visão de Produto:
     - Lean Inception: visao-produto/lean-inception.md
@@ -44,6 +43,8 @@ nav:
       - Sprint 1: andamento/sprint1.md
       - Sprint 2: andamento/sprint2.md
       - Sprint 3: andamento/sprint3.md
+      - Sprint 4: andamento/sprint4.md
+      - Sprint 5: andamento/sprint5.md
 
 # Pra mais informações sobre personalizar cores
 # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
