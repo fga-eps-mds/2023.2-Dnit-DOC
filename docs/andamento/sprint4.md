@@ -19,6 +19,7 @@
 |US06 - Menor custo logístico para um conjunto de ações| Victor Hugo, André e João|
 |US08 - Gerenciar ações| Daniel Porto, Vitor Lamego, Lucas e João|
 |Deploy contínuo| Wagner, Thiago, André e Eduardo|
+|Correção do bug de paginação | Rafael |
 |Mensagem de erro ao cadastrar email já registrado|Yudi e Márcio|
 |Refatorar a disposição de pastas do front| Victor Hugo e Lucas Bottino|
 |Refatorar comunicação com a api | Victor Hugo, Jõao e Márcio|
@@ -48,4 +49,4 @@
 | Data | Modificação | Autor |
 |---|---|---|
 |16/11/2023|Criação do documento|Daniel Porto|
-|21/11/2023|Atualização do documento| Rafael|
+|22/11/2023|Atualização do documento| Rafael|
