@@ -43,11 +43,11 @@
 
 ## 4. Retrospectiva
 
-![Retrospectiva](../../assets/retrospectivas/retrospectiva-teste.png)
+![Retrospectiva](../assets/retrospectivas/retrospectiva-teste.png)
 
 ## 5. Quadro de conhecimentos
 
-![Conhecimentos](../../assets/quadro-conhecimento/conhecimentoTest.png)
+![Conhecimentos](../assets/quadro-conhecimento/conhecimentoTest.png)
 
 ## Versionamento
 
