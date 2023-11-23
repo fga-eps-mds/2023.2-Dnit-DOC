@@ -27,7 +27,7 @@
 
 ## 3. Resultados
 
-&emsp;&emsp;A sprint foi teve um relativo prejuízo devido ao ritmo empregado pela equipe que não foi possível ser acompanhado pela validação dos POs. Dessa forma, foram atacadas algumas tarefas de melhorias e correções de bugs, além das USs já validadas.
+&emsp;&emsp;A sprint teve um relativo prejuízo devido ao ritmo empregado pela equipe que não foi possível ser acompanhado pela validação dos POs. Dessa forma, foram atacadas algumas tarefas de melhorias e correções de bugs, além das USs já validadas.
 
 ### 3.1 Tarefas finalizadas:
 
