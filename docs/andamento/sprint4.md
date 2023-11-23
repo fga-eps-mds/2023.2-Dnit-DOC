@@ -26,7 +26,7 @@
 
 ## 3. Resultados
 
-&emsp;&emsp;
+&emsp;&emsp; A Sprint conseguiu dar prosseguimento com as validaçõe represadas das semanas anteriores de forma a destravar o desenvolvimento de algumas histórias de usuário, exceto a US08 que permaneceu na espera do envio de mais informações acerca das informações e fluxo das ações.
 
 ### 3.1 Tarefas finalizadas:
 
@@ -48,5 +48,5 @@
 
 | Data | Modificação | Autor |
 |---|---|---|
-|16/11/2023|Criação do documento|Daniel Porto|
-|22/11/2023|Atualização do documento| Rafael|
+|16/11/2023|Criação do documento| Daniel Porto |
+|22/11/2023|Atualização do documento| Rafael |
