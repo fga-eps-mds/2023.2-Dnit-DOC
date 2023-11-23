@@ -9,7 +9,6 @@
 - Começar a Desenvolver a US08;
 - Resolver os bugs do footer e do email já cadastrado;
 - Realizar o fechamento da Release 2 (USs 2, 3, 4 e 6);
-- Terminar a documentação para a Release 2.
 
 ## 2. Atividades da Sprint
 | Tarefa | Responsáveis |
@@ -18,12 +17,12 @@
 |US04 - Ranking de escolas|Yudi, Thiago, Eduardo e Artur|
 |US06 - Menor custo logístico para um conjunto de ações| Victor Hugo, André e João|
 |US08 - Gerenciar ações| Daniel Porto, Vitor Lamego, Lucas e João|
-|Corrigir bug de seleção do tamanho da pagina| Rafael
-|Footer não responsivo|Vitor Lamego e Cassio|
+|Corrigir bug de seleção do tamanho da pagina| Rafael|
+
 
 ## 3. Resultados
 
-&emsp;&emsp;A sprint foi teve um relativo prejuízo devido ao ritmo empregado pela equipe que não foi possível ser acompanhado pela validação dos POs. Dessa forma, foram atacadas algumas tarefas de melhorias e correções de bugs, além das USs já validadas.
+&emsp;&emsp;A sprint teve um relativo prejuízo devido ao ritmo empregado pela equipe que não foi possível ser acompanhado pela validação dos POs. Dessa forma, foram atacadas algumas tarefas de melhorias e correções de bugs, além das USs já validadas.
 
 ### 3.1 Tarefas finalizadas:
 
@@ -31,8 +30,7 @@
 - US03 - Gerenciar empresas terceirizadas;
 - US04 - Ranking de escolas;
 - US06 - Menor custo logístico para um conjunto de ações;
-- Correção de bug;
-- Footer não responsivo;
+- Corrigir bug de seleção do tamanho da pagina;
 - Release 2.
 
 ## 4. Retrospectiva
@@ -41,11 +39,12 @@
 
 ## 5. Quadro de conhecimentos
 
-![Conhecimentos](../assets/quadro-conhecimento/conhecimento4.png)
+![Conhecimentos](../assets/quadro-conhecimento/conhecimento5.png)
 
 ## Versionamento
 
 | Data | Modificação | Autor |
 |---|---|---|
-|16/11/2023|Criação do documento|Daniel Porto|
-|21/11/2023|Atualização do documento| Rafael|
+|16/11/2023|Criação do documento| Daniel Porto |
+|21/11/2023|Atualização do documento| Rafael |
+|23/11/2023|Atualização do documento| Daniel Porto |
