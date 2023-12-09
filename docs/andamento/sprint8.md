@@ -1,4 +1,4 @@
-# Sprint 7
+# Sprint 8
 
 - Data de início: 25/11/2023
 - Data de término: 01/12/2023
@@ -35,14 +35,14 @@
 
 ## 4. Retrospectiva
 
-![Retrospectiva](../assets/retrospectivas/retrospectiva7.png)
+![Retrospectiva](../assets/retrospectivas/retrospectiva8.png)
 
 ## 5. Quadro de conhecimentos
 
-![Conhecimentos](../assets/quadro-conhecimento/conhecimento7.png)
+![Conhecimentos](../assets/quadro-conhecimento/conhecimento8.png)
 
 ## Versionamento
 
 | Data | Modificação | Autor |
 |---|---|---|
-|23/11/2023|Criação do documento| Rafael Berto |
+|09/12/2023|Criação do documento| Rafael Berto |
