@@ -29,7 +29,6 @@
 
 - US07;
 - US09;
-- US11;
 - Geração do notebook.
 
 

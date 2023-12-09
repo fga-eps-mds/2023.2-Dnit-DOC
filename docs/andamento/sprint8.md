@@ -14,24 +14,24 @@
 | Tarefa | Responsáveis |
 |---|---|
 |US05 - Configurar pesos dos fatores de priorização| Wagner, Cassio e Márcio |
-|US07 - Gerenciar solicitações de ações| Rafael e Yudi |
 |US08 - Gerenciar ações| Daniel Porto, Vitor Lamego, Lucas e João|
-|US09 - Exportar dados| Thiago e Eduardo |
+|US10 - Visualização de escolas pelo Google Maps | Thiago |
 |US11 - Menor custo logístico para um conjunto de ações| Victor Hugo, Artur e André|
-|Gerar o notebook para apresentação em sala de aula| Daniel Porto, Wagner, Thiago e Rafael|
+|Melhorias US7| Rafael e Yudi |
+|Melhorias US9| Thiago e Eduardo |
 |[BUG] Às vezes o ranque não finaliza| Yudi |
 
 ## 3. Resultados
 
-&emsp;&emsp; A reunião extra de quarta-feira, mais uma vez benificiou a equipe de desenvolvimento. Foi possível esclarecer com o cliente os desafios e impedimentos especificamente em relação à US8 que foi quebrada em tarefas menores. A US7 precisou ser revalidada pois na reunião de segunda-feira os clientes solicitaram um fluxo que não estava presente no protótipo já validado. As demais USs tiveram dúvidas pontuais que não atrapalhavam diretamente seu desenvolvimento.
+&emsp;&emsp; Os clientes não compareceram para a reunião extra de quarta-feira. Então as melhorias realizas foram baseadas apenas nas observações dos clientes na reunião de acompanhamento na segunda-feira
 
 ### 3.1 Tarefas finalizadas:
 
-- US07;
-- US09;
+- Melhorias US07;
+- Melhorias US09;
+- US05;
+- US10;
 - US11;
-- Geração do notebook.
-
 
 ## 4. Retrospectiva
 
