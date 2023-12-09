@@ -22,7 +22,7 @@ Este documento tem como objetivo apresentar a análise comparativa entre o plane
 * US7 - [Gerenciar solicitações de ações AGUARDANDO_VALIDACAO](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/85)
 * US8 - [Gerenciar Ações](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/73)
 * US9 - [Exportar Dados](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/75)
-* US10 - [Visualização de escolas pelo Google Maps ](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/76)
+* US10 - [Visualização de escolas pelo Google Maps](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/76)
 
 ### 2.2. Executado
 
@@ -41,7 +41,7 @@ Este documento tem como objetivo apresentar a análise comparativa entre o plane
 * US7 - [Gerenciar solicitações de ações AGUARDANDO_VALIDACAO](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/85)
 * US8 - [Gerenciar Ações](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/73)
 * US9 - [Exportar Dados](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/75)
-* US10 - [Visualização de escolas pelo Google Maps ](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/76)
+* US10 - [Visualização de escolas pelo Google Maps](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/76)
 
 ### 2.3. Análise
 
@@ -60,7 +60,7 @@ O grupo planejou inicialmente 15 atividades no backlog e conseguiu se organizar 
 * US7 - [Gerenciar solicitações de ações AGUARDANDO_VALIDACAO](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/85)
 * US8 - [Gerenciar Ações](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/73)
 * US9 - [Exportar Dados](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/75)
-* US10 - [Visualização de escolas pelo Google Maps ](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/76)
+* US10 - [Visualização de escolas pelo Google Maps](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/76)
 
 ### 3.2 Executado
 
@@ -73,7 +73,7 @@ O grupo planejou inicialmente 15 atividades no backlog e conseguiu se organizar 
 * US7 - [Gerenciar solicitações de ações AGUARDANDO_VALIDACAO](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/85)
 * **US8** - [Gerenciar Ações](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/73)
 * US9 - [Exportar Dados](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/75)
-* US10 - [Visualização de escolas pelo Google Maps ](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/76)
+* US10 - [Visualização de escolas pelo Google Maps](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/76)
 * **US11** - [Gerenciar Polos](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/105)
 
 ### 3.3 Análise
@@ -94,14 +94,33 @@ Entretanto a US8 que está destacada em negrito precisou sofrer alguns ajustes d
 
 ### 4.3. Análise
 
-## Tempo
+## 5. Tempo
+
+As tabelas em 5.1 e 5.2 foram montadas a partir do [ROADMAP DA EQUIPE](https://app.zenhub.com/workspaces/20232-dnit-64f76d98c06d872bd36ffac8/roadmap). Elas fazem a comparação entre o planejado e executado do tempo do projeto.
 
 ### 5.1. Planejado
 
+|Releases| incicio | Fim |
+|--------|---------|-----|
+| Lean Inception |14/09/2023|16/10/2023|
+| Treinamentos Front e Back|11/09/2023|25/09/2023|
+| Release 1|13/10/2023|21/10/2023|
+| Release 2|13/10/2023|27/11/2023|
+| Release 3|28/11/2023|09/12/2023|
 
 ### 5.2. Executado
 
+|Releases| incicio | Fim |
+|--------|---------|-----|
+| Lean Inception |14/09/2023|16/10/2023|
+| Treinamentos Front e Back|11/09/2023|25/09/2023|
+| Release 1|13/10/2023|**25/10/2023**|
+| Release 2|13/10/2023|27/11/2023|
+| Release 3|28/11/2023|09/12/2023|
+
 ### 5.3. Análise
+
+O grupo conseguiu cumprir com a maior parte do prazo planejado. Entretando, o lançamento da Release 1 sofreu um atrazo devido à organização original do código do projeto. Isso levou o grupo a realizar algumas mudanças no código para facilitar futuras implementações, consequentemente atrasando um pouco a entrega da Release 1, destacado na data em negrito.
 
 ## 6. Qualidade
 
@@ -129,8 +148,7 @@ O grupo manteve a preocupação de manter a cobertura de testes em torno de 90% 
 
 <iframe width="600" height="448" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_cUBfKXtr-iQssXj1gmYRuSHkpjKGj5wlsiUM7nDlV8a8eq9WRX9CNlWfgBJ1MSapeszGHFQ91zVw/pubchart?oid=944010320&format=interactive"></iframe>
 
-
-## Versionamento
+## 8. Versionamento
 
 |**Data**|**Descrição**|**Autor(es)**|
 |--------|-------------|--------------|
@@ -138,3 +156,4 @@ O grupo manteve a preocupação de manter a cobertura de testes em torno de 90% 
 | 09/12/2023 | Adição do item 2 | Rafael |
 | 09/12/2023 | Adição do item 6 | Rafael |
 | 09/12/2023 | Adição do item 7 | Rafael |
+| 09/12/2023 | Adição do item 5 | Rafael |
