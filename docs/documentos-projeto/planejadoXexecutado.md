@@ -8,9 +8,44 @@ Este documento tem como objetivo apresentar a análise comparativa entre o plane
 
 ### 2.1. Planejado
 
+* [Implementar design system do Gov.br](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/66)
+* [Configuração do Sonnar](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/46)
+* [Refatorar Comunicação com a API](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/38)
+* [Refatorar disposição das pastas do front](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/37)
+* [Adição de ORM](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/21)
+* US1 - [Gerenciar perfis](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/64)
+* US2 - [Gerenciar os diferentes tipos de usuários do sistema](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/65)
+* US3 - [Gerenciar empresas terceirizadas](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/83)
+* US4 - [Ranking de Escolas](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/71)
+* US5 - [Configurar pesos dos fatores de priorização](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/84)
+* US6 - [Cálculo de Custo logístico](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/74)
+* US7 - [Gerenciar solicitações de ações AGUARDANDO_VALIDACAO](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/85)
+* US8 - [Gerenciar Ações](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/73)
+* US9 - [Exportar Dados](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/75)
+* US10 - [Visualização de escolas pelo Google Maps ](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/76)
+
 ### 2.2. Executado
 
+* [Adição de ORM](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/21)
+* [Implementar design system do Gov.br](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/66)
+* [Configuração do Sonnar](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/46)
+* [Refatorar Comunicação com a API](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/38)
+* [Refatorar disposição das pastas do front](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/37)
+* [Configuração de deploy contínuo](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/8)
+* US1 - [Gerenciar perfis](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/64)
+* US2 - [Gerenciar os diferentes tipos de usuários do sistema](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/65)
+* US3 - [Gerenciar empresas terceirizadas](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/83)
+* US4 - [Ranking de Escolas](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/71)
+* US5 - [Configurar pesos dos fatores de priorização](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/84)
+* US6 - [Cálculo de Custo logístico](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/74)
+* US7 - [Gerenciar solicitações de ações AGUARDANDO_VALIDACAO](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/85)
+* US8 - [Gerenciar Ações](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/73)
+* US9 - [Exportar Dados](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/75)
+* US10 - [Visualização de escolas pelo Google Maps ](https://github.com/fga-eps-mds/2023.2-Dnit-DOC/issues/76)
+
 ### 2.3. Análise
+
+O grupo planejou inicialmente 15 atividades no backlog e conseguiu se organizar para executar todo o planejamento. Destaca-se também a inclusão da atividade de configuração do deploy contínuo. Isso foi necessário para livrar a obrigração do grupo de atualizar o ambiente de homologação manualmente toda vez que fosse desenvolvida uma nova feture.
 
 ## 3. User Stories
 
