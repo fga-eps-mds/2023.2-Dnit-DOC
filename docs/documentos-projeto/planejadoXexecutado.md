@@ -98,11 +98,12 @@ Entretanto a US8 que está destacada em negrito precisou sofrer alguns ajustes d
 
 ### 5.1. Planejado
 
+
 ### 5.2. Executado
 
 ### 5.3. Análise
 
-## Qualidade
+## 6. Qualidade
 
 ### 6.1. Planejado
 
@@ -118,16 +119,22 @@ O nosso grupo planejou melhorar a segurança e robustez do projeto em relação 
 
 O grupo manteve a preocupação de manter a cobertura de testes em torno de 90% e uma boa robustez do código. Isso está evidenciado nos gráficos gerados pelo Q-Rapids, uma ferramenta de análise da qualidade do projeto sobre os aspectos de manutenabilidade e confiabilidade. Esses graficos possuem em seu eixo y uma nota que vai de 0 a 1 e quanto mais próximo de 1 melhor é a avaliação do projeto.
 
-## Riscos
+## 7. Risco
 
-### 7.1. Planejado
+### 7.1. Tabela de Resumo
 
-### 7.2. Executado
+<iframe width="700" height="525" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_cUBfKXtr-iQssXj1gmYRuSHkpjKGj5wlsiUM7nDlV8a8eq9WRX9CNlWfgBJ1MSapeszGHFQ91zVw/pubhtml?gid=0&single=true"></iframe>
 
-### 7.3. Análise
+### 7.2. Gráfico de Burndown
+
+<iframe width="600" height="448" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_cUBfKXtr-iQssXj1gmYRuSHkpjKGj5wlsiUM7nDlV8a8eq9WRX9CNlWfgBJ1MSapeszGHFQ91zVw/pubchart?oid=944010320&format=interactive"></iframe>
+
 
 ## Versionamento
 
 |**Data**|**Descrição**|**Autor(es)**|
 |--------|-------------|--------------|
-| 09/12/2023 | Criação do documento | Rafael |
+| 09/12/2023 | Criação do documento e item 3 | Rafael |
+| 09/12/2023 | Adição do item 2 | Rafael |
+| 09/12/2023 | Adição do item 6 | Rafael |
+| 09/12/2023 | Adição do item 7 | Rafael |
