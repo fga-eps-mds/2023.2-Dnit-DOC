@@ -106,9 +106,17 @@ Entretanto a US8 que está destacada em negrito precisou sofrer alguns ajustes d
 
 ### 6.1. Planejado
 
+O nosso grupo planejou melhorar a segurança e robustez do projeto em relação ao semestre passado para facilitar futuras implementações, com menor acoplamento e com alta coesão, tratando os bugs encontrados e sempre levando em conta possives fragilidades. Com uma ampla cobertura de testes em torno de 90%.
+
 ### 6.2. Executado
 
+![avaliação dos testes](../assets/analitics/avaliacaoTestes.png)
+
+![qualidade geral projeto](../assets/analitics/qualidadeGeralProjeto.png)
+
 ### 6.3. Análise
+
+O grupo manteve a preocupação de manter a cobertura de testes em torno de 90% e uma boa robustez do código. Isso está evidenciado nos gráficos gerados pelo Q-Rapids, uma ferramenta de análise da qualidade do projeto sobre os aspectos de manutenabilidade e confiabilidade. Esses graficos possuem em seu eixo y uma nota que vai de 0 a 1 e quanto mais próximo de 1 melhor é a avaliação do projeto.
 
 ## Riscos
 
