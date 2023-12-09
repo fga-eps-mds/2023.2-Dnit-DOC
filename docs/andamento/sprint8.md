@@ -1,13 +1,13 @@
 # Sprint 8
 
-- Data de início: 25/11/2023
-- Data de término: 01/12/2023
+- Data de início: 02/12/2023
+- Data de término: 08/12/2023
 
 ## 1. Objetivos da Sprint
 
-- Esclarecer dúvidas e Continuar o desenvolvimento das US08 e US05;
-- Esclarecer dúvidas e finalizar o desenvolvimento das US07, US09 e US11;
-- Corrigir o bug conhecido dos jobs do ranking.
+- Esclarecer dúvidas e Continuar o desenvolvimento das US11, US08 e US05;
+- Realizar melhorias nas US07 e US09;
+- Corrigir bugs conhecidos
 
 ## 2. Atividades da Sprint
 
@@ -23,13 +23,14 @@
 
 ## 3. Resultados
 
-&emsp;&emsp; Os clientes não compareceram para a reunião extra de quarta-feira. Então as melhorias realizas foram baseadas apenas nas observações dos clientes na reunião de acompanhamento na segunda-feira
+&emsp;&emsp; Os clientes não compareceram para a reunião extra de quarta-feira. Então as melhorias realizadas foram baseadas apenas nas observações dos clientes na reunião de acompanhamento de segunda-feira
 
 ### 3.1 Tarefas finalizadas:
 
 - Melhorias US07;
 - Melhorias US09;
 - US05;
+- US08;
 - US10;
 - US11;
 
