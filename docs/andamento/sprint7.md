@@ -17,7 +17,7 @@
 |US07 - Gerenciar solicitações de ações| Rafael e Yudi |
 |US08 - Gerenciar ações| Daniel Porto, Vitor Lamego, Lucas e João|
 |US09 - Exportar dados| Thiago e Eduardo |
-|US11 - Menor custo logístico para um conjunto de ações| Victor Hugo, Artur e André|
+|US11 - Gerenciar Polos| Victor Hugo, Artur e André|
 |Gerar o notebook para apresentação em sala de aula| Daniel Porto, Wagner, Thiago e Rafael|
 |[BUG] Às vezes o ranque não finaliza| Yudi |
 
@@ -29,6 +29,7 @@
 
 - US07;
 - US09;
+- US11;
 - Geração do notebook.
 
 
@@ -44,4 +45,5 @@
 
 | Data | Modificação | Autor |
 |---|---|---|
-|23/11/2023|Criação do documento| Rafael Berto |
+|30/11/2023|Criação do documento| Rafael Berto |
+|09/12/2023|Ajustes| Daniel Porto |
