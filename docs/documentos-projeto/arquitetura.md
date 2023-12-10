@@ -4,6 +4,9 @@
 
 Este documento tem como objetivo detalhar a arquitetura do projeto e a visão de dados, apresentando uma visão geral do projeto, as tecnologias utilizadas e a visão de dados.
 
+### Visão Geral
+Este documento está estruturado da seguinte forma: - Introdução - Tecnologias - Arquitetura - Visão de Dados - Referências - Versionamento
+
 ## Tecnologias
 
 ### PostgreSQL
@@ -52,9 +55,17 @@ Microsserviço responsável pelos serviços de cálculo do UPS (Unidade Padrão 
 
 O PostgreSQL é um SGBD (Sistema Gerenciador de Banco de Dados) de código aberto. Cada microsserviço se comunicará com um banco de dados respectivo - o UsuarioService se comunicará com o UsuarioDB, por exemplo. Os diferentes bancos de dados têm flexibilidade quanto a ficarem em uma instância ou múltiplas instâncias do SGBD.
 
-### Visão de Dados
+## Visão de Dados
 
-Os diagramas a seguir apresentam a organização dos dados em seus respectivos bancos de dados.
+### Modelagem de Dados
+
+A modelagem de dados é um processo fundamental na área de gerenciamento de informações. Envolve a criação de representações estruturadas que descrevem entidades, relacionamentos e atributos dos dados, permitindo uma compreensão clara e organizada dos mesmos. Através da modelagem de dados, é possível criar diagramas que retratam de forma visual como os dados estão relacionados entre si, facilitando a análise, a tomada de decisões e o desenvolvimento de sistemas de informação eficientes. Os diagramas a seguir apresentam a organização dos dados em seus respectivos bancos de dados.
+
+### Visão de Implementação
+
+A visão de implementação tem como objetivo descrever a implementação física de informações geradas pelo programa de software em componentes de hardware e é utilizada no fluxo de trabalho de Análise & Design. Essa visão ilustra a distribuição do processamento em um conjunto de nós do sistema, incluindo a distribuição física dos processos e threads. Durante cada iteração do processo de desenvolvimento, essa visão é refinada para mostrar de forma mais clara a distribuição física do processamento no sistema. As caixas tridimensionais conhecidas como nódulos (nós), representam os elementos básicos de software ou hardware, ou nódulos no sistema. As linhas de nódulo a nódulo indicam relacionamentos e as formas menores contidas dentro das caixas representam os artefatos de software empregados. O diagrama de implementação pode ser visto a seguir.
+
+![Diagrama de Implementação](../assets/arquitetura/diagrama_implementacao.png)
 
 #### Usuários
 ![Diagrama Usuarios](../assets/arquitetura/diagrama_usuario.png)
@@ -75,6 +86,8 @@ Os diagramas a seguir apresentam a organização dos dados em seus respectivos b
 > PostgreSQL. Disponível em: <https://www.postgresql.org/>. Acesso em: 10/12/2023.
 > React. Disponível em: <https://react.dev/>. Acesso em: 10/12/2023.
 > xUnit. Disponível em: <https://xunit.net/>. Acesso em: 10/12/2023.
+> Visão de Implementação. Disponível em: <https://www.cin.ufpe.br/~gta/rup-vc/core.base_rup/guidances/concepts/deployment_view_64CB74A6.html>. Acesso em: 10/12/2023.
+> Diagrama de Implementação. Disponível em: <https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml>. Acesso em: 10/12/2023.
 
 ## Versionamento
 
@@ -84,3 +97,4 @@ Os diagramas a seguir apresentam a organização dos dados em seus respectivos b
 | 22/10/2023 | Revisão | Thiago |
 | 22/10/2023 | Adição da Visão de dados | Wagner Martins |
 | 10/12/2023 | Adição das Tecnologias utilizadas | Victor Hugo |
+| 10/12/2023 | Adição da Visão de Implementação | Victor Hugo |
