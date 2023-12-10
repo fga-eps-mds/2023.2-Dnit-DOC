@@ -4,8 +4,10 @@
 
 Este documento tem como objetivo detalhar a arquitetura do projeto e a visão de dados, apresentando uma visão geral do projeto, as tecnologias utilizadas e a visão de dados.
 
+Através desse documento, é possível obter um melhor entendimento da arquitetura do projeto, permitindo ao leitor a compreensão do funcionamento do sistema e as abordagens utilizadas para o seu desenvolvimento.
+
 ### Visão Geral
-Este documento está estruturado da seguinte forma: - Introdução - Tecnologias - Arquitetura - Visão de Dados - Referências - Versionamento
+Este documento está estruturado da seguinte forma: - Introdução - Tecnologias - Representação Arquitetural - Visões do Sistema - Referências - Versionamento
 
 ## Tecnologias
 
@@ -24,7 +26,7 @@ O React é uma biblioteca Javascript altamente flexível que permite a construç
 ### Jest
 Para os testes do front-end será usado o Jest, um framework de testes em Javascript simples, rápido e seguro. Permite escrever testes com uma API acessível, bem documentada e forncece relatórios de cobertura de código.
 
-## Arquitetura
+## Representação Arquitetural
 
 A arquitetura do projeto consiste no front-end e 3 microsserviços no back-end, sendo o primeiro para a gestão dos usuários, o segundo para a gestão das escolas e o terceiro para lidar com os cálculos e cadastros necessários para o cálculo do UPS (Unidade Padrão de Severidade).
 
@@ -56,7 +58,7 @@ gerência de sinistros, de rodovias e cálculo de UPS de escolas.
 
 O PostgreSQL é um SGBD (Sistema Gerenciador de Banco de Dados) de código aberto. Cada microsserviço se comunicará com um banco de dados respectivo - o UsuarioService se comunicará com o UsuarioDB, por exemplo. Os diferentes bancos de dados têm flexibilidade quanto a ficarem em uma instância ou múltiplas instâncias do SGBD.
 
-## Visão de Dados
+## Visões do Sistema
 
 ### Modelagem de Dados
 
@@ -68,7 +70,23 @@ A visão de implementação tem como objetivo descrever a implementação físic
 
 ![Diagrama de Implementação](../assets/arquitetura/diagrama_implementacao.png)
 
-#### Usuários
+### Visão Lógica
+
+A visão lógica do sistema se concentra na estruturação do sistema em unidades de implementação, como pacotes, classes e interfaces. Nessa visão, é possível identificar as dependências entre esses elementos, bem como as realizações de interface e os relacionamentos parte-todo, entre outras relações relevantes para a estruturação lógica do sistema. O diagrama lógico de dados (DLD) apresentado ao final deste documento representa essa visão.
+
+### ME-R (Modelo Entidade-Relacionamento)
+
+O ME-R representa o banco de dados em um nível conceitual. Nele trazemos as representações de nossas entidades, os atributos de cada uma delas e, por fim, cada relacionamento existente entre as entidades. Isso permite visualizar como os dados estão organizados e como as entidades se relacionam no sistema de informações.
+
+### DE-R (Diagrama Entidade-Relacionamento)
+
+O DE-R baseia-se no ME-R e traz uma representação, no formato de diagrama, sobre as entidades, os atributos e os relacionamentos. Esse diagrama fornece uma visão um pouco mais próxima do nível lógico. Ele descreve as entidades (objetos do mundo real), seus atributos (características) e os relacionamentos entre as entidades. Os retângulos representam as entidades, as elipses indicam os atributos, losangos que indicam o relacionamento e as linhas conectam as entidades para mostrar como elas se relacionam. O DER é uma ferramenta fundamental para visualizar e planejar a estrutura de um banco de dados antes da implementação, ajudando a definir como os dados são armazenados e acessados.
+
+### DLD (Diagrama Lógico de Dados)
+
+O DLD serve para especificar a um nível mais lógico as entidades, cada atributo com seus tipos (literal, inteiro, por exemplo), bem como os relacionamentos e as chaves de cada entidade - primárias ou estrangeiras. É uma representação gráfica que ilustra a estrutura lógica de um banco de dados, ele funciona como uma representação visual que orienta a implementação efetiva do banco de dados.
+
+<!-- #### Usuários
 ![Diagrama Usuarios](../assets/arquitetura/diagrama_usuario.png)
 
 #### Escolas
@@ -76,19 +94,31 @@ A visão de implementação tem como objetivo descrever a implementação físic
 
 #### UPS (Rodovias e Sinistros)
 ![Diagrama Rodovias](../assets/arquitetura/diagrama_rodovias.png)
-![Diagrama Sinistros](../assets/arquitetura/diagrama_sinistros.png)
+![Diagrama Sinistros](../assets/arquitetura/diagrama_sinistros.png) -->
 
 ## Referências
 
 > EQUIPE DNIT 2023-1. Documento de arquitetura. Disponível em: <https://fga-eps-mds.github.io/2023-1-Dnit-DOC/projeto/arquitetura/>. Acesso em: 20/10/2023.
+
 > O que é arquitetura de microsserviços?. Disponível em: <https://www.redhat.com/pt-br/topics/microservices/what-are-microservices>. Acesso em: 20/10/2023.
+
 > ASP.NET. Disponível em: <https://dotnet.microsoft.com/pt-br/apps/aspnet>. Acesso em: 10/12/2023.
+
 > Jest. Disponível em: <https://jestjs.io/pt-BR/>. Acesso em: 10/12/2023.
+
 > PostgreSQL. Disponível em: <https://www.postgresql.org/>. Acesso em: 10/12/2023.
+
 > React. Disponível em: <https://react.dev/>. Acesso em: 10/12/2023.
+
 > xUnit. Disponível em: <https://xunit.net/>. Acesso em: 10/12/2023.
+
 > Visão de Implementação. Disponível em: <https://www.cin.ufpe.br/~gta/rup-vc/core.base_rup/guidances/concepts/deployment_view_64CB74A6.html>. Acesso em: 10/12/2023.
+
 > Diagrama de Implementação. Disponível em: <https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml>. Acesso em: 10/12/2023.
+
+> Visão Arquitetural. Disponível em: <https://www.trt9.jus.br/pds/pdstrt9/guidances/guidelines/architectural_view_FF6EDA37.html#:~:text=Vis%C3%A3o%20L%C3%B3gica%3A%20Descreve%20como%20o,todo%20e%20assim%20por%20diante.>. Acesso em: 10/12/2023.
+
+> Diagrama Relacional. Disponível em: <https://unbarqdsw2022-1.github.io/2022.1_G1_FGAvisos/#/Modelagem/2.1.2.6.DiagramaDeBancos>. Acesso em: 10/12/2023.
 
 ## Versionamento
 
@@ -99,3 +129,4 @@ A visão de implementação tem como objetivo descrever a implementação físic
 | 22/10/2023 | Adição da Visão de dados | Wagner Martins |
 | 10/12/2023 | Adição das Tecnologias utilizadas | Victor Hugo |
 | 10/12/2023 | Adição da Visão de Implementação | Victor Hugo |
+| 10/12/2023 | Adição das Visões do Sistema | Victor Hugo |
