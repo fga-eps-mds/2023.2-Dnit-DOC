@@ -44,12 +44,13 @@ Microsserviço para autenticação e autorização dos usuários.
 
 #### EscolaService
 
-Microsserviço responsável pelos serviços relacionados às escolas.
+Microsserviço responsável pelas funcionalidades relacionadas ao cáculo de ranque
+de escolas, configuração de prioridades, gerência de escola, de polos e etc.
 
 #### UpsService
 
-Microsserviço responsável pelos serviços de cálculo do UPS (Unidade Padrão de Severidade).
-
+Microsserviço responsável pelas funcionalidades relacionadas à 
+gerência de sinistros, de rodovias e cálculo de UPS de escolas.
 
 ### Banco de Dados (PostgreSQL)
 
