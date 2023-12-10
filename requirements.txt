@@ -1,2 +1,6 @@
 mkdocs==1.5.2
 mkdocs-material==9.2.8
+pandas
+matplotlib
+openpyxl
+seaborn

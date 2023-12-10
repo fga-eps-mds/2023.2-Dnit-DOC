@@ -1,7 +1,6 @@
 site_name: DNIT - Educação paro o trânsito
 repo_name: "2023.2-DNIT-DOC"
 repo_url: https://github.com/fga-eps-mds/2023.2-Dnit-DOC
-
 docs_dir: docs
 
 theme:
@@ -22,11 +21,15 @@ nav:
     - Plano de custos: plano-monitoramento/plano-custos.md
     - Plano de qualidade: plano-monitoramento/plano-qualidade.md
     - Plano de riscos: plano-monitoramento/plano-riscos.md
+    - EVM Agile : plano-monitoramento/EVM.md
   - Documentos do projeto:
     - Metodologias: documentos-projeto/metodologias.md
+    - EAP: documentos-projeto/eap.md
     - Documento de Arquitetura: documentos-projeto/arquitetura.md
-    - Identidade Visual: documentos-projeto/identidadeVisual/identidade.md
+    - Identidade Visual: documentos-projeto/identidade.md
     - Componentes: documentos-projeto/identidadeVisual/Componentes.md
+  - Visão de Produto:
+    - Lean Inception: visao-produto/lean-inception.md
   - Andamento:
     - Pré-sprints:
       - Semana 1: andamento/semana1.md
@@ -37,7 +40,16 @@ nav:
       - Semana 6: andamento/semana6.md
     - Sprints:
       - Sprint Teste: andamento/sprint-teste.md
-      
+      - Sprint 1: andamento/sprint1.md
+      - Sprint 2: andamento/sprint2.md
+      - Sprint 3: andamento/sprint3.md
+      - Sprint 4: andamento/sprint4.md
+      - Sprint 5: andamento/sprint5.md
+      - Sprint 6: andamento/sprint6.md
+      - Sprint 7: andamento/sprint7.md
+      - Sprint 8: andamento/sprint8.md
+  - Post-mortem: post-mortem.md
+
 # Pra mais informações sobre personalizar cores
 # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
 extra_css:
