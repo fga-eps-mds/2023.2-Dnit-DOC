@@ -19,16 +19,18 @@ contínua de valor resultando na satisfação deles.
 - Colaboração dos integrantes da equipe
 - Tecnologias utilizadas (.NET, React, PostgreSQL)
 - Constante busca por resultados pela equipe
-- Apoio dos mentores Denys e Fernando, que estiveram com a gente em todo o 
-andamento do projeto, nos auxiliando sempre que possível. Eles foram 
-imprescindíveis
+- Expressamos nossa sincera gratidão aos mentores Denys e Fernando, cujo apoio 
+foi fundamental durante todo o andamento do projeto. Eles estiveram sempre 
+disponíveis para nos auxiliar quando necessário, tornando-se imprescindíveis 
+para o nosso progresso. Estamos profundamente gratos pela dedicação e 
+orientação recebidas
 
 ## O que poderia ser melhorado?
 
 - Como houve gargalos no processo de validação de histórias de usuário com o 
 cliente, entre o meio e o fim do semestre estipulamos uma reunião extra 
 recorrente às quartas para  resolver o que faltava. Deveríamos ter começado 
-isso _muito_ antes
+isso desde o início do semestre
 - Tornar os clientes mais próximos da equipe, para assim tornar possível uma 
 boa experiência do usuário com o produto
 - Colocar mais cedo os integrantes de MDS para programar nos repositórios
@@ -96,12 +98,12 @@ valor e do que está sendo entregue para o seu cliente
 
 ### Recomendações Futuras
 
-- Garantam que o SonnarCloud esteja coletando todas as 12 métricas pedidas pelo professor
-- Investam muito esforço já no começo para configurar o Sonar com todas as métricas
+- Garantam que o SonnarCloud esteja coletando todas as 12 métricas pedidas pelo 
+professor desde o início do projeto.
 - Acompanhem a disciplina com um material online, provavelmente cursos gratuitos
-- Não criem os repositórios de vocês forkando os nossos repositórios. Se vocês fizerem
-isso fica _muito fácil_ abrir uma PR pro repositório errado
 no youtube para que não passem tanta dificuldade na hora de desenvolver
+- Não criem os repositórios de vocês forkando os nossos repositórios. Se vocês fizerem
+isso fica _muito fácil_ abrir uma PR para o repositório errado
 - Analisar melhores maneiras de validação com os clientes, para tentar obter
 respostas mais rápidas e reduzir a possibilidade de atrasos por parte deles
 - Ter uma reunião separada da reunião principal somente para a validação de 
@@ -120,7 +122,7 @@ responsável no DNIT
 eles são alunos e são comprometidos também por diversas matérias
 - 👽 Busquem conhecimento
 - Tentar envolver os dois POs também na resposta aos formulários de aceitação.
-- Otimizar o LI para não perder tempo hábil
+- Otimizar o Lean Inception para não perder tempo hábil
 - Ensiram os membros de MDS na codificação dos repositórios o quanto antes
 
 ### Evolução do Software
@@ -133,13 +135,10 @@ no caso do cálculo do ranque e da distância dos polos
     - Desenvolver uma estratégia para gerenciar o lançamento de jobs 
     - O cálculo de ranque (para 200 escolas e 300.000 sinistros) dura tipicamente
     menos que 5 minutos. Imagine 150 milhões de escolas
-    - Em um futuro próximo será referenciado aqui um breve documento explicando
-    o cálculo de ranque
 - Ao atualizar as distâncias das escolas para algum polo ou superintendência, 
 por ser um processo lento e demorado, seria legal tirar esse recálculo 
 automatizado e implementar uma página específica para a atualização dessas distâncias
-- Continuar o gerenciamento de ações. Esse gerenciamento irá demandar bastante
-conhecimento técnico pois os clientes esperam um sistema de recomendação
+conhecimento técnico pois **os clientes esperam um sistema de recomendação**
 - Refatorar cadastro de escolas com o componente de cadastro de escolas
 - No semestre anterior, as mensagens de erro das APIs para o frontend eram 
 apenas strings. Esse semestre começamos a usar `ApiException` como maneira 
@@ -165,4 +164,13 @@ existentes
 - Muita coisa foi refatorada no frontend, mas ainda tem muita coisa fora do padrão 
 do governo. Existe toda uma oportunidade para implementar uma costomização do 
 usuário sobre os próprios dados
-- A responsividade do frontend ainda não está a contento
+- A responsividade do frontend ainda deixa a desesejar. Para efeito de teste, 
+abra em um navegador minimizado ou em um smartphone para verificar os 
+redimencionamentos que não estão funcionando
+
+## Versionamento
+
+| **Data**   | **Descrição**         | **Autore(es)** |
+| ---------- | --------------------- | -------------- |
+| 09/12/2023 | Criação do documento  | Yudi           |
+| 10/12/2023 | Correção de português | Rafael         |
