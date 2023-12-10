@@ -88,11 +88,19 @@ Entretanto a US8 que está destacada em negrito precisou sofrer alguns ajustes d
 
 ## 4. Custo
 
+<iframe width="900" height="600" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS8xfau65HO7DXoBTgG_q5poVAqh6NSefKkBZwgrKsirwEAO0M2K-aHSG5Rtuiln_egvQqxCP5PGTV1/pubhtml?widget=true&amp;headers=false"></iframe>
+
 ### 4.1. Planejado
+
+Segundo nosso planejamento inicial na página sumário da planilha de EVM, planejou-se para esse projeto do semestre de 2023.2 oito sprints com um custo médio por sprint de R$ 11.318,28. Para o desenvolvimento de código, foram planejados 157 pontos de história com custo de desenvolvimento de R$ 98.591,40.
 
 ### 4.2. Executado
 
+A página de  EVM - Valor agregado mostra que o time de fato executou as 8 sprints e que o custo incialmente planejado não foi alterado.
+
 ### 4.3. Análise
+
+Ao observar o velocity do projeto, disponível na página Velocity da planilha, observa-se alguns pontos onde não foram entregues nenhum ponto de histótia, consequentemente, nehuma entrega de valor. Isso ocorreu devido a impedimentos de comunicação com o cliente que impossibilitaram a validação de features que estavam planejadas para iniciar o desenvolvimento na mesma semana.
 
 ## 5. Tempo
 
@@ -148,7 +156,7 @@ O grupo manteve a preocupação de manter a cobertura de testes em torno de 90% 
 
 <iframe width="600" height="448" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_cUBfKXtr-iQssXj1gmYRuSHkpjKGj5wlsiUM7nDlV8a8eq9WRX9CNlWfgBJ1MSapeszGHFQ91zVw/pubchart?oid=944010320&format=interactive"></iframe>
 
-## 8. Versionamento
+## Versionamento
 
 |**Data**|**Descrição**|**Autor(es)**|
 |--------|-------------|--------------|
@@ -157,3 +165,4 @@ O grupo manteve a preocupação de manter a cobertura de testes em torno de 90% 
 | 09/12/2023 | Adição do item 6 | Rafael |
 | 09/12/2023 | Adição do item 7 | Rafael |
 | 09/12/2023 | Adição do item 5 | Rafael |
+| 09/12/2023 | Adição do item 4 | Rafael |
