@@ -22,11 +22,10 @@
 
 ## 3. Resultados
 
-&emsp;&emsp;A sprint teve um relativo prejuízo devido ao ritmo empregado pela equipe que não foi possível ser acompanhado pela validação dos POs. Dessa forma, foram atacadas algumas tarefas de melhorias e correções de bugs, além das USs já validadas.
+&emsp;&emsp;O desenvolvimento das US03, US04 e US06 foram finalizados e mandados para aceitação na forma da Release 2. Devido a falta de resposta sobre a US08 a mesma foi realocada para a release seguinte.
 
 ### 3.1 Tarefas finalizadas:
 
-- US02 - Gerenciar os diferentes tipos de usuários do sistema;
 - US03 - Gerenciar empresas terceirizadas;
 - US04 - Ranking de escolas;
 - US06 - Menor custo logístico para um conjunto de ações;
@@ -48,3 +47,4 @@
 |16/11/2023|Criação do documento| Daniel Porto |
 |21/11/2023|Atualização do documento| Rafael |
 |23/11/2023|Atualização do documento| Daniel Porto |
+|23/11/2023|Correção do documento| Daniel Porto |
