@@ -135,6 +135,10 @@ no caso do cálculo do ranque e da distância dos polos
     - Desenvolver uma estratégia para gerenciar o lançamento de jobs 
     - O cálculo de ranque (para 200 escolas e 300.000 sinistros) dura tipicamente
     menos que 5 minutos. Imagine 150 milhões de escolas
+- Atualmente a comunicação entre serviços (`EscolaService <-> UpsService`, 
+por exemplo), acontece por requisições HTTP. Pode ser interessante pensar em 
+diferentes formas de comunicação como filas de mensagens (brokers) ou chamadas
+remotas (ex: gRPC)
 - Ao atualizar as distâncias das escolas para algum polo ou superintendência, 
 por ser um processo lento e demorado, seria legal tirar esse recálculo 
 automatizado e implementar uma página específica para a atualização dessas distâncias
@@ -145,7 +149,11 @@ apenas strings. Esse semestre começamos a usar `ApiException` como maneira
 padrão de retornar erros das APIs, mas não conseguimos usar isso em toda a base
 de código, então atualmente os erros são retornados de dois jeitos. É recomendado
 que a próxima equipe escolha apenas uma como padrão (preferencialmente a última)
-e adote-a para toda a base de código e para todas as APIs
+e adote-a para toda os endpoints e para todas as APIs
+- Atualmente é possível criar uma única escola a partir de uma solicitação. O 
+relacionamento `Solicitacao->Escola` já está sendo realizado. Mas **ainda
+falta** implementar a realização desse relacionamento ao criar várias escolas por 
+aquivo CSV
 - Onde for possível, traduzir nomes de classes e variáveis para português, tanto
 no frontend quanto nos backends
 - Verificar os endpoints de todas as APIs a fim de entendê-los 
