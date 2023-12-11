@@ -147,3 +147,4 @@ O DLD serve para especificar a um nível mais lógico as entidades, cada atribut
 | 10/12/2023 | Adição da Visão de Implementação | Victor Hugo |
 | 10/12/2023 | Adição das Visões do Sistema | Victor Hugo |
 | 10/12/2023 | Adição do Diagrama de Pacotes | Victor Hugo |
+| 10/12/2023 | Adição do Diagrama Lógico de Dados | Thiago |
