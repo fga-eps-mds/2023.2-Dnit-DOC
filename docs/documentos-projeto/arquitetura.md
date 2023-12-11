@@ -74,6 +74,18 @@ A visão de implementação tem como objetivo descrever a implementação físic
 
 A visão lógica do sistema se concentra na estruturação do sistema em unidades de implementação, como pacotes, classes e interfaces. Nessa visão, é possível identificar as dependências entre esses elementos, bem como as realizações de interface e os relacionamentos parte-todo, entre outras relações relevantes para a estruturação lógica do sistema. O diagrama lógico de dados (DLD) apresentado ao final deste documento representa essa visão.
 
+### Diagrama de Pacotes
+
+O Diagrama de Pacotes é um diagrama de estrutura UML que descreve a estrutura do sistema projetado no nível de pacotes. São comumente usados para simplificar os diagramas de classe complexos e organizar as classes em pacotes, oferecendo uma valiosa visibilidade de alto nível para grandes projetos e sistemas. Nesse projeto, a utilização desse diagrama visa apresentar de forma clara a aquitetura de pacotes que serão usadas no desenvolvimento, apresentando os componentes, interfaces e dependências do software. Os diagramas de pacotes do frontend e dos 3 microsserviços podem ser vistas abaixo.
+
+![Diagrama de Pacotes do Frontend](../assets/arquitetura/diagrama_Pac_Front.png)
+![Diagrama de Pacotes do UpsService](../assets/arquitetura/diagrama_Pac_UpsService.png)
+![Diagrama de Pacotes do UsuarioService](../assets/arquitetura/diagrama_Pac_UsuarioService.png)
+![Diagrama de Pacotes do EscolaService](../assets/arquitetura/diagrama_Pac_EscolaService.png)
+
+
+
+
 ### ME-R (Modelo Entidade-Relacionamento)
 
 O ME-R representa o banco de dados em um nível conceitual. Nele trazemos as representações de nossas entidades, os atributos de cada uma delas e, por fim, cada relacionamento existente entre as entidades. Isso permite visualizar como os dados estão organizados e como as entidades se relacionam no sistema de informações.
@@ -120,6 +132,9 @@ O DLD serve para especificar a um nível mais lógico as entidades, cada atribut
 
 > Diagrama Relacional. Disponível em: <https://unbarqdsw2022-1.github.io/2022.1_G1_FGAvisos/#/Modelagem/2.1.2.6.DiagramaDeBancos>. Acesso em: 10/12/2023.
 
+> Diagrama de Pacotes. Disponível em: <https://unbarqdsw2022-1.github.io/2022.1_G1_FGAvisos/#/Modelagem/2.1.1.2.DiagramaDePacotes>. Acesso em: 10/12/2023.
+
+
 ## Versionamento
 
 |**Data**|**Descrição**|**Autor(es)**|
@@ -130,3 +145,4 @@ O DLD serve para especificar a um nível mais lógico as entidades, cada atribut
 | 10/12/2023 | Adição das Tecnologias utilizadas | Victor Hugo |
 | 10/12/2023 | Adição da Visão de Implementação | Victor Hugo |
 | 10/12/2023 | Adição das Visões do Sistema | Victor Hugo |
+| 10/12/2023 | Adição do Diagrama de Pacotes | Victor Hugo |
