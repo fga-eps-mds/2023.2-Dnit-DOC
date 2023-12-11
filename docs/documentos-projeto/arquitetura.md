@@ -88,6 +88,141 @@ O Diagrama de Pacotes é um diagrama de estrutura UML que descreve a estrutura d
 
 O ME-R representa o banco de dados em um nível conceitual. Nele trazemos as representações de nossas entidades, os atributos de cada uma delas e, por fim, cada relacionamento existente entre as entidades. Isso permite visualizar como os dados estão organizados e como as entidades se relacionam no sistema de informações.
 
+#### UsuarioService
+
+##### Entidades
+    EMPRESA
+    EMPRESAUFS
+    MUNICIPIO
+    PERFILPERMISSOES
+    PERFIS
+    REDEFINICAOSENHA
+    USUARIO
+
+##### Atributos
+* EMPRESA (<ins>cnpj</ins>, razaoSocial)
+* EMPRESAUFS(<ins>uf</ins>, <ins>empresaId</ins>)
+* MUNICIPIO(<ins>id</ins>, nome, uf)
+* PERFILPERMISSOES(<ins>id</ins>, perfilId, permissao)
+* PERFIS(<ins>id</ins>, nome, tipo)
+* REDEFINICAOSENHA(<ins>id</ins>, uuid, idUsuario)
+* USUARIO(<ins>id</ins>, nome, email, senha, ufLotacao, perfilId, tokenAtualizacao, tokenAtualizacaoExpiracao, municipioId, associacao, empresaCnpj)
+
+##### Relacionamentos
+    USUARIO - realiza - REDEFINICAOSENHA (n:m)
+    Um USUARIO realiza uma ou mais REDEFINICAOSENHA, uma REDEFINICAOSENHA pode ser realizada por um ou mais USUARIO.
+
+    PERFIS - possui - USUARIO (1:n)
+    Um PERFIS possui um ou mais USUARIO, um USUARIO possui só e somente um único PERFIS.
+
+    PERFIS - possui - PERFILPERMISSOES (n:m)
+    Um PERFIS possui um ou mais PERFILPERMISSOES, um PERFILPERMISSOES é de um ou mais PERFIS.
+
+    MUNICIPIO - possui - USUARIO (1:n)
+    Um MUNICIPIO possui um ou mais USUARIO, um USUARIO possui só e somente um único MUNICIPIO.
+
+    EMPRESA - possui - USUARIO (1:n)
+    Um EMPRESA possui um ou mais USUARIO, um USUARIO possui só e somente um único EMPRESA.
+
+    EMPRESA - possui - EMPRESAUFS (1:n)
+    Um EMPRESA possui um ou mais EMPRESAUFS, um EMPRESAUFS possui só e somente um único EMPRESA.
+    
+#### EscolaService
+
+##### Entidades
+    CONDICAOVALORES
+    CUSTOSLOGISTICOS
+    ESCOLAETAPAENSINO
+    ESCOLASRANQUES
+    ESCOLAS
+    FATORCONDICOES
+    FATORESCOLAS
+    FATORPRIORIZACOES
+    FATORRANQUES
+    MUNICIPIOS
+    PLANEJAMENTOMACRO
+    PLANEJAMENTOMACROESCOLA
+    POLOS
+    RANQUES
+    SOLICITACOES
+
+##### Atributos
+* CONDICAOVALORES(<ins>id</ins>, fatorCondicaoId, valor)
+* CUSTOSLOGISTICOS(<ins>custo</ins>, valor, raioMin, raioMax)
+* ESCOLAETAPAENSINO(<ins>id</ins>, escolaId, etapaEnsino)
+* ESCOLASRANQUES(<ins>id</ins>, escolaId, ranqueId, pontuacao, posicao)
+* ESCOLA (<ins>id</ins>, nome, codigo, cep, endereco, latitude, longitude, totalAlunos, totalDocentes, telefone, rede, uf, localizacao, porte, situacao, municipioId, dataAtualizacaoUtc, ups, distanciaPolo, poloId)
+* FATORCONDICOES(<ins>id</ins>, propriedade, operador, fatorPriorizacaoId)
+* FATORESCOLAS(<ins>fatorPriorizacaoId</ins>, escolaId, valor)
+* FATORPRIORIZACOES(<ins>id</ins>, nome, peso, ativo, primario, deleteTime)
+* FATORRANQUES(<ins>fatorPriorizacaoId</ins>, ranqueId)
+* MUNICIPIOS(<ins>id</ins>, nome, uf)
+* PLANEJAMENTOMACRO(<ins>id</ins>, nome, responsavel, mesInicio, mesFim, anoInicio, anoFim, quantidadeAcoes)
+* PLANEJAMENTOMACROESCOLA(<ins>id</ins>, mes, ano, planejamentoMacroId, escolaId)
+* POLOS(<ins>id</ins>, endereco, cep, latitude, longitude, nome, municipioId, uf)
+* RANQUES(<ins>id</ins>, dataInicioUtc, dataFimUtc, bateladasEmProgresso, descricao)
+* SOLICITACOES(<ins>id</ins>, escolaUf, escolaMunicipioId, escolaCodigoInep, escolaNome, totalAlunos, escolaId, nomeSolicitante, email, vinculo, telefone, observacoes, dataRealizadaUtc)
+
+##### Relacionamentos
+
+    FATORCONDICOES - possui - CONDICAOVALORES (1:n)
+    Um FATORCONDICOES possui um ou mais CONDICAOVALORES, um CONDICAOVALORES possui só e somente um único FATORCONDICOES.
+
+    ESCOLAS - possui - ESCOLAETAPAENSINO (n:m)
+    Uma ESCOLAS possui uma ou mais ESCOLAETAPAENSINO, uma ESCOLAETAPAENSINO é de uma ou mais ESCOLAS.
+
+    ESCOLAS - possui - ESCOLASRANQUES (1:n)
+    Uma ESCOLAS possui uma ou mais ESCOLASRANQUES, uma ESCOLASRANQUES possui só e somente uma única ESCOLAS.
+
+    RANQUES - possui - ESCOLASRANQUES (1:n)
+    Um RANQUES possui uma ou mais ESCOLASRANQUES, uma ESCOLASRANQUES possui só e somente um único RANQUES.
+
+    ESCOLAS - possui - SOLICITACOES (1:n)
+    Uma ESCOLAS possui uma ou mais SOLICITACOES, uma SOLICITACOES possui só e somente uma única ESCOLAS.
+
+    ESCOLAS - possui - PLANEJAMENTOMACROESCOLA (1:n)
+    Uma ESCOLAS possui um ou mais PLANEJAMENTOMACROESCOLA, um PLANEJAMENTOMACROESCOLA possui só e somente uma única ESCOLAS.
+
+    ESCOLAS - possui - FATORESCOLAS (1:n)
+    Uma ESCOLAS possui um ou mais FATORESCOLAS, um FATORESCOLAS possui só e somente uma única ESCOLAS.
+
+    MUNICIPIOS - possui - ESCOLAS (0:n)
+    Um MUNICIPIOS possui zero ou mais ESCOLAS, uma ESCOLAS possui só e somente um único MUNICIPIOS.
+
+    POLOS - possui - ESCOLAS (0:n)
+    Um POLOS possui zero ou mais ESCOLAS, uma ESCOLAS possui só e somente um único POLOS.
+
+    FATORPRIORIZACOES - possui - FATORCONDICOES (1:n)
+    Um FATORPRIORIZACOES possui um ou mais FATORCONDICOES, um FATORCONDICOES possui só e somente um único FATORPRIORIZACOES.
+
+    FATORPRIORIZACOES - possui - FATORESCOLAS (1:n)
+    Um FATORPRIORIZACOES possui um ou mais FATORESCOLAS, um FATORESCOLAS possui só e somente um único FATORPRIORIZACOES.
+
+    FATORPRIORIZACOES - possui - FATORRANQUES (1:n)
+    Um FATORPRIORIZACOES possui um ou mais FATORRANQUES, um FATORRANQUES possui só e somente um único FATORPRIORIZACOES.
+
+    RANQUES - possui - FATORRANQUES (1:n)
+    Um RANQUES possui um ou mais FATORRANQUES, um FATORRANQUES possui só e somente um único RANQUES.
+
+    MUNICIPIOS - possui - SOLICITACOES (0:n)
+    Um MUNICIPIOS possui zero ou mais SOLICITACOES, uma SOLICITACOES possui só e somente um único MUNICIPIOS.
+
+    MUNICIPIOS - possui - POLOS (0:n)
+    Um MUNICIPIOS possui zero ou mais POLOS, um POLOS possui só e somente um único MUNICIPIOS.
+
+    PLANEJAMENTOMACRO - possui - PLANEJAMENTOMACROESCOLA (1:n)
+    Um PLANEJAMENTOMACRO possui um ou mais PLANEJAMENTOMACROESCOLA, um PLANEJAMENTOMACROESCOLA possui só e somente um único PLANEJAMENTOMACRO.
+    
+#### UpsService
+
+##### Entidades
+    RODOVIAS
+    SINISTROS
+
+##### Atributos
+* RODOVIA (<ins>id</ins>, uf, anoApuracao, numeroRodovia, tipoTrecho, codigoSnv, localInicioFim, kmInicial, kmFinal, extensao, superficie, federalCoincidence, estadualCoincidence, superficieEstadual, mp082, concessaoConvenio)
+* SINISTRO (<ins>id</ins>, uf, rodovia, km, snv, sentido, solo, tipo, causa, gravidade, feridos, mortos, ups, latitude, longitude, dataUtc)
+
 ### DE-R (Diagrama Entidade-Relacionamento)
 
 O DE-R baseia-se no ME-R e traz uma representação, no formato de diagrama, sobre as entidades, os atributos e os relacionamentos. Esse diagrama fornece uma visão um pouco mais próxima do nível lógico. Ele descreve as entidades (objetos do mundo real), seus atributos (características) e os relacionamentos entre as entidades. Os retângulos representam as entidades, as elipses indicam os atributos, losangos que indicam o relacionamento e as linhas conectam as entidades para mostrar como elas se relacionam. O DER é uma ferramenta fundamental para visualizar e planejar a estrutura de um banco de dados antes da implementação, ajudando a definir como os dados são armazenados e acessados.
