@@ -64,11 +64,11 @@ O PostgreSQL é um SGBD (Sistema Gerenciador de Banco de Dados) de código abert
 
 A modelagem de dados é um processo fundamental na área de gerenciamento de informações. Envolve a criação de representações estruturadas que descrevem entidades, relacionamentos e atributos dos dados, permitindo uma compreensão clara e organizada dos mesmos. Através da modelagem de dados, é possível criar diagramas que retratam de forma visual como os dados estão relacionados entre si, facilitando a análise, a tomada de decisões e o desenvolvimento de sistemas de informação eficientes. Os diagramas a seguir apresentam a organização dos dados em seus respectivos bancos de dados.
 
-### Visão de Implementação
+### Visão de Implantação
 
-A visão de implementação tem como objetivo descrever a implementação física de informações geradas pelo programa de software em componentes de hardware e é utilizada no fluxo de trabalho de Análise & Design. Essa visão ilustra a distribuição do processamento em um conjunto de nós do sistema, incluindo a distribuição física dos processos e threads. Durante cada iteração do processo de desenvolvimento, essa visão é refinada para mostrar de forma mais clara a distribuição física do processamento no sistema. As caixas tridimensionais conhecidas como nódulos (nós), representam os elementos básicos de software ou hardware, ou nódulos no sistema. As linhas de nódulo a nódulo indicam relacionamentos e as formas menores contidas dentro das caixas representam os artefatos de software empregados. O diagrama de implementação pode ser visto a seguir.
+A visão de implantação tem como objetivo descrever a implementação física de informações geradas pelo programa de software em componentes de hardware e é utilizada no fluxo de trabalho de Análise & Design. Essa visão ilustra a distribuição do processamento em um conjunto de nós do sistema, incluindo a distribuição física dos processos e threads. Durante cada iteração do processo de desenvolvimento, essa visão é refinada para mostrar de forma mais clara a distribuição física do processamento no sistema. As caixas tridimensionais conhecidas como nódulos (nós), representam os elementos básicos de software ou hardware, ou nódulos no sistema. As linhas de nódulo a nódulo indicam relacionamentos e as formas menores contidas dentro das caixas representam os artefatos de software empregados. O diagrama de implantação pode ser visto a seguir.
 
-![Diagrama de Implementação](../assets/arquitetura/diagrama_implementacao.png)
+![Diagrama de Implantação](../assets/arquitetura/diagrama_implementacao.png)
 
 ### Visão Lógica
 
@@ -84,8 +84,6 @@ O Diagrama de Pacotes é um diagrama de estrutura UML que descreve a estrutura d
 ![Diagrama de Pacotes do EscolaService](../assets/arquitetura/diagrama_Pac_EscolaService.png)
 
 
-
-
 ### ME-R (Modelo Entidade-Relacionamento)
 
 O ME-R representa o banco de dados em um nível conceitual. Nele trazemos as representações de nossas entidades, os atributos de cada uma delas e, por fim, cada relacionamento existente entre as entidades. Isso permite visualizar como os dados estão organizados e como as entidades se relacionam no sistema de informações.
@@ -98,15 +96,18 @@ O DE-R baseia-se no ME-R e traz uma representação, no formato de diagrama, sob
 
 O DLD serve para especificar a um nível mais lógico as entidades, cada atributo com seus tipos (literal, inteiro, por exemplo), bem como os relacionamentos e as chaves de cada entidade - primárias ou estrangeiras. É uma representação gráfica que ilustra a estrutura lógica de um banco de dados, ele funciona como uma representação visual que orienta a implementação efetiva do banco de dados.
 
-<!-- #### Usuários
+#### Usuários
 ![Diagrama Usuarios](../assets/arquitetura/diagrama_usuario.png)
 
 #### Escolas
 ![Diagrama Escolas](../assets/arquitetura/diagrama_escola.png)
 
 #### UPS (Rodovias e Sinistros)
-![Diagrama Rodovias](../assets/arquitetura/diagrama_rodovias.png)
-![Diagrama Sinistros](../assets/arquitetura/diagrama_sinistros.png) -->
+
+<div>
+<img src="../../assets/arquitetura/diagrama_rodovias.png" height="100">
+<img src="../../assets/arquitetura/diagrama_sinistros.png" height="100">
+</div>
 
 ## Referências
 
