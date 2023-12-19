@@ -14,15 +14,15 @@
 
 &emsp;&emsp;Como esses dados se referem ao ano de 2015, há a necessidade de corrigir o valor para o ano de 2023 de acordo com a inflação. Após aplicar essa correção utilizando a calculadora de inflação do [IBGE](https://www3.bcb.gov.br/CALCIDADAO/publico/corrigirPorIndice.do?method=corrigirPorIndice#), o valor passa a ser R$ 61.955,77 por ano
 
-&emsp;&emsp;Para além disso, essa estimativa, leva também em consideração o curso da equipe, Engenharia de Software, que é um curso de 5 anos, de 232 créditos. Considerando também as 17 semanas de projeto e os 14 integrantes da equipe, temos os seguintes cálculos:
+&emsp;&emsp;Para além disso, essa estimativa leva em consideração o curso da equipe, Engenharia de Software, que é um curso de 5 anos, de 232 créditos. Considerando também as 17 semanas de projeto e os 14 integrantes da equipe, temos os seguintes cálculos:
 
 - **Custo médio por crédito**: custo médio anual por integrante x quantidade padrão de anos de curso ÷ quantidade de créditos para formação no curso **`61.955,77 x 5 ÷ 232 = R$ 1.335,25`**
 
-- **Custo médio por integrante na disciplina de EPS/MDS**: custo médio por crédito x quantidade de créditos da disciplina e extraclasse **`1.335,25 x (4 + 6) = R$ 13.352,50`**
+- **Custo médio por integrante na disciplina de EPS/MDS**: custo médio por crédito x quantidade de créditos da disciplina e extraclasse **`1.335,25 x 4 = R$ 5.341,01`**
 
-- **Custo TOTAL por equipe**: custo médio por integrante na disciplina de EPS/MDS x quantidade de integrantes da equipe **`13.352,50 x 14 = R$ 186.935,00`**
+- **Custo TOTAL por equipe**: custo médio por integrante na disciplina de EPS/MDS x quantidade de integrantes da equipe **`5.341,01 x 14 = R$ 74.774,21`**
 
-- **Custo médio semanal por equipe**: custo TOTAL por equipe ÷ quantidade de semanas do projeto **`186.935,00 ÷ 17 = R$ 10.996,18`**
+- **Custo médio semanal por equipe**: custo TOTAL por equipe ÷ quantidade de semanas do projeto **`74.774,21 ÷ 17 = R$ 4.398,48`**
 
 ### 2.2. Equipamentos
 
@@ -68,9 +68,9 @@
 
     custo pessoas + custo equipamentos + custo ferramentas + custo capacitação + custo infraestrutura
 
-    R$ 186.935,00 + R$ 42.000,00 + R$ 0,00 + R$ 0,00 + R$ 5.475,38 = R$ 234.410,38
+    R$ 70.375,72 + R$ 42.000,00 + R$ 0,00 + R$ 0,00 + R$ 5.475,38 = R$ 122.249,45
 
-&emsp;&emsp;Para o custo do MVP o cálculo se dá com base nas semanas a partir do início do desenvolvimento.Calculado para 8 semanas, o custo do MVP é de R$ 132.546,24.
+&emsp;&emsp;Para o custo do MVP o cálculo se dá com base nas semanas a partir do início do desenvolvimento.Calculado para 8 semanas, o custo do MVP é de R$ 79.764,45.
 
 ## 4. Planilha de custos
 
@@ -96,4 +96,5 @@
 |--------|-------------|--------------|
 |14/09/2023| Criação do documento | Yudi |
 |04/10/2023| Ajustes de Cálculos | Daniel Porto |
-|18/10/2023| Atualização do custo  do MVP e ajuste de formatação| Daniel Porto |
+|18/10/2023| Atualização do custo do MVP e ajuste de formatação| Daniel Porto |
+|19/12/2023| Correção do custo com recursos humanos | Daniel Porto |
