@@ -1,0 +1,1736 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../andamento/sprint8/">
+      
+      
+      
+      <link rel="icon" href="../assets/logos/dnitLogoBrancoFundoAzul.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.8">
+    
+    
+      
+        <title>Post-mortem - DNIT - Educação paro o trânsito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.046329b4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introducao" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="DNIT - Educação paro o trânsito" class="md-header__button md-logo" aria-label="DNIT - Educação paro o trânsito" data-md-component="logo">
+      
+  <img src="../assets/logos/dnitLogoBranco.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DNIT - Educação paro o trânsito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Post-mortem
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fga-eps-mds/2023.2-Dnit-DOC" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2023.2-DNIT-DOC
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../plano-monitoramento/plano-comunicacao/" class="md-tabs__link">
+          
+  
+  Plano e monitoramento
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../documentos-projeto/metodologias/" class="md-tabs__link">
+          
+  
+  Documentos do projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../visao-produto/lean-inception/" class="md-tabs__link">
+          
+  
+  Visão de Produto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../andamento/semana1/" class="md-tabs__link">
+          
+  
+  Andamento
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Post-mortem
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="DNIT - Educação paro o trânsito" class="md-nav__button md-logo" aria-label="DNIT - Educação paro o trânsito" data-md-component="logo">
+      
+  <img src="../assets/logos/dnitLogoBranco.png" alt="logo">
+
+    </a>
+    DNIT - Educação paro o trânsito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fga-eps-mds/2023.2-Dnit-DOC" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2023.2-DNIT-DOC
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CONTRIBUTING/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guia de contribuição
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CODE_OF_CONDUCT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Código de conduta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Plano e monitoramento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Plano e monitoramento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plano-monitoramento/plano-comunicacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de comunicação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plano-monitoramento/plano-custos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de custos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plano-monitoramento/plano-qualidade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de qualidade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plano-monitoramento/plano-riscos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de riscos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plano-monitoramento/EVM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EVM Agile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Documentos do projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Documentos do projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentos-projeto/metodologias/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metodologias
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentos-projeto/eap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EAP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentos-projeto/arquitetura/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documento de Arquitetura
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentos-projeto/identidade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Identidade Visual
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentos-projeto/identidadeVisual/Componentes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Componentes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentos-projeto/planejadoXexecutado/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Planejado X Executado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentos-projeto/manual-implantacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manual de Implantação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Visão de Produto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Visão de Produto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visao-produto/lean-inception/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lean Inception
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Andamento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Andamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pré-sprints
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Pré-sprints
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/semana1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/semana2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/semana3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/semana4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/semana5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/semana6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sprints
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Sprints
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/sprint-teste/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint Teste
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/sprint1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/sprint2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/sprint3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/sprint4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/sprint5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/sprint6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/sprint7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/sprint8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Post-mortem
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Post-mortem
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-voce-gostou-no-projeto" class="md-nav__link">
+    O que você gostou no projeto?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-poderia-ser-melhorado" class="md-nav__link">
+    O que poderia ser melhorado?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quais-pontos-positivos-da-sua-experiencia-na-disciplina" class="md-nav__link">
+    Quais pontos positivos da sua experiência na disciplina?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quais-pontos-negativos-da-sua-experiencia-na-disciplina" class="md-nav__link">
+    Quais pontos negativos da sua experiência na disciplina?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quais-foram-as-licoes-aprendidas-com-a-materia-e-o-projeto" class="md-nav__link">
+    Quais foram as lições aprendidas com a matéria e o projeto?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-os-proximos-desenvolvedores" class="md-nav__link">
+    Para os próximos desenvolvedores
+  </a>
+  
+    <nav class="md-nav" aria-label="Para os próximos desenvolvedores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recomendacoes-futuras" class="md-nav__link">
+    Recomendações Futuras
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evolucao-do-software" class="md-nav__link">
+    Evolução do Software
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versionamento" class="md-nav__link">
+    Versionamento
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-voce-gostou-no-projeto" class="md-nav__link">
+    O que você gostou no projeto?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-poderia-ser-melhorado" class="md-nav__link">
+    O que poderia ser melhorado?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quais-pontos-positivos-da-sua-experiencia-na-disciplina" class="md-nav__link">
+    Quais pontos positivos da sua experiência na disciplina?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quais-pontos-negativos-da-sua-experiencia-na-disciplina" class="md-nav__link">
+    Quais pontos negativos da sua experiência na disciplina?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quais-foram-as-licoes-aprendidas-com-a-materia-e-o-projeto" class="md-nav__link">
+    Quais foram as lições aprendidas com a matéria e o projeto?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-os-proximos-desenvolvedores" class="md-nav__link">
+    Para os próximos desenvolvedores
+  </a>
+  
+    <nav class="md-nav" aria-label="Para os próximos desenvolvedores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recomendacoes-futuras" class="md-nav__link">
+    Recomendações Futuras
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evolucao-do-software" class="md-nav__link">
+    Evolução do Software
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versionamento" class="md-nav__link">
+    Versionamento
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Post-mortem</h1>
+
+<h2 id="introducao">Introdução</h2>
+<p>Este documento apresenta as lições aprendidas durante o semestre, tanto sobre
+a parte da disciplina quanto da parte do projeto.</p>
+<p>Ao final, são dadas sugestões de melhorias e recomendações para a equipe
+que vai assumir no futuro.</p>
+<p>As perguntas a seguir foram feitas para os integrantes do grupo em formulário
+e suas respostas são apresentadas de forma resumida:</p>
+<h2 id="o-que-voce-gostou-no-projeto">O que você gostou no projeto?</h2>
+<ul>
+<li>Motivação e impacto do projeto: descobrir as escolas que mais precisam de 
+ações do DNIT para então realizar ações sobre educação no trânsito</li>
+<li>O contato com clientes e usuários reais evidenciou os efeitos da entrega 
+contínua de valor resultando na satisfação deles. </li>
+<li>Experiência real de um projeto no mercado profissional</li>
+<li>Colaboração dos integrantes da equipe</li>
+<li>Tecnologias utilizadas (.NET, React, PostgreSQL)</li>
+<li>Constante busca por resultados pela equipe</li>
+<li>Expressamos nossa sincera gratidão aos mentores Denys e Fernando, cujo apoio 
+foi fundamental durante todo o andamento do projeto. Eles estiveram sempre 
+disponíveis para nos auxiliar quando necessário, tornando-se imprescindíveis 
+para o nosso progresso. Estamos profundamente gratos pela dedicação e 
+orientação recebidas</li>
+</ul>
+<h2 id="o-que-poderia-ser-melhorado">O que poderia ser melhorado?</h2>
+<ul>
+<li>Como houve gargalos no processo de validação de histórias de usuário com o 
+cliente, entre o meio e o fim do semestre estipulamos uma reunião extra 
+recorrente às quartas para  resolver o que faltava. Deveríamos ter começado 
+isso desde o início do semestre</li>
+<li>Tornar os clientes mais próximos da equipe, para assim tornar possível uma 
+boa experiência do usuário com o produto</li>
+<li>Colocar mais cedo os integrantes de MDS para programar nos repositórios</li>
+<li>Cobrir algumas bases teóricas (ex: banco de dados e arquitetura) para os 
+integrantes de MDS</li>
+<li>Realçar desde o começo do projeto a interação e a confiabilidade entre os 
+times, tanto por parte de EPS e MDS</li>
+<li>O código das partes mais complexas poderia ter comentários mais explicativos 
+sobre seu funcionamento</li>
+<li>A reusabilidade de código no front pode ser melhorada</li>
+</ul>
+<h2 id="quais-pontos-positivos-da-sua-experiencia-na-disciplina">Quais pontos positivos da sua experiência na disciplina?</h2>
+<ul>
+<li>Didática simples porém eficaz, a riqueza das experiências do professor passadas 
+em aula, torna um aula cativante, e permite que os alunos tenham uma visão 
+mais privilegiada do mercado de software</li>
+<li>Aprender como otimizar um projeto para ter resultados rápidos e relevantes</li>
+<li>Muito aprendizado prático e trabalho em equipe</li>
+<li>Aprender e aplicar conceitos importantes sobre o ciclo de vida do software</li>
+<li>Experiência em gerenciar uma equipe</li>
+<li>Colocar os métodos ágeis em prática e aprimorar o trabalho em equipe</li>
+<li>Trabalhar com uma equipe de diferentes níveis</li>
+<li>Passar por problemas e obstáculos que vão além da equipe de desenvolvimento e
+saber como lidar com isso</li>
+<li>Interagir com pessoas que ensinaram muito sobre outros campos (ex: DevOps)</li>
+</ul>
+<h2 id="quais-pontos-negativos-da-sua-experiencia-na-disciplina">Quais pontos negativos da sua experiência na disciplina?</h2>
+<ul>
+<li>Dificuldade de validação de algumas histórias de usuário que acabaram 
+aumentando bastante o volume de trabalho ainda em um espaço curto de tempo</li>
+<li>A disciplina exige <em>muito</em> tempo, muito mais do que previsto inicialmente. Isso 
+dificultou o conciliamento com outras disciplinas</li>
+<li>Infelizmente o professor ficou afastado um tempo por questão de saúde. Isso
+prejudicou na questão de conteúdo teórico e no acompanhamento dele do projeto</li>
+<li>Falta de tempo para melhorar a base de código (sem focar em entregar novas
+funcionalidades)</li>
+</ul>
+<h2 id="quais-foram-as-licoes-aprendidas-com-a-materia-e-o-projeto">Quais foram as lições aprendidas com a matéria e o projeto?</h2>
+<ul>
+<li>Cobrir pelo menos 80% do código ajuda a evitar que o código tenha um 
+comportamento inesperado</li>
+<li>Falta de cobertura de testes não é um fator impedidor para mandar a funcionalidade 
+para produção. É uma questão que envolve muito bom senso, coragem e uma 
+relativa experiência</li>
+<li>O desenvolvimento de software é um processo contínuo e que requer organização,
+não só no nível pessoal mas também no coletivo. As metodologias ágeis ajudam o 
+desenvolvimento de um bom produto de software, assim como um bom trabalho em equipe</li>
+<li>Não adianta a ideia parecer interessante para a equipe de desenvolvimento
+se o usuário não vê valor nela. Nosso trabalho é atender as necessidades dos
+clientes e usuários</li>
+<li>No fase de planejamento deve ser considerado o ritmo do cliente. Não adianta 
+planejar muita funcionalidade se ele só consegue validade metade delas ou menos</li>
+<li>O fluxo consistente de entrega de funcionalidades e validação constrói um bom 
+relacionamento entre equipe de desenvolvedores e cliente e estimula confiança
+entre todos os envolvidos</li>
+<li>É importante manter o projeto organizado, planejado e bem estruturado. Isso 
+oferece apoio em diferentes fatores dentro do ciclo de desenvolvimento de software, 
+além de ser algo estabelecido e um combinado firmado com o cliente, 
+o que não permite uma oscilação de escopo, principalmente para projetos com o 
+tempo bem estabelecido e que não seja flexível, também ajuda no entendimento do 
+valor e do que está sendo entregue para o seu cliente</li>
+</ul>
+<h2 id="para-os-proximos-desenvolvedores">Para os próximos desenvolvedores</h2>
+<h3 id="recomendacoes-futuras">Recomendações Futuras</h3>
+<ul>
+<li>Garantam que o SonnarCloud esteja coletando todas as 12 métricas pedidas pelo 
+professor desde o início do projeto.</li>
+<li>Acompanhem a disciplina com um material online, provavelmente cursos gratuitos
+no youtube para que não passem tanta dificuldade na hora de desenvolver</li>
+<li>Não criem os repositórios de vocês forkando os nossos repositórios. Se vocês fizerem
+isso fica <em>muito fácil</em> abrir uma PR para o repositório errado</li>
+<li>Analisar melhores maneiras de validação com os clientes, para tentar obter
+respostas mais rápidas e reduzir a possibilidade de atrasos por parte deles</li>
+<li>Ter uma reunião separada da reunião principal somente para a validação de 
+requisitos e protótipos</li>
+<li>Sempre estabelecer um prazo para os clientes validarem as funcionalidades entregues</li>
+<li>Para os desenvolvedores, tenham sempre um tempo extra de segurança para a 
+validação por parte dos POs para não depender da pontualidade deles</li>
+<li>Busquem consistemente validar as histórias de usuário para que não sobrecarregue o time</li>
+<li>Para os de MDS, procurem buscar mais autonomia o quanto antes</li>
+<li>A depender de quantas novas funcionalidades forem levantadas, foquem bastante 
+em refatorações, seja de código ou na interface do sistema, para melhorar a 
+manutenibilidade do projeto, a experiência do usuário com o produto e tornar o 
+código de fácil entendimento para a futura equipe de software que será 
+responsável no DNIT</li>
+<li>Para os gerentes, fiquem sempre atentos às demandas dos desenvolvedores, porque
+eles são alunos e são comprometidos também por diversas matérias</li>
+<li>👽 Busquem conhecimento</li>
+<li>Tentar envolver os dois POs também na resposta aos formulários de aceitação.</li>
+<li>Otimizar o Lean Inception para não perder tempo hábil</li>
+<li>Ensiram os membros de MDS na codificação dos repositórios o quanto antes</li>
+</ul>
+<h3 id="evolucao-do-software">Evolução do Software</h3>
+<ul>
+<li>Uso de tecnologias e algoritmos para proporcionar um cálculo de custo 
+logístico mais realista, que não se baseia apenas na distância entre coordenadas
+ao polo. A distância deve considerar o caminho percorrido em ruas e estradas
+no caso do cálculo do ranque e da distância dos polos</li>
+<li>Medir e otimizar cálculo/processamento de rank e de custo logístico<ul>
+<li>Desenvolver uma estratégia para gerenciar o lançamento de jobs </li>
+<li>O cálculo de ranque (para 200 escolas e 300.000 sinistros) dura tipicamente
+menos que 5 minutos. Imagine 150 milhões de escolas</li>
+</ul>
+</li>
+<li>Atualmente a comunicação entre serviços (<code>EscolaService &lt;-&gt; UpsService</code>, 
+por exemplo), acontece por requisições HTTP. Pode ser interessante pensar em 
+diferentes formas de comunicação como filas de mensagens (brokers) ou chamadas
+remotas (ex: gRPC)</li>
+<li>Ao atualizar as distâncias das escolas para algum polo ou superintendência, 
+por ser um processo lento e demorado, seria legal tirar esse recálculo 
+automatizado e implementar uma página específica para a atualização dessas distâncias
+conhecimento técnico pois <strong>os clientes esperam um sistema de recomendação</strong></li>
+<li>Refatorar cadastro de escolas com o componente de cadastro de escolas</li>
+<li>No semestre anterior, as mensagens de erro das APIs para o frontend eram 
+apenas strings. Esse semestre começamos a usar <code>ApiException</code> como maneira 
+padrão de retornar erros das APIs, mas não conseguimos usar isso em toda a base
+de código, então atualmente os erros são retornados de dois jeitos. É recomendado
+que a próxima equipe escolha apenas uma como padrão (preferencialmente a última)
+e adote-a para toda os endpoints e para todas as APIs</li>
+<li>Atualmente é possível criar uma única escola a partir de uma solicitação. O 
+relacionamento <code>Solicitacao-&gt;Escola</code> já está sendo realizado. Mas <strong>ainda
+falta</strong> implementar a realização desse relacionamento ao criar várias escolas por 
+aquivo CSV</li>
+<li>Onde for possível, traduzir nomes de classes e variáveis para português, tanto
+no frontend quanto nos backends</li>
+<li>Verificar os endpoints de todas as APIs a fim de entendê-los </li>
+<li>Refatorar o código tornando-o mais fácil de entender e de realizar manutenções</li>
+<li>Tem alguns erros que são mostradas no Front mas não deixam 
+muito claro para o usuário qual erro está sendo mostrado. Uma possibilidade é 
+utilizar o construtor <code>ExcessoesApi</code> e modelar a saída do erro mostrado pelo Back.</li>
+<li>Não é um bug, mas ao entrar em uma página, seria conveniente ter um scroll 
+automático para o topo</li>
+<li>O cliente demonstrou interesse em que toda tabela do sistema seja exportável 
+para uma planilha. Nesse semestre, isso foi implementado em apenas duas tabelas</li>
+<li>No frontend existe muita classe que está interferindo em componentes de outros 
+arquivos, então a manutenção de alguns componentes é muito dificultada por esse 
+fator. Talvez pensar em alguma forma de mudar isso sem afetar os estilos já 
+existentes</li>
+<li>Muita coisa foi refatorada no frontend, mas ainda tem muita coisa fora do padrão 
+do governo. Existe toda uma oportunidade para implementar uma costomização do 
+usuário sobre os próprios dados</li>
+<li>A responsividade do frontend ainda deixa a desesejar. Para efeito de teste, 
+abra em um navegador minimizado ou em um smartphone para verificar os 
+redimencionamentos que não estão funcionando</li>
+</ul>
+<h2 id="versionamento">Versionamento</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Data</strong></th>
+<th><strong>Descrição</strong></th>
+<th><strong>Autore(es)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>09/12/2023</td>
+<td>Criação do documento</td>
+<td>Yudi</td>
+</tr>
+<tr>
+<td>10/12/2023</td>
+<td>Correção de português</td>
+<td>Rafael</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs"], "search": "../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  </body>
+</html>

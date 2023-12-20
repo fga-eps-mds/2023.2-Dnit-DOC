@@ -1,0 +1,2332 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../eap/">
+      
+      
+        <link rel="next" href="../identidade/">
+      
+      
+      <link rel="icon" href="../../assets/logos/dnitLogoBrancoFundoAzul.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.8">
+    
+    
+      
+        <title>Documento de Arquitetura - DNIT - Educação paro o trânsito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documento-de-arquitetura" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="DNIT - Educação paro o trânsito" class="md-header__button md-logo" aria-label="DNIT - Educação paro o trânsito" data-md-component="logo">
+      
+  <img src="../../assets/logos/dnitLogoBranco.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DNIT - Educação paro o trânsito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Documento de Arquitetura
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fga-eps-mds/2023.2-Dnit-DOC" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2023.2-DNIT-DOC
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../plano-monitoramento/plano-comunicacao/" class="md-tabs__link">
+          
+  
+  Plano e monitoramento
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../metodologias/" class="md-tabs__link">
+          
+  
+  Documentos do projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../visao-produto/lean-inception/" class="md-tabs__link">
+          
+  
+  Visão de Produto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../andamento/semana1/" class="md-tabs__link">
+          
+  
+  Andamento
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../post-mortem/" class="md-tabs__link">
+        
+  
+    
+  
+  Post-mortem
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="DNIT - Educação paro o trânsito" class="md-nav__button md-logo" aria-label="DNIT - Educação paro o trânsito" data-md-component="logo">
+      
+  <img src="../../assets/logos/dnitLogoBranco.png" alt="logo">
+
+    </a>
+    DNIT - Educação paro o trânsito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fga-eps-mds/2023.2-Dnit-DOC" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2023.2-DNIT-DOC
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CONTRIBUTING/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guia de contribuição
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CODE_OF_CONDUCT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Código de conduta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Plano e monitoramento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Plano e monitoramento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plano-monitoramento/plano-comunicacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de comunicação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plano-monitoramento/plano-custos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de custos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plano-monitoramento/plano-qualidade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de qualidade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plano-monitoramento/plano-riscos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de riscos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plano-monitoramento/EVM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EVM Agile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Documentos do projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Documentos do projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metodologias/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metodologias
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EAP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Documento de Arquitetura
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Documento de Arquitetura
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    Introdução
+  </a>
+  
+    <nav class="md-nav" aria-label="Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    Visão Geral
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tecnologias" class="md-nav__link">
+    Tecnologias
+  </a>
+  
+    <nav class="md-nav" aria-label="Tecnologias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgresql" class="md-nav__link">
+    PostgreSQL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#net" class="md-nav__link">
+    .NET
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xunit" class="md-nav__link">
+    xUnit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#react" class="md-nav__link">
+    React
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jest" class="md-nav__link">
+    Jest
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#representacao-arquitetural" class="md-nav__link">
+    Representação Arquitetural
+  </a>
+  
+    <nav class="md-nav" aria-label="Representação Arquitetural">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontend-react" class="md-nav__link">
+    Frontend (React)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microsservicos" class="md-nav__link">
+    Microsserviços
+  </a>
+  
+    <nav class="md-nav" aria-label="Microsserviços">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usuarioservice" class="md-nav__link">
+    UsuarioService
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escolaservice" class="md-nav__link">
+    EscolaService
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upsservice" class="md-nav__link">
+    UpsService
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banco-de-dados-postgresql" class="md-nav__link">
+    Banco de Dados (PostgreSQL)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visoes-do-sistema" class="md-nav__link">
+    Visões do Sistema
+  </a>
+  
+    <nav class="md-nav" aria-label="Visões do Sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modelagem-de-dados" class="md-nav__link">
+    Modelagem de Dados
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visao-de-implantacao" class="md-nav__link">
+    Visão de Implantação
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visao-logica" class="md-nav__link">
+    Visão Lógica
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-de-pacotes" class="md-nav__link">
+    Diagrama de Pacotes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#me-r-modelo-entidade-relacionamento" class="md-nav__link">
+    ME-R (Modelo Entidade-Relacionamento)
+  </a>
+  
+    <nav class="md-nav" aria-label="ME-R (Modelo Entidade-Relacionamento)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usuarioservice_1" class="md-nav__link">
+    UsuarioService
+  </a>
+  
+    <nav class="md-nav" aria-label="UsuarioService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entidades" class="md-nav__link">
+    Entidades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atributos" class="md-nav__link">
+    Atributos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relacionamentos" class="md-nav__link">
+    Relacionamentos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escolaservice_1" class="md-nav__link">
+    EscolaService
+  </a>
+  
+    <nav class="md-nav" aria-label="EscolaService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entidades_1" class="md-nav__link">
+    Entidades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atributos_1" class="md-nav__link">
+    Atributos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relacionamentos_1" class="md-nav__link">
+    Relacionamentos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upsservice_1" class="md-nav__link">
+    UpsService
+  </a>
+  
+    <nav class="md-nav" aria-label="UpsService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entidades_2" class="md-nav__link">
+    Entidades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atributos_2" class="md-nav__link">
+    Atributos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#de-r-diagrama-entidade-relacionamento" class="md-nav__link">
+    DE-R (Diagrama Entidade-Relacionamento)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dld-diagrama-logico-de-dados" class="md-nav__link">
+    DLD (Diagrama Lógico de Dados)
+  </a>
+  
+    <nav class="md-nav" aria-label="DLD (Diagrama Lógico de Dados)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usuarios" class="md-nav__link">
+    Usuários
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escolas" class="md-nav__link">
+    Escolas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ups-rodovias-e-sinistros" class="md-nav__link">
+    UPS (Rodovias e Sinistros)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versionamento" class="md-nav__link">
+    Versionamento
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../identidade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Identidade Visual
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../identidadeVisual/Componentes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Componentes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../planejadoXexecutado/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Planejado X Executado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual-implantacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manual de Implantação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Visão de Produto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Visão de Produto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao-produto/lean-inception/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lean Inception
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Andamento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Andamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pré-sprints
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Pré-sprints
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/semana1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/semana2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/semana3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/semana4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/semana5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/semana6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sprints
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Sprints
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint-teste/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint Teste
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../post-mortem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Post-mortem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    Introdução
+  </a>
+  
+    <nav class="md-nav" aria-label="Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    Visão Geral
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tecnologias" class="md-nav__link">
+    Tecnologias
+  </a>
+  
+    <nav class="md-nav" aria-label="Tecnologias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgresql" class="md-nav__link">
+    PostgreSQL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#net" class="md-nav__link">
+    .NET
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xunit" class="md-nav__link">
+    xUnit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#react" class="md-nav__link">
+    React
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jest" class="md-nav__link">
+    Jest
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#representacao-arquitetural" class="md-nav__link">
+    Representação Arquitetural
+  </a>
+  
+    <nav class="md-nav" aria-label="Representação Arquitetural">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontend-react" class="md-nav__link">
+    Frontend (React)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microsservicos" class="md-nav__link">
+    Microsserviços
+  </a>
+  
+    <nav class="md-nav" aria-label="Microsserviços">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usuarioservice" class="md-nav__link">
+    UsuarioService
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escolaservice" class="md-nav__link">
+    EscolaService
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upsservice" class="md-nav__link">
+    UpsService
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banco-de-dados-postgresql" class="md-nav__link">
+    Banco de Dados (PostgreSQL)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visoes-do-sistema" class="md-nav__link">
+    Visões do Sistema
+  </a>
+  
+    <nav class="md-nav" aria-label="Visões do Sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modelagem-de-dados" class="md-nav__link">
+    Modelagem de Dados
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visao-de-implantacao" class="md-nav__link">
+    Visão de Implantação
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visao-logica" class="md-nav__link">
+    Visão Lógica
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-de-pacotes" class="md-nav__link">
+    Diagrama de Pacotes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#me-r-modelo-entidade-relacionamento" class="md-nav__link">
+    ME-R (Modelo Entidade-Relacionamento)
+  </a>
+  
+    <nav class="md-nav" aria-label="ME-R (Modelo Entidade-Relacionamento)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usuarioservice_1" class="md-nav__link">
+    UsuarioService
+  </a>
+  
+    <nav class="md-nav" aria-label="UsuarioService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entidades" class="md-nav__link">
+    Entidades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atributos" class="md-nav__link">
+    Atributos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relacionamentos" class="md-nav__link">
+    Relacionamentos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escolaservice_1" class="md-nav__link">
+    EscolaService
+  </a>
+  
+    <nav class="md-nav" aria-label="EscolaService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entidades_1" class="md-nav__link">
+    Entidades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atributos_1" class="md-nav__link">
+    Atributos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relacionamentos_1" class="md-nav__link">
+    Relacionamentos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upsservice_1" class="md-nav__link">
+    UpsService
+  </a>
+  
+    <nav class="md-nav" aria-label="UpsService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entidades_2" class="md-nav__link">
+    Entidades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atributos_2" class="md-nav__link">
+    Atributos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#de-r-diagrama-entidade-relacionamento" class="md-nav__link">
+    DE-R (Diagrama Entidade-Relacionamento)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dld-diagrama-logico-de-dados" class="md-nav__link">
+    DLD (Diagrama Lógico de Dados)
+  </a>
+  
+    <nav class="md-nav" aria-label="DLD (Diagrama Lógico de Dados)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usuarios" class="md-nav__link">
+    Usuários
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escolas" class="md-nav__link">
+    Escolas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ups-rodovias-e-sinistros" class="md-nav__link">
+    UPS (Rodovias e Sinistros)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versionamento" class="md-nav__link">
+    Versionamento
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="documento-de-arquitetura">Documento de Arquitetura</h1>
+<h2 id="introducao">Introdução</h2>
+<p>Este documento tem como objetivo detalhar a arquitetura do projeto e a visão de dados, apresentando uma visão geral do projeto, as tecnologias utilizadas e a visão de dados.</p>
+<p>Através desse documento, é possível obter um melhor entendimento da arquitetura do projeto, permitindo ao leitor a compreensão do funcionamento do sistema e as abordagens utilizadas para o seu desenvolvimento.</p>
+<h3 id="visao-geral">Visão Geral</h3>
+<p>Este documento está estruturado da seguinte forma: - Introdução - Tecnologias - Representação Arquitetural - Visões do Sistema - Referências - Versionamento</p>
+<h2 id="tecnologias">Tecnologias</h2>
+<h3 id="postgresql">PostgreSQL</h3>
+<p>O PostgreSQL é um SGBD objeto-relacional que suporta grande parte do padrão SQL e disponibiliza recursos modernos, como chaves estrangeiras, triggers e consultas complexas. Uma de suas principais vantagens é o fato de ser uma ferramenta de código aberto que pode ser usada para fins privados, comerciais e acadêmicos.</p>
+<h3 id="net">.NET</h3>
+<p>O ASP.NET, utilizado para o back-end da aplicação, é um framework de código aberto que permite a criação de serviços usando .NET e C#. É um framework rápido, escalonável e seguro, que possui recursos internos de proteção contra ameaças de segurança. Além disso, o fato da instituição cliente já estar familiarizada com .NET foi determinante para a escolha dessa tecnologia, a fim de facilitar a futura manutenção do software.</p>
+<h3 id="xunit">xUnit</h3>
+<p>Para os testes do back-end foi escolhido o xUnit, uma ferramenta gratuita de código aberto com foco em testes unitários para aplicações .NET. É muito utilizada por ser simples, extensível e compatível com ferramentas de execução de teste.</p>
+<h3 id="react">React</h3>
+<p>O React é uma biblioteca Javascript altamente flexível que permite a construção de interfaces de usuário interativas e responsivas. A construção das aplicações é feita por meio de componentes que possibilitam uma alta reutilização de código.</p>
+<h3 id="jest">Jest</h3>
+<p>Para os testes do front-end será usado o Jest, um framework de testes em Javascript simples, rápido e seguro. Permite escrever testes com uma API acessível, bem documentada e forncece relatórios de cobertura de código.</p>
+<h2 id="representacao-arquitetural">Representação Arquitetural</h2>
+<p>A arquitetura do projeto consiste no front-end e 3 microsserviços no back-end, sendo o primeiro para a gestão dos usuários, o segundo para a gestão das escolas e o terceiro para lidar com os cálculos e cadastros necessários para o cálculo do UPS (Unidade Padrão de Severidade).</p>
+<p><img alt="Diagrama de Arquitetura" src="../../assets/arquitetura/Diagrama_Arquitetura.png" /></p>
+<h3 id="frontend-react">Frontend (React)</h3>
+<p>O Frontend é a aplicação que o usuário acessa diretamente. <code>React</code> é uma biblioteca Javascript que permite a criação de interfaces de usuário interativas e responsivas atráves de componentes que permitem o reuso de código.</p>
+<h3 id="microsservicos">Microsserviços</h3>
+<p>Microsserviços são um estilo de arquitetura em que um conjunto de serviços se comunicam por meio de APIs mais leves. Essa forma de construir aplicações permite a separação de responsabilidades entre os diferentes componentes de um sistema, tornando-os independentes e mais escaláveis, além de facilitar a manutenção e evolução do software.</p>
+<h4 id="usuarioservice">UsuarioService</h4>
+<p>Microsserviço para autenticação e autorização dos usuários.</p>
+<h4 id="escolaservice">EscolaService</h4>
+<p>Microsserviço responsável pelas funcionalidades relacionadas ao cáculo de ranque
+de escolas, configuração de prioridades, gerência de escola, de polos e etc.</p>
+<h4 id="upsservice">UpsService</h4>
+<p>Microsserviço responsável pelas funcionalidades relacionadas à 
+gerência de sinistros, de rodovias e cálculo de UPS de escolas.</p>
+<h3 id="banco-de-dados-postgresql">Banco de Dados (PostgreSQL)</h3>
+<p>O PostgreSQL é um SGBD (Sistema Gerenciador de Banco de Dados) de código aberto. Cada microsserviço se comunicará com um banco de dados respectivo - o UsuarioService se comunicará com o UsuarioDB, por exemplo. Os diferentes bancos de dados têm flexibilidade quanto a ficarem em uma instância ou múltiplas instâncias do SGBD.</p>
+<h2 id="visoes-do-sistema">Visões do Sistema</h2>
+<h3 id="modelagem-de-dados">Modelagem de Dados</h3>
+<p>A modelagem de dados é um processo fundamental na área de gerenciamento de informações. Envolve a criação de representações estruturadas que descrevem entidades, relacionamentos e atributos dos dados, permitindo uma compreensão clara e organizada dos mesmos. Através da modelagem de dados, é possível criar diagramas que retratam de forma visual como os dados estão relacionados entre si, facilitando a análise, a tomada de decisões e o desenvolvimento de sistemas de informação eficientes. Os diagramas a seguir apresentam a organização dos dados em seus respectivos bancos de dados.</p>
+<h3 id="visao-de-implantacao">Visão de Implantação</h3>
+<p>A visão de implantação tem como objetivo descrever a implementação física de informações geradas pelo programa de software em componentes de hardware e é utilizada no fluxo de trabalho de Análise &amp; Design. Essa visão ilustra a distribuição do processamento em um conjunto de nós do sistema, incluindo a distribuição física dos processos e threads. Durante cada iteração do processo de desenvolvimento, essa visão é refinada para mostrar de forma mais clara a distribuição física do processamento no sistema. As caixas tridimensionais conhecidas como nódulos (nós), representam os elementos básicos de software ou hardware, ou nódulos no sistema. As linhas de nódulo a nódulo indicam relacionamentos e as formas menores contidas dentro das caixas representam os artefatos de software empregados. O diagrama de implantação pode ser visto a seguir.</p>
+<p><img alt="Diagrama de Implantação" src="../../assets/arquitetura/diagrama_implementacao.png" /></p>
+<h3 id="visao-logica">Visão Lógica</h3>
+<p>A visão lógica do sistema se concentra na estruturação do sistema em unidades de implementação, como pacotes, classes e interfaces. Nessa visão, é possível identificar as dependências entre esses elementos, bem como as realizações de interface e os relacionamentos parte-todo, entre outras relações relevantes para a estruturação lógica do sistema. O diagrama lógico de dados (DLD) apresentado ao final deste documento representa essa visão.</p>
+<h3 id="diagrama-de-pacotes">Diagrama de Pacotes</h3>
+<p>O Diagrama de Pacotes é um diagrama de estrutura UML que descreve a estrutura do sistema projetado no nível de pacotes. São comumente usados para simplificar os diagramas de classe complexos e organizar as classes em pacotes, oferecendo uma valiosa visibilidade de alto nível para grandes projetos e sistemas. Nesse projeto, a utilização desse diagrama visa apresentar de forma clara a aquitetura de pacotes que serão usadas no desenvolvimento, apresentando os componentes, interfaces e dependências do software. Os diagramas de pacotes do frontend e dos 3 microsserviços podem ser vistas abaixo.</p>
+<p><img alt="Diagrama de Pacotes do Frontend" src="../../assets/arquitetura/diagrama_Pac_Front.png" />
+<img alt="Diagrama de Pacotes do UpsService" src="../../assets/arquitetura/diagrama_Pac_UpsService.png" />
+<img alt="Diagrama de Pacotes do UsuarioService" src="../../assets/arquitetura/diagrama_Pac_UsuarioService.png" />
+<img alt="Diagrama de Pacotes do EscolaService" src="../../assets/arquitetura/diagrama_Pac_EscolaService.png" /></p>
+<h3 id="me-r-modelo-entidade-relacionamento">ME-R (Modelo Entidade-Relacionamento)</h3>
+<p>O ME-R representa o banco de dados em um nível conceitual. Nele trazemos as representações de nossas entidades, os atributos de cada uma delas e, por fim, cada relacionamento existente entre as entidades. Isso permite visualizar como os dados estão organizados e como as entidades se relacionam no sistema de informações.</p>
+<h4 id="usuarioservice_1">UsuarioService</h4>
+<h5 id="entidades">Entidades</h5>
+<pre><code>EMPRESA
+EMPRESAUFS
+MUNICIPIO
+PERFILPERMISSOES
+PERFIS
+REDEFINICAOSENHA
+USUARIO
+</code></pre>
+<h5 id="atributos">Atributos</h5>
+<ul>
+<li>EMPRESA (<ins>cnpj</ins>, razaoSocial)</li>
+<li>EMPRESAUFS(<ins>uf</ins>, <ins>empresaId</ins>)</li>
+<li>MUNICIPIO(<ins>id</ins>, nome, uf)</li>
+<li>PERFILPERMISSOES(<ins>id</ins>, perfilId, permissao)</li>
+<li>PERFIS(<ins>id</ins>, nome, tipo)</li>
+<li>REDEFINICAOSENHA(<ins>id</ins>, uuid, idUsuario)</li>
+<li>USUARIO(<ins>id</ins>, nome, email, senha, ufLotacao, perfilId, tokenAtualizacao, tokenAtualizacaoExpiracao, municipioId, associacao, empresaCnpj)</li>
+</ul>
+<h5 id="relacionamentos">Relacionamentos</h5>
+<pre><code>USUARIO - realiza - REDEFINICAOSENHA (n:m)
+Um USUARIO realiza uma ou mais REDEFINICAOSENHA, uma REDEFINICAOSENHA pode ser realizada por um ou mais USUARIO.
+
+PERFIS - possui - USUARIO (1:n)
+Um PERFIS possui um ou mais USUARIO, um USUARIO possui só e somente um único PERFIS.
+
+PERFIS - possui - PERFILPERMISSOES (n:m)
+Um PERFIS possui um ou mais PERFILPERMISSOES, um PERFILPERMISSOES é de um ou mais PERFIS.
+
+MUNICIPIO - possui - USUARIO (1:n)
+Um MUNICIPIO possui um ou mais USUARIO, um USUARIO possui só e somente um único MUNICIPIO.
+
+EMPRESA - possui - USUARIO (1:n)
+Um EMPRESA possui um ou mais USUARIO, um USUARIO possui só e somente um único EMPRESA.
+
+EMPRESA - possui - EMPRESAUFS (1:n)
+Um EMPRESA possui um ou mais EMPRESAUFS, um EMPRESAUFS possui só e somente um único EMPRESA.
+</code></pre>
+<h4 id="escolaservice_1">EscolaService</h4>
+<h5 id="entidades_1">Entidades</h5>
+<pre><code>CONDICAOVALORES
+CUSTOSLOGISTICOS
+ESCOLAETAPAENSINO
+ESCOLASRANQUES
+ESCOLAS
+FATORCONDICOES
+FATORESCOLAS
+FATORPRIORIZACOES
+FATORRANQUES
+MUNICIPIOS
+PLANEJAMENTOMACRO
+PLANEJAMENTOMACROESCOLA
+POLOS
+RANQUES
+SOLICITACOES
+</code></pre>
+<h5 id="atributos_1">Atributos</h5>
+<ul>
+<li>CONDICAOVALORES(<ins>id</ins>, fatorCondicaoId, valor)</li>
+<li>CUSTOSLOGISTICOS(<ins>custo</ins>, valor, raioMin, raioMax)</li>
+<li>ESCOLAETAPAENSINO(<ins>id</ins>, escolaId, etapaEnsino)</li>
+<li>ESCOLASRANQUES(<ins>id</ins>, escolaId, ranqueId, pontuacao, posicao)</li>
+<li>ESCOLA (<ins>id</ins>, nome, codigo, cep, endereco, latitude, longitude, totalAlunos, totalDocentes, telefone, rede, uf, localizacao, porte, situacao, municipioId, dataAtualizacaoUtc, ups, distanciaPolo, poloId)</li>
+<li>FATORCONDICOES(<ins>id</ins>, propriedade, operador, fatorPriorizacaoId)</li>
+<li>FATORESCOLAS(<ins>fatorPriorizacaoId</ins>, escolaId, valor)</li>
+<li>FATORPRIORIZACOES(<ins>id</ins>, nome, peso, ativo, primario, deleteTime)</li>
+<li>FATORRANQUES(<ins>fatorPriorizacaoId</ins>, ranqueId)</li>
+<li>MUNICIPIOS(<ins>id</ins>, nome, uf)</li>
+<li>PLANEJAMENTOMACRO(<ins>id</ins>, nome, responsavel, mesInicio, mesFim, anoInicio, anoFim, quantidadeAcoes)</li>
+<li>PLANEJAMENTOMACROESCOLA(<ins>id</ins>, mes, ano, planejamentoMacroId, escolaId)</li>
+<li>POLOS(<ins>id</ins>, endereco, cep, latitude, longitude, nome, municipioId, uf)</li>
+<li>RANQUES(<ins>id</ins>, dataInicioUtc, dataFimUtc, bateladasEmProgresso, descricao)</li>
+<li>SOLICITACOES(<ins>id</ins>, escolaUf, escolaMunicipioId, escolaCodigoInep, escolaNome, totalAlunos, escolaId, nomeSolicitante, email, vinculo, telefone, observacoes, dataRealizadaUtc)</li>
+</ul>
+<h5 id="relacionamentos_1">Relacionamentos</h5>
+<pre><code>FATORCONDICOES - possui - CONDICAOVALORES (1:n)
+Um FATORCONDICOES possui um ou mais CONDICAOVALORES, um CONDICAOVALORES possui só e somente um único FATORCONDICOES.
+
+ESCOLAS - possui - ESCOLAETAPAENSINO (n:m)
+Uma ESCOLAS possui uma ou mais ESCOLAETAPAENSINO, uma ESCOLAETAPAENSINO é de uma ou mais ESCOLAS.
+
+ESCOLAS - possui - ESCOLASRANQUES (1:n)
+Uma ESCOLAS possui uma ou mais ESCOLASRANQUES, uma ESCOLASRANQUES possui só e somente uma única ESCOLAS.
+
+RANQUES - possui - ESCOLASRANQUES (1:n)
+Um RANQUES possui uma ou mais ESCOLASRANQUES, uma ESCOLASRANQUES possui só e somente um único RANQUES.
+
+ESCOLAS - possui - SOLICITACOES (1:n)
+Uma ESCOLAS possui uma ou mais SOLICITACOES, uma SOLICITACOES possui só e somente uma única ESCOLAS.
+
+ESCOLAS - possui - PLANEJAMENTOMACROESCOLA (1:n)
+Uma ESCOLAS possui um ou mais PLANEJAMENTOMACROESCOLA, um PLANEJAMENTOMACROESCOLA possui só e somente uma única ESCOLAS.
+
+ESCOLAS - possui - FATORESCOLAS (1:n)
+Uma ESCOLAS possui um ou mais FATORESCOLAS, um FATORESCOLAS possui só e somente uma única ESCOLAS.
+
+MUNICIPIOS - possui - ESCOLAS (0:n)
+Um MUNICIPIOS possui zero ou mais ESCOLAS, uma ESCOLAS possui só e somente um único MUNICIPIOS.
+
+POLOS - possui - ESCOLAS (0:n)
+Um POLOS possui zero ou mais ESCOLAS, uma ESCOLAS possui só e somente um único POLOS.
+
+FATORPRIORIZACOES - possui - FATORCONDICOES (1:n)
+Um FATORPRIORIZACOES possui um ou mais FATORCONDICOES, um FATORCONDICOES possui só e somente um único FATORPRIORIZACOES.
+
+FATORPRIORIZACOES - possui - FATORESCOLAS (1:n)
+Um FATORPRIORIZACOES possui um ou mais FATORESCOLAS, um FATORESCOLAS possui só e somente um único FATORPRIORIZACOES.
+
+FATORPRIORIZACOES - possui - FATORRANQUES (1:n)
+Um FATORPRIORIZACOES possui um ou mais FATORRANQUES, um FATORRANQUES possui só e somente um único FATORPRIORIZACOES.
+
+RANQUES - possui - FATORRANQUES (1:n)
+Um RANQUES possui um ou mais FATORRANQUES, um FATORRANQUES possui só e somente um único RANQUES.
+
+MUNICIPIOS - possui - SOLICITACOES (0:n)
+Um MUNICIPIOS possui zero ou mais SOLICITACOES, uma SOLICITACOES possui só e somente um único MUNICIPIOS.
+
+MUNICIPIOS - possui - POLOS (0:n)
+Um MUNICIPIOS possui zero ou mais POLOS, um POLOS possui só e somente um único MUNICIPIOS.
+
+PLANEJAMENTOMACRO - possui - PLANEJAMENTOMACROESCOLA (1:n)
+Um PLANEJAMENTOMACRO possui um ou mais PLANEJAMENTOMACROESCOLA, um PLANEJAMENTOMACROESCOLA possui só e somente um único PLANEJAMENTOMACRO.
+</code></pre>
+<h4 id="upsservice_1">UpsService</h4>
+<h5 id="entidades_2">Entidades</h5>
+<pre><code>RODOVIAS
+SINISTROS
+</code></pre>
+<h5 id="atributos_2">Atributos</h5>
+<ul>
+<li>RODOVIA (<ins>id</ins>, uf, anoApuracao, numeroRodovia, tipoTrecho, codigoSnv, localInicioFim, kmInicial, kmFinal, extensao, superficie, federalCoincidence, estadualCoincidence, superficieEstadual, mp082, concessaoConvenio)</li>
+<li>SINISTRO (<ins>id</ins>, uf, rodovia, km, snv, sentido, solo, tipo, causa, gravidade, feridos, mortos, ups, latitude, longitude, dataUtc)</li>
+</ul>
+<h3 id="de-r-diagrama-entidade-relacionamento">DE-R (Diagrama Entidade-Relacionamento)</h3>
+<p>O DE-R baseia-se no ME-R e traz uma representação, no formato de diagrama, sobre as entidades, os atributos e os relacionamentos. Esse diagrama fornece uma visão um pouco mais próxima do nível lógico. Ele descreve as entidades (objetos do mundo real), seus atributos (características) e os relacionamentos entre as entidades. Os retângulos representam as entidades, as elipses indicam os atributos, losangos que indicam o relacionamento e as linhas conectam as entidades para mostrar como elas se relacionam. O DER é uma ferramenta fundamental para visualizar e planejar a estrutura de um banco de dados antes da implementação, ajudando a definir como os dados são armazenados e acessados.</p>
+<h3 id="dld-diagrama-logico-de-dados">DLD (Diagrama Lógico de Dados)</h3>
+<p>O DLD serve para especificar a um nível mais lógico as entidades, cada atributo com seus tipos (literal, inteiro, por exemplo), bem como os relacionamentos e as chaves de cada entidade - primárias ou estrangeiras. É uma representação gráfica que ilustra a estrutura lógica de um banco de dados, ele funciona como uma representação visual que orienta a implementação efetiva do banco de dados.</p>
+<h4 id="usuarios">Usuários</h4>
+<p><img alt="Diagrama Usuarios" src="../../assets/arquitetura/diagrama_usuario.png" /></p>
+<h4 id="escolas">Escolas</h4>
+<p><img alt="Diagrama Escolas" src="../../assets/arquitetura/diagrama_escola.png" /></p>
+<h4 id="ups-rodovias-e-sinistros">UPS (Rodovias e Sinistros)</h4>
+<div>
+<img src="../../assets/arquitetura/diagrama_rodovias.png" height="100">
+<img src="../../assets/arquitetura/diagrama_sinistros.png" height="100">
+</div>
+
+<h2 id="referencias">Referências</h2>
+<blockquote>
+<p>EQUIPE DNIT 2023-1. Documento de arquitetura. Disponível em: <a href="https://fga-eps-mds.github.io/2023-1-Dnit-DOC/projeto/arquitetura/">https://fga-eps-mds.github.io/2023-1-Dnit-DOC/projeto/arquitetura/</a>. Acesso em: 20/10/2023.</p>
+<p>O que é arquitetura de microsserviços?. Disponível em: <a href="https://www.redhat.com/pt-br/topics/microservices/what-are-microservices">https://www.redhat.com/pt-br/topics/microservices/what-are-microservices</a>. Acesso em: 20/10/2023.</p>
+<p>ASP.NET. Disponível em: <a href="https://dotnet.microsoft.com/pt-br/apps/aspnet">https://dotnet.microsoft.com/pt-br/apps/aspnet</a>. Acesso em: 10/12/2023.</p>
+<p>Jest. Disponível em: <a href="https://jestjs.io/pt-BR/">https://jestjs.io/pt-BR/</a>. Acesso em: 10/12/2023.</p>
+<p>PostgreSQL. Disponível em: <a href="https://www.postgresql.org/">https://www.postgresql.org/</a>. Acesso em: 10/12/2023.</p>
+<p>React. Disponível em: <a href="https://react.dev/">https://react.dev/</a>. Acesso em: 10/12/2023.</p>
+<p>xUnit. Disponível em: <a href="https://xunit.net/">https://xunit.net/</a>. Acesso em: 10/12/2023.</p>
+<p>Visão de Implementação. Disponível em: <a href="https://www.cin.ufpe.br/~gta/rup-vc/core.base_rup/guidances/concepts/deployment_view_64CB74A6.html">https://www.cin.ufpe.br/~gta/rup-vc/core.base_rup/guidances/concepts/deployment_view_64CB74A6.html</a>. Acesso em: 10/12/2023.</p>
+<p>Diagrama de Implementação. Disponível em: <a href="https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml">https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml</a>. Acesso em: 10/12/2023.</p>
+<p>Visão Arquitetural. Disponível em: <a href="https://www.trt9.jus.br/pds/pdstrt9/guidances/guidelines/architectural_view_FF6EDA37.html#:~:text=Vis%C3%A3o%20L%C3%B3gica%3A%20Descreve%20como%20o,todo%20e%20assim%20por%20diante.">https://www.trt9.jus.br/pds/pdstrt9/guidances/guidelines/architectural_view_FF6EDA37.html#:~:text=Vis%C3%A3o%20L%C3%B3gica%3A%20Descreve%20como%20o,todo%20e%20assim%20por%20diante.</a>. Acesso em: 10/12/2023.</p>
+<p>Diagrama Relacional. Disponível em: <a href="https://unbarqdsw2022-1.github.io/2022.1_G1_FGAvisos/#/Modelagem/2.1.2.6.DiagramaDeBancos">https://unbarqdsw2022-1.github.io/2022.1_G1_FGAvisos/#/Modelagem/2.1.2.6.DiagramaDeBancos</a>. Acesso em: 10/12/2023.</p>
+<p>Diagrama de Pacotes. Disponível em: <a href="https://unbarqdsw2022-1.github.io/2022.1_G1_FGAvisos/#/Modelagem/2.1.1.2.DiagramaDePacotes">https://unbarqdsw2022-1.github.io/2022.1_G1_FGAvisos/#/Modelagem/2.1.1.2.DiagramaDePacotes</a>. Acesso em: 10/12/2023.</p>
+</blockquote>
+<h2 id="versionamento">Versionamento</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Data</strong></th>
+<th><strong>Descrição</strong></th>
+<th><strong>Autor(es)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20/10/2023</td>
+<td>Criação do documento</td>
+<td>Wagner Martins</td>
+</tr>
+<tr>
+<td>22/10/2023</td>
+<td>Revisão</td>
+<td>Thiago</td>
+</tr>
+<tr>
+<td>22/10/2023</td>
+<td>Adição da Visão de dados</td>
+<td>Wagner Martins</td>
+</tr>
+<tr>
+<td>10/12/2023</td>
+<td>Adição das Tecnologias utilizadas</td>
+<td>Victor Hugo</td>
+</tr>
+<tr>
+<td>10/12/2023</td>
+<td>Adição da Visão de Implementação</td>
+<td>Victor Hugo</td>
+</tr>
+<tr>
+<td>10/12/2023</td>
+<td>Adição das Visões do Sistema</td>
+<td>Victor Hugo</td>
+</tr>
+<tr>
+<td>10/12/2023</td>
+<td>Adição do Diagrama de Pacotes</td>
+<td>Victor Hugo</td>
+</tr>
+<tr>
+<td>10/12/2023</td>
+<td>Adição do Diagrama Lógico de Dados</td>
+<td>Thiago</td>
+</tr>
+<tr>
+<td>10/12/2023</td>
+<td>Atualização da visão de implantação</td>
+<td>Thiago</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  </body>
+</html>

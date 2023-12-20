@@ -1,0 +1,1804 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../CODE_OF_CONDUCT/">
+      
+      
+      <link rel="icon" href="../assets/logos/dnitLogoBrancoFundoAzul.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.8">
+    
+    
+      
+        <title>Guia de contribuição - DNIT - Educação paro o trânsito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.046329b4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#como-contribuir" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="DNIT - Educação paro o trânsito" class="md-header__button md-logo" aria-label="DNIT - Educação paro o trânsito" data-md-component="logo">
+      
+  <img src="../assets/logos/dnitLogoBranco.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DNIT - Educação paro o trânsito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guia de contribuição
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fga-eps-mds/2023.2-Dnit-DOC" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2023.2-DNIT-DOC
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href=".." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../plano-monitoramento/plano-comunicacao/" class="md-tabs__link">
+          
+  
+  Plano e monitoramento
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../documentos-projeto/metodologias/" class="md-tabs__link">
+          
+  
+  Documentos do projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../visao-produto/lean-inception/" class="md-tabs__link">
+          
+  
+  Visão de Produto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../andamento/semana1/" class="md-tabs__link">
+          
+  
+  Andamento
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../post-mortem/" class="md-tabs__link">
+        
+  
+    
+  
+  Post-mortem
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="DNIT - Educação paro o trânsito" class="md-nav__button md-logo" aria-label="DNIT - Educação paro o trânsito" data-md-component="logo">
+      
+  <img src="../assets/logos/dnitLogoBranco.png" alt="logo">
+
+    </a>
+    DNIT - Educação paro o trânsito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fga-eps-mds/2023.2-Dnit-DOC" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2023.2-DNIT-DOC
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Guia de contribuição
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Guia de contribuição
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-codigo-de-conduta" class="md-nav__link">
+    1. Código de conduta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-politica-de-branches" class="md-nav__link">
+    2. Política de branches
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Política de branches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-main" class="md-nav__link">
+    2.1. Main
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-develop" class="md-nav__link">
+    2.2. Develop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-novas-branches" class="md-nav__link">
+    2.3. Novas branches
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3. Novas branches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-nomenclatura" class="md-nav__link">
+    2.3.1. Nomenclatura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232-tipos-de-branches" class="md-nav__link">
+    2.3.2. Tipos de branches
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.2. Tipos de branches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature" class="md-nav__link">
+    Feature:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentacao" class="md-nav__link">
+    Documentação
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bugfix" class="md-nav__link">
+    Bugfix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hotfix" class="md-nav__link">
+    Hotfix
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-repositorio-de-documentacao" class="md-nav__link">
+    2.4. Repositório de documentação
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-politica-de-issues" class="md-nav__link">
+    3. Política de issues
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-politica-de-commits" class="md-nav__link">
+    4. Política de commits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versionamento" class="md-nav__link">
+    Versionamento
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CODE_OF_CONDUCT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Código de conduta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Plano e monitoramento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Plano e monitoramento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plano-monitoramento/plano-comunicacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de comunicação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plano-monitoramento/plano-custos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de custos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plano-monitoramento/plano-qualidade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de qualidade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plano-monitoramento/plano-riscos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de riscos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plano-monitoramento/EVM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EVM Agile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Documentos do projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Documentos do projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentos-projeto/metodologias/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metodologias
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentos-projeto/eap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EAP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentos-projeto/arquitetura/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documento de Arquitetura
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentos-projeto/identidade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Identidade Visual
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentos-projeto/identidadeVisual/Componentes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Componentes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentos-projeto/planejadoXexecutado/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Planejado X Executado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentos-projeto/manual-implantacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manual de Implantação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Visão de Produto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Visão de Produto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visao-produto/lean-inception/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lean Inception
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Andamento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Andamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pré-sprints
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Pré-sprints
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/semana1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/semana2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/semana3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/semana4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/semana5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/semana6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sprints
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Sprints
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/sprint-teste/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint Teste
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/sprint1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/sprint2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/sprint3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/sprint4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/sprint5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/sprint6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/sprint7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andamento/sprint8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../post-mortem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Post-mortem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-codigo-de-conduta" class="md-nav__link">
+    1. Código de conduta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-politica-de-branches" class="md-nav__link">
+    2. Política de branches
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Política de branches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-main" class="md-nav__link">
+    2.1. Main
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-develop" class="md-nav__link">
+    2.2. Develop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-novas-branches" class="md-nav__link">
+    2.3. Novas branches
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3. Novas branches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-nomenclatura" class="md-nav__link">
+    2.3.1. Nomenclatura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232-tipos-de-branches" class="md-nav__link">
+    2.3.2. Tipos de branches
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.2. Tipos de branches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature" class="md-nav__link">
+    Feature:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentacao" class="md-nav__link">
+    Documentação
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bugfix" class="md-nav__link">
+    Bugfix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hotfix" class="md-nav__link">
+    Hotfix
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-repositorio-de-documentacao" class="md-nav__link">
+    2.4. Repositório de documentação
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-politica-de-issues" class="md-nav__link">
+    3. Política de issues
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-politica-de-commits" class="md-nav__link">
+    4. Política de commits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versionamento" class="md-nav__link">
+    Versionamento
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="como-contribuir">Como Contribuir?</h1>
+<p><strong>Siga as diretrizes abaixo.</strong></p>
+<h2 id="1-codigo-de-conduta">1. Código de conduta</h2>
+<p>&emsp;&emsp;Para contribuir em qualquer respositório desse projeto, siga o seguinte <a href="../CODE_OF_CONDUCT/">código de conduta</a>.</p>
+<h2 id="2-politica-de-branches">2. Política de branches</h2>
+<p>&emsp;&emsp;A política de branches adotada por esse projeto tem o objetivo de garantir um fluxo de trabalho sistemático de forma a contribuir com a organização e eficiência provenientes de tais padronizações. As seguintes diretrizes devem ser seguidas em todos os repositórios do projeto.</p>
+<h3 id="21-main">2.1. Main</h3>
+<p>&emsp;&emsp;Essa é a branch que contém o código em nível de produção. É a branch que contém o código mais estável da aplicação:</p>
+<ul>
+<li>Branch raiz do projeto;</li>
+<li>Existe apenas uma branch main;</li>
+<li>Está protegida de commits;</li>
+<li>Tirando o repositório de documentação, deve aceitar apenas mesclagens de branches do tipo <a href="#hotfix">hotfix</a> e da <a href="#22-develop">develop</a>.</li>
+</ul>
+<h3 id="22-develop">2.2. Develop</h3>
+<p>&emsp;&emsp;É a branch que contém a versão mais atualizada do código que está sendo desenvolvido, integrando, por pull requests, as novas funcionalidades finalizadas.</p>
+<ul>
+<li>Existe apenas uma branch develop;</li>
+<li>O repositório de documentação não pussui essa branch;</li>
+<li>Está protegida de commits;</li>
+<li>Deve ser derivada da main como ponto zero do desenvolvimento;</li>
+<li>Deve estar sempre sincronizada com tudo que é desenvolvido no projeto, ou seja, todas as branches pode mesclar a ela.</li>
+</ul>
+<h3 id="23-novas-branches">2.3. Novas branches</h3>
+<p>&emsp;&emsp;As branches para o desenvolvimento de novas funcionalidades ou correções devem ser criadas seguindo alguns padrões de nomenclatura e derivação.</p>
+<h4 id="231-nomenclatura">2.3.1. Nomenclatura</h4>
+<p>&emsp;&emsp;Novas branches devem seguir o seguinte padrão de nomenclatura:</p>
+<pre><code>&lt;tipo&gt;/x-nome-da-issue
+</code></pre>
+<ul>
+<li>Onde <code>&lt;tipo&gt;</code> refere-se ao tipo da branch, podendo ser: <code>feat</code>, <code>doc</code>, <code>bugfix</code> ou <code>hotfix</code>;</li>
+<li>Onde x é o número da issue.</li>
+</ul>
+<h4 id="232-tipos-de-branches">2.3.2. Tipos de branches</h4>
+<ul>
+<li>
+<h5 id="feature">Feature:</h5>
+<code>feat</code><ul>
+<li>É a branch destinada ao desenvolvimento de uma nova funcionalidade do produto.</li>
+<li>Deve ser derivada da branch <a href="#22-develop">develop</a>;</li>
+<li>Via pull request, deve ser mesclada de volta à branch <a href="#22-develop">develop</a> após a funcionalidade ser desenvolvida;</li>
+<li>Após a mesclagem, a branch deve ser excluída.</li>
+</ul>
+</li>
+<li>
+<h5 id="documentacao">Documentação</h5>
+<p><code>doc</code></p>
+<ul>
+<li>Branch exclusiva para o repositório de documentação, servirá para a criação e manutenção de documentos nessa wiki.</li>
+<li>Deve ser derivada da <a href="#22-main">main</a>;</li>
+<li>Via pull request, deve ser mesclada de volta à branch <a href="#22-main">main</a> após a finalização da documentação;</li>
+<li>Após a mesclagem, a branch deve ser excluída.</li>
+</ul>
+</li>
+<li>
+<h5 id="bugfix">Bugfix</h5>
+<p><code>bugfix</code></p>
+<ul>
+<li>É a branch destinada a implementação de soluções para bugs e erros encontrados na <a href="#22-develop">develop</a>.</li>
+<li>Deve ser derivada da <a href="#22-develop">develop</a>;</li>
+<li>Via pull request, deve ser mesclada a branch <a href="#22-develop">develop</a> após o ponto abordado pela branch ser resolvido;</li>
+<li>Após a mesclagem, a branch deve ser excluída.</li>
+</ul>
+</li>
+<li>
+<h5 id="hotfix">Hotfix</h5>
+<p><code>hotfix</code></p>
+<ul>
+<li>É a branch destinada a implementação de soluções para bugs e erros emergentes encontrados no ambiente de produção, a <a href="#22-main">main</a>.</li>
+<li>Deve ser derivada da branch <a href="#22-main">main</a>;</li>
+<li>Deve ser mesclada a branch <a href="#22-main">main</a> após o ponto abordado pela branch ser resolvido;</li>
+<li>Quando um hotfix é mesclado a <a href="#22-main">main</a>, também deve ser realizada a mesclagem da <a href="#22-main">main</a> à <a href="#22-develop">develop</a>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="24-repositorio-de-documentacao">2.4. Repositório de documentação</h3>
+<p>&emsp;&emsp;No repositório de documentação, na branch gh-pages, está o código da página de documentação do github pages. A branch <a href="#21-main">main</a> está protegida e só deve aceitar modificações por pull requests. Esse repositório não possui uma branch <a href="#22-develop">develop</a>.</p>
+<h2 id="3-politica-de-issues">3. Política de issues</h2>
+<p>&emsp;&emsp;A criação de novas issues deverá seguir um dos padrões estabelecidos abaixo:</p>
+<ul>
+<li><a href="https://github.com/fga-eps-mds/2023.2-Dnit-DOC/tree/main/.github/workflows/ISSUE_TEMPLATE/bug_report.md">Bug report</a>: para relatar problemas, erros, defeitos ou falhas;<ul>
+<li>Título da issue com sufixo <code>[Bugfix]</code> ou <code>[Hotfix]</code>.</li>
+</ul>
+</li>
+<li><a href="https://github.com/fga-eps-mds/2023.2-Dnit-DOC/tree/main/.github/workflows/ISSUE_TEMPLATE/historia_de_usuario.md">História de usuário</a>: quando for descrever funcionalidades a nível de história de usuário;<ul>
+<li>Título da issue com sufixo <code>[USX]</code>, com X sendo o número da História.</li>
+</ul>
+</li>
+<li><a href="https://github.com/fga-eps-mds/2023.2-Dnit-DOC/tree/main/.github/workflows/ISSUE_TEMPLATE/geral.md">Geral</a>: utilizado para criar ou relatar tarefas ou outras atividades gerais.<ul>
+<li>Título da issue com sufixo <code>[Doc]</code>, para issues de documentação.</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-politica-de-commits">4. Política de commits</h2>
+<p>&emsp;&emsp;Os commits deverão seguir o padrão de mensagens especificado pelo <a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits</a> além das seguintes regras:</p>
+<ul>
+<li>A descrição de um commit deve ser escrita em Português;</li>
+<li>Um commit deve referenciar a issue trabalhada;</li>
+<li>
+<p>Um commit deve representar uma unidade de trabalho. Ou seja, não se deve incluir num único commit trabalhos relacionados a issues diferentes;</p>
+<p>git commit -m "feat: adiciona campos de email e senha na tela de login"</p>
+</li>
+</ul>
+<p>&emsp;&emsp;Para tarefas realizadas em pares, os commits precisam seguir o seguinte padrão:</p>
+<pre><code>git commit -m "feat: adiciona campos de email e senha na tela de login
+
+
+Co-authored-by: Nome de quem auxiliou &lt;auxiliador@gmail.com&gt;"
+</code></pre>
+<p>&emsp;&emsp;É importante ressaltar que o email <strong>PRECISA</strong> ser o mesmo que está vinculado à conta do GitHub.</p>
+<ul>
+<li><strong>Co-authored-by</strong>: deve ser preenchido por quem prestou auxílio durante a tarefa.</li>
+</ul>
+<p>Para preencher o campo <strong>Co-authored-by</strong>, consulte a <a href="https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors">documentação</a>.</p>
+<h2 id="referencias">Referências</h2>
+<blockquote>
+<p>VAMOS CUIDAR 2020-1. Políticas. Disponível em: <a href="https://fga-eps-mds.github.io/2020.1-VC_Usuario/#/docs/Policies">https://fga-eps-mds.github.io/2020.1-VC_Usuario/#/docs/Policies</a></p>
+<p>CONVENTIONAL COMMITS. Conventional Commits. Disponível em: <a href="https://www.conventionalcommits.org/en/v1.0.0/">https://www.conventionalcommits.org/en/v1.0.0/</a></p>
+<p>EQUIPE ALECTRION 2023-1. Como contribuir. Disponível em: <a href="https://fga-eps-mds.github.io/2023-1-Alectrion-DOC/documentacao/guiaDeContribuicao/">https://fga-eps-mds.github.io/2023-1-Alectrion-DOC/documentacao/guiaDeContribuicao/</a></p>
+<p>EQUIPE DNIT 2023-1. Guia de contribuição. Disponível em: <a href="https://fga-eps-mds.github.io/2023-1-Dnit-DOC/GuiaDeContribuicao/guiaDeContribuicao/">https://fga-eps-mds.github.io/2023-1-Dnit-DOC/GuiaDeContribuicao/guiaDeContribuicao/</a></p>
+</blockquote>
+<h2 id="versionamento">Versionamento</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Data</strong></th>
+<th><strong>Descrição</strong></th>
+<th><strong>Autor(es)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">04/10/2023</td>
+<td>Criação do Guia de Contribuição</td>
+<td>Daniel Porto</td>
+</tr>
+<tr>
+<td style="text-align: center;">06/10/2023</td>
+<td>Ajustes das políticas de commits</td>
+<td>Daniel Porto, Yudi</td>
+</tr>
+<tr>
+<td style="text-align: center;">18/10/2023</td>
+<td>Pequenos ajustes</td>
+<td>Daniel Porto</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs"], "search": "../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  </body>
+</html>
