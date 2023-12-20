@@ -128,13 +128,13 @@ O acompanhamento dos riscos é essencial durante o desenvolvimento de um projeto
 <iframe width="700" height="760" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_cUBfKXtr-iQssXj1gmYRuSHkpjKGj5wlsiUM7nDlV8a8eq9WRX9CNlWfgBJ1MSapeszGHFQ91zVw/pubhtml?gid=0&single=true"></iframe>
 
 ## Gráficos
-O gráfico abaixo mostra a pontuação total de Probabilidade x Impacto a cada sprint.
+O gráfico abaixo mostra a pontuação total de Probabilidade x Impacto a cada sprint. Nele é possível notar que a pontuação apresentou um decréscimo até a sprint 6, nas sprints posteriores observamos um aumento, justamente por alguns riscos que aumentaram por ser perto da entrega do MVP e por se aproximar do final do semestre.
 
 <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_cUBfKXtr-iQssXj1gmYRuSHkpjKGj5wlsiUM7nDlV8a8eq9WRX9CNlWfgBJ1MSapeszGHFQ91zVw/pubchart?oid=558130271&format=interactive"></iframe>
 
-O gráfico de áreas empilhadas abaixo mostra a evolução dos riscos ao longo das sprints, fornecendo uma representação visual de sua variação.
+O gráfico de áreas empilhadas abaixo mostra a evolução dos riscos ao longo das sprints, fornecendo uma representação visual de sua variação. Em geral, há um comportamento parecido com o gráfico anterior, com exceção de alguns riscos como o 11 (Indisponibilidade do cliente), que na sprint 3 e 4 foram as que maior apresentaram graus de risco.
 
-<iframe width="600" height="448" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_cUBfKXtr-iQssXj1gmYRuSHkpjKGj5wlsiUM7nDlV8a8eq9WRX9CNlWfgBJ1MSapeszGHFQ91zVw/pubchart?oid=944010320&format=interactive"></iframe>
+<iframe width="600" height="480" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_cUBfKXtr-iQssXj1gmYRuSHkpjKGj5wlsiUM7nDlV8a8eq9WRX9CNlWfgBJ1MSapeszGHFQ91zVw/pubchart?oid=944010320&format=interactive"></iframe>
 
 ## Referências
 
@@ -149,3 +149,4 @@ O gráfico de áreas empilhadas abaixo mostra a evolução dos riscos ao longo d
 |--|--|--|
 | 12/10/2023 | Criação do documento | Rafael Berto e Victor Hugo |
 | 16/10/2023 | Revisão e correção ortográfica | Thiago |
+| 19/12/2023 | Correção dos gráficos e sua descrição | Victor Hugo |
